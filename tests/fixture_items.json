@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-07-30T11:00:00+00:00",
+  "publication": {
+    "id": "demo",
+    "name": "Weekly Flyer",
+    "valid_from": "2026-07-30",
+    "valid_to": "2026-08-05"
+  },
+  "items": [
+    {"name": "Coca-Cola 12x355mL", "price": "2/$13.00", "image": "https://example.com/coke.png", "story": "Selected varieties"},
+    {"name": "Tide Pods 35 ct", "price": "$12.99", "image": "https://example.com/tide.png", "story": "Save $5"},
+    {"name": "Life Brand Vitamin D 1000IU 240s", "price": "$8.49", "image": "", "story": ""},
+    {"name": "Cadbury Family Bars", "price": "3/$10", "image": "https://example.com/cadbury.jpg", "story": "Assorted"}
+  ]
+}

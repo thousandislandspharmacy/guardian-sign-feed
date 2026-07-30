@@ -1,0 +1,4 @@
+__pycache__/
+capture.har
+urls.txt
+*.pyc

@@ -1,0 +1,28 @@
+{
+  "mode": "flyerkit",
+  "api_base": "https://dam.flippenterprise.net/hosted",
+  "merchant": "guardian",
+  "access_token": "9520757e8743c0a3ffb3032e09a47116",
+  "store_code": "7063802",
+  "locale": "en",
+  "store_name": "Thousand Islands Pharmacy",
+  "brand_sub": "This Week's Specials",
+  "flyer_public_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
+  "max_items": 12,
+  "require_image": true,
+  "require_price": true,
+  "exclude_keywords": [],
+  "fallback_lines": [
+    "Weekly specials in store now",
+    "Ask us about this week's flyer deals"
+  ],
+  "download_images": true,
+  "observed_urls": [
+    "https://dam.flippenterprise.net/hosted/store/guardian?locale=en&access_token=9520757e8743c0a3ffb3032e09a47116&store_code=7063802",
+    "https://dam.flippenterprise.net/hosted/publications/guardian?languages%5B%5D=en&locale=en&access_token=9520757e8743c0a3ffb3032e09a47116&show_storefronts=true&postal_code=K7G1G6&store_code=7063802",
+    "https://dam.flippenterprise.net/hosted/publication/8026836/products?display_type=all&locale=en&access_token=9520757e8743c0a3ffb3032e09a47116",
+    "https://aq.flippenterprise.net/storefronts/1168327/8026836/99cc723ba972efce043f53ab1a965d3ee447c8406278cf765dba1d4ded82a17b?merchant_id=3423",
+    "https://cdn.flippenterprise.net/flyers/8026836/stock_premium/1784569043.jpg",
+    "https://cdn.flippenterprise.net/flyers/8036503/stock_premium/1785273281.jpg"
+  ]
+}

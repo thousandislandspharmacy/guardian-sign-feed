@@ -1,0 +1,49 @@
+name: Update sign feed
+
+on:
+  schedule:
+    # Thursday + Friday retry, 11:00 UTC = 6am EST / 7am EDT.
+    # New Guardian flyers go live Thursday; Friday run self-heals a late post.
+    - cron: "0 11 * * 4"
+    - cron: "0 11 * * 5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape current flyer
+        id: scrape
+        run: python scrape.py
+
+      - name: Generate sign content
+        if: success()
+        run: python generate.py
+
+      # If the scrape fails for ANY reason, publish the evergreen fallback so
+      # the sign never advertises last week's prices. The job still ends as
+      # failed, which triggers GitHub's email notification to you.
+      - name: Generate fallback content
+        if: failure()
+        run: python generate.py --fallback
+
+      - name: Commit and push
+        if: always()
+        run: |
+          git config user.name "sign-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs data
+          git diff --cached --quiet || git commit -m "Sign feed update $(date -u +%Y-%m-%d)"
+          git push
