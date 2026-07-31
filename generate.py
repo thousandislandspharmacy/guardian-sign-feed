@@ -37,10 +37,15 @@ CONFIG_PATH = ROOT / "config.json"
 # element -- the price, set huge in retail amber, which reads at distance
 # and is the one thing a driver needs.
 W, H = 336, 144
+# Palette per the Guardian branding summary (GDN_Branding_Summary v3.0).
+# Deal slides stay on black (unlit LEDs, product photos pop); brand and
+# preset slides flip to white-on-Guardian-Green, the brand's signature look.
+# Guardian Green is too dark to carry small TEXT on black, hence backgrounds.
 BG = "#000000"
 FG = "#FFFFFF"
-ACCENT = "#FFC400"   # amber: high luminance on LED, vernacular for pricing
-DIM = "#9AA0A6"
+GREEN = "#00643C"    # Guardian Green, PMS 3425 -- brand/preset backgrounds
+RED = "#EE3124"      # Guardian/I.D.A. Red, PMS 3556 -- prices, as in the flyer
+LIGHT = "#F7F6F5"    # Light Grey -- secondary text
 SLIDE_SECONDS = 7
 RELOAD_SECONDS = 21600  # webview re-pulls the page every 6 h
 
@@ -116,7 +121,36 @@ def slide_html(item):
     </div>"""
 
 
-def page(cfg, items, dates_line):
+def preset_html(preset):
+    title = escape(str(preset.get("title", "")))
+    sub = escape(str(preset.get("sub", "")))
+    sub_html = f'<div class="psub">{sub}</div>' if sub else ""
+    return f"""    <div class="slide flat">
+      <div class="mid"><div class="cell">
+        <div class="ptitle">{title}</div>
+        {sub_html}
+      </div></div>
+    </div>"""
+
+
+def weave(deals, presets):
+    """Spread preset slides evenly through the deal rotation."""
+    if not presets:
+        return deals
+    if not deals:
+        return presets
+    step = max(1, round(len(deals) / (len(presets) + 1)))
+    out, index = [], 0
+    for position, slide in enumerate(deals, start=1):
+        out.append(slide)
+        if index < len(presets) and position == step * (index + 1):
+            out.append(presets[index])
+            index += 1
+    out.extend(presets[index:])
+    return out
+
+
+def page(cfg, items, dates_line, presets):
     store = escape(cfg.get("store_name", "Weekly Specials"))
     sub = escape(cfg.get("brand_sub", "This Week's Specials"))
     brand = f"""    <div class="slide brand">
@@ -124,7 +158,8 @@ def page(cfg, items, dates_line):
       <div class="sub">{sub}</div>
       <div class="dates">{escape(dates_line)}</div>
     </div>"""
-    slides = "\n".join([brand] + [slide_html(item) for item in items])
+    slides = "\n".join([brand] + weave([slide_html(item) for item in items],
+                                       [preset_html(p) for p in presets]))
     # ES5 only, no external assets: the ViPlex player webview is old and may
     # be firewalled to this one page.
     return f"""<!DOCTYPE html>
@@ -136,7 +171,7 @@ def page(cfg, items, dates_line):
 <style>
   html, body {{ margin:0; padding:0; background:{BG}; overflow:hidden; }}
   body {{ width:{W}px; height:{H}px; position:relative;
-         font-family:Arial, Helvetica, sans-serif; color:{FG}; }}
+         font-family:'PT Sans', Arial, Helvetica, sans-serif; color:{FG}; }}
   .slide {{ position:absolute; top:0; left:0; width:{W}px; height:{H}px;
             display:none; }}
   .slide.on {{ display:block; }}
@@ -146,16 +181,22 @@ def page(cfg, items, dates_line):
   .name {{ margin-top:10px; font-size:17px; line-height:20px; font-weight:bold;
            max-height:40px; overflow:hidden; }}
   .qual {{ margin-top:4px; font-size:14px; line-height:16px; font-weight:bold;
-           color:{ACCENT}; }}
+           color:{FG}; }}
   .price {{ margin-top:4px; font-size:44px; line-height:46px; font-weight:800;
-            color:{ACCENT}; white-space:nowrap; }}
+            color:{RED}; white-space:nowrap; }}
   .price.long {{ font-size:30px; line-height:34px; }}
-  .story {{ margin-top:2px; font-size:13px; color:{DIM}; white-space:nowrap;
+  .story {{ margin-top:2px; font-size:13px; color:{LIGHT}; white-space:nowrap;
             overflow:hidden; }}
-  .brand {{ text-align:center; }}
+  .brand {{ text-align:center; background:{GREEN}; }}
   .store {{ margin-top:14px; font-size:22px; line-height:25px; font-weight:800; }}
-  .sub {{ margin-top:6px; font-size:18px; color:{ACCENT}; font-weight:bold; }}
-  .dates {{ margin-top:8px; font-size:12px; color:{DIM}; }}
+  .sub {{ margin-top:6px; font-size:18px; color:{FG}; font-weight:bold; }}
+  .dates {{ margin-top:8px; font-size:12px; color:{LIGHT}; }}
+  .flat {{ background:{GREEN}; }}
+  .mid {{ display:table; width:{W}px; height:{H}px; }}
+  .cell {{ display:table-cell; vertical-align:middle; text-align:center; }}
+  .ptitle {{ font-size:24px; line-height:28px; font-weight:800;
+             padding:0 12px; }}
+  .psub {{ margin-top:6px; font-size:15px; color:{LIGHT}; }}
 </style>
 </head>
 <body>
@@ -205,14 +246,20 @@ def main():
             if pub.get("valid_from") and pub.get("valid_to"):
                 dates_line = f"{pub['valid_from']} to {pub['valid_to']}"
 
+    presets = [p for p in cfg.get("preset_slides", []) if p.get("enabled", True)]
+    preset_lines = [" \u2014 ".join(part for part in
+                               (str(p.get("title", "")).strip(),
+                                str(p.get("sub", "")).strip()) if part)
+                    for p in presets]
+
     if args.fallback or not items:
         if not args.fallback:
             print("No items available -- building fallback so the sign "
                   "never shows stale prices.", file=sys.stderr)
-        lines = cfg.get("fallback_lines", ["Weekly specials in store now"])
+        lines = cfg.get("fallback_lines", ["Weekly specials in store now"]) + preset_lines
         (out_dir / "sign-feed.xml").write_text(rss(channel, lines, link), encoding="utf-8")
-        (out_dir / "index.html").write_text(page(cfg, [], "See flyer in store"),
-                                            encoding="utf-8")
+        (out_dir / "index.html").write_text(
+            page(cfg, [], "See flyer in store", presets), encoding="utf-8")
         print(f"Fallback build written to {out_dir}/")
         return
 
@@ -224,10 +271,12 @@ def main():
                                     item.get("price", "")) if p)
         return f"{item['name']} \u2014 {deal}" if deal else item["name"]
 
-    lines = [ticker(item) for item in items]
+    lines = [ticker(item) for item in items] + preset_lines
     (out_dir / "sign-feed.xml").write_text(rss(channel, lines, link), encoding="utf-8")
-    (out_dir / "index.html").write_text(page(cfg, items, dates_line), encoding="utf-8")
-    print(f"Wrote {len(items)} deal slides + RSS to {out_dir}/")
+    (out_dir / "index.html").write_text(page(cfg, items, dates_line, presets),
+                                        encoding="utf-8")
+    print(f"Wrote {len(items)} deal slides + {len(presets)} preset slides "
+          f"+ RSS to {out_dir}/")
 
 
 if __name__ == "__main__":

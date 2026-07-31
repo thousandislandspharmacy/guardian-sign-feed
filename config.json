@@ -11,7 +11,20 @@
   "max_items": 12,
   "require_image": true,
   "require_price": true,
-  "exclude_keywords": [],
+  "exclude_keywords": [
+    "incontinence", "diarrhea", "laxative", "hemorrhoid", "constipation",
+    "lice", "wart", "condom", "pregnancy test", "feminine", "yeast",
+    "enema", "stool", "suppositor", "tampon",
+    "nicotine", "zonnic", "smoking"
+  ],
+  "exclude_categories": [
+    "feminine", "sexual", "fertility", "tobacco", "smoking cessation"
+  ],
+  "preset_slides": [
+    {"title": "Free Local Delivery", "sub": "Ask us for details", "enabled": true},
+    {"title": "Seniors Day Every Thursday", "sub": "Ask us in store", "enabled": false},
+    {"title": "Feeling better starts here®", "sub": "Your local pharmacy®", "enabled": true}
+  ],
   "fallback_lines": [
     "Weekly specials in store now",
     "Ask us about this week's flyer deals"

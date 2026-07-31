@@ -43,7 +43,26 @@ DEFAULTS = {
     "max_items": 12,
     "require_image": True,
     "require_price": True,
-    "exclude_keywords": [],
+    # Road-sign guardrails: legitimate flyer deals that don't belong four
+    # feet tall on King St. Keywords match name+description; categories
+    # match Flipp's merchant tags and Google taxonomy labels.
+    "exclude_keywords": [
+        "incontinence", "diarrhea", "laxative", "hemorrhoid", "constipation",
+        "lice", "wart", "condom", "pregnancy test", "feminine", "yeast",
+        "enema", "stool", "suppositor", "tampon",
+        "nicotine", "zonnic", "smoking",
+    ],
+    "exclude_categories": [
+        "feminine", "sexual", "fertility", "tobacco", "smoking cessation",
+    ],
+    "preset_slides": [
+        {"title": "Free Local Delivery", "sub": "Ask us for details",
+         "enabled": True},
+        {"title": "Seniors Day Every Thursday", "sub": "Ask us in store",
+         "enabled": False},
+        {"title": "Feeling better starts here®",
+         "sub": "Your local pharmacy®", "enabled": True},
+    ],
     "fallback_lines": [
         "Weekly specials in store now",
         "Ask us about this week's flyer deals",

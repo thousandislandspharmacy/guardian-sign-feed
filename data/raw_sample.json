@@ -66,107 +66,36 @@
   ],
   "first_two_products": [
     {
-      "id": 1025987031,
-      "name": "ENERGIZER",
-      "sale_story": "25% OFF*",
+      "id": 1027374561,
+      "name": "DOVE, MITCHUM or ST. IVES",
+      "sale_story": null,
       "sku": null,
-      "description": "Batteries Selected Types and Sizes",
-      "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-07-24T00:00:00-04:00",
-      "valid_to_timestamp": "2026-07-30T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23679385/590c0596-7d0c-11f1-82c7-92550442661b/x_large",
+      "description": "Antiperspirant/ Deodorant or ST. IVES Body Wash Selected Types and Sizes",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-07-31T00:00:00-04:00",
+      "valid_to_timestamp": "2026-08-06T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23709909/73004f24-81ef-11f1-bef1-eaf2bfe4a490/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-07-24",
-      "valid_to": "2026-07-30",
+      "valid_from": "2026-07-31",
+      "valid_to": "2026-08-06",
       "categories": [
         "Grocery"
       ],
       "pre_price_text": "",
-      "price_text": "",
-      "post_price_text": "",
-      "hosted_coupon_image": null,
-      "hide_brand_in_pop": false,
-      "left": 3388.28,
-      "bottom": -1997.39,
-      "right": 3623.17,
-      "top": -1710.96,
-      "page": 4,
-      "item_categories": {
-        "l1": {
-          "confidence": null,
-          "category_name": "Electronics",
-          "google_category_id": 220
-        },
-        "l2": {
-          "confidence": null,
-          "category_name": "Electronics Accessories",
-          "google_category_id": 255
-        },
-        "l3": {
-          "confidence": null,
-          "category_name": "Power",
-          "google_category_id": 266
-        },
-        "l4": {
-          "confidence": null,
-          "category_name": "Batteries",
-          "google_category_id": 2570
-        },
-        "l5": null,
-        "l6": null,
-        "l7": null
-      },
-      "flyer_id": 8026836,
-      "page_destination": null,
-      "in_store_only": false,
-      "item_type": 1,
-      "average_rating": null,
-      "web_commission_url": null,
-      "item_web_url": null,
-      "brand": "Energizer",
-      "images": [
-        "https://f.wishabi.net/page_pdf_images/23679385/590c0596-7d0c-11f1-82c7-92550442661b/x_large"
-      ],
-      "original_price": null,
-      "hide_flyer_item_ttm_links_outside_validity": false,
-      "sub_items": []
-    },
-    {
-      "id": 1025987038,
-      "name": "Option+",
-      "sale_story": "Save up to $3.99",
-      "sku": null,
-      "description": "Diarrhea Relief Caplets",
-      "disclaimer_text": null,
-      "valid_from_timestamp": "2026-07-24T00:00:00-04:00",
-      "valid_to_timestamp": "2026-07-30T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23679385/47a79392-7d0c-11f1-82c7-92550442661b/x_large",
-      "custom_id_field_1": null,
-      "custom_id_field_2": null,
-      "custom_id_field_3": null,
-      "custom_id_field_4": null,
-      "custom_id_field_5": null,
-      "custom_id_field_6": null,
-      "valid_from": "2026-07-24",
-      "valid_to": "2026-07-30",
-      "categories": [
-        "Health & Wellness"
-      ],
-      "pre_price_text": "",
-      "price_text": "12.00",
+      "price_text": "4.99",
       "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 3882.31,
-      "bottom": -645.25,
-      "right": 4113.34,
-      "top": -389.32,
-      "page": 4,
+      "left": 275.94,
+      "bottom": -1131.82,
+      "right": 513.48,
+      "top": -921.56,
+      "page": 1,
       "item_categories": {
         "l1": {
           "confidence": null,
@@ -175,31 +104,110 @@
         },
         "l2": {
           "confidence": null,
-          "category_name": "Health Care",
-          "google_category_id": 710
+          "category_name": "Personal Care",
+          "google_category_id": 727
         },
         "l3": {
           "confidence": null,
-          "category_name": "Medicine & Drugs",
-          "google_category_id": 719
+          "category_name": "Cosmetics",
+          "google_category_id": 729
         },
-        "l4": null,
-        "l5": null,
+        "l4": {
+          "confidence": null,
+          "category_name": "Bath & Body",
+          "google_category_id": 3423
+        },
+        "l5": {
+          "confidence": null,
+          "category_name": "Body Wash",
+          "google_category_id": 3429
+        },
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8026836,
+      "flyer_id": 8036503,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Option+",
+      "brand": "DOVE | MITCHUM | ST. IVES",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/23679385/47a79392-7d0c-11f1-82c7-92550442661b/x_large"
+        "https://f.wishabi.net/page_pdf_images/23709909/73004f24-81ef-11f1-bef1-eaf2bfe4a490/x_large"
       ],
-      "original_price": "15.99",
+      "original_price": null,
+      "hide_flyer_item_ttm_links_outside_validity": false,
+      "sub_items": []
+    },
+    {
+      "id": 1027374646,
+      "name": "VASELINE Intensive Care Dry Skin Repair, NOXZEMA or POND'S Skin Care Products",
+      "sale_story": "20% OFF*",
+      "sku": null,
+      "description": "Selected Types and Sizes",
+      "disclaimer_text": "*Our regular retail price",
+      "valid_from_timestamp": "2026-07-31T00:00:00-04:00",
+      "valid_to_timestamp": "2026-08-06T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23709916/6347945c-81ef-11f1-85f8-a29085117425/x_large",
+      "custom_id_field_1": null,
+      "custom_id_field_2": null,
+      "custom_id_field_3": null,
+      "custom_id_field_4": null,
+      "custom_id_field_5": null,
+      "custom_id_field_6": null,
+      "valid_from": "2026-07-31",
+      "valid_to": "2026-08-06",
+      "categories": [
+        "Beauty"
+      ],
+      "pre_price_text": "",
+      "price_text": "",
+      "post_price_text": "",
+      "hosted_coupon_image": null,
+      "hide_brand_in_pop": false,
+      "left": 2754.75,
+      "bottom": -1685.83,
+      "right": 3096.76,
+      "top": -1411.42,
+      "page": 3,
+      "item_categories": {
+        "l1": {
+          "confidence": null,
+          "category_name": "Health & Beauty",
+          "google_category_id": 709
+        },
+        "l2": {
+          "confidence": null,
+          "category_name": "Personal Care",
+          "google_category_id": 727
+        },
+        "l3": {
+          "confidence": null,
+          "category_name": "Cosmetics",
+          "google_category_id": 729
+        },
+        "l4": {
+          "confidence": null,
+          "category_name": "Skin Care",
+          "google_category_id": 3510
+        },
+        "l5": null,
+        "l6": null,
+        "l7": null
+      },
+      "flyer_id": 8036503,
+      "page_destination": null,
+      "in_store_only": false,
+      "item_type": 1,
+      "average_rating": null,
+      "web_commission_url": null,
+      "item_web_url": null,
+      "brand": "Vaseline",
+      "images": [
+        "https://f.wishabi.net/page_pdf_images/23709916/6347945c-81ef-11f1-85f8-a29085117425/x_large"
+      ],
+      "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     }

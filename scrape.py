@@ -141,6 +141,17 @@ def discount_score(item):
     return 0.0
 
 
+def category_names(item):
+    """Every category label Flipp attaches: merchant tags + Google taxonomy."""
+    names = [str(c) for c in (item.get("categories") or [])]
+    levels = item.get("item_categories") or {}
+    if isinstance(levels, dict):
+        for level in levels.values():
+            if isinstance(level, dict) and level.get("category_name"):
+                names.append(str(level["category_name"]))
+    return names
+
+
 def keep(item, cfg):
     name = pick(item, NAME_KEYS)
     if not name:
@@ -153,8 +164,16 @@ def keep(item, cfg):
     if desc and desc.lower() not in display.lower():
         display = f"{display} {desc}"
     display = " ".join(display.split())  # descriptions carry literal newlines
+    story = " ".join(str(item.get("sale_story") or "").split())
+    # Some descriptions repeat the sale story ("... Caplets Save up to $8");
+    # the story gets its own line on the slide, so trim the duplicate.
+    if story and display.lower().endswith(story.lower()):
+        display = display[:-len(story)].rstrip(" -–—,")
     lowered = display.lower()
     if any(bad.lower() in lowered for bad in cfg.get("exclude_keywords", [])):
+        return None
+    cats = " | ".join(category_names(item)).lower()
+    if any(bad.lower() in cats for bad in cfg.get("exclude_categories", [])):
         return None
     price, qualifier = price_parts(item)
     image = pick(item, IMAGE_KEYS)
@@ -167,7 +186,7 @@ def keep(item, cfg):
         "price": price or "",
         "qualifier": qualifier,
         "image": image or "",
-        "story": str(item.get("sale_story") or "").strip(),
+        "story": story,
         "_score": discount_score(item),
     }
 
