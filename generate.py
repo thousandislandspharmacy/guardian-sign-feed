@@ -212,52 +212,16 @@ def slide_html(item):
     </div>"""
 
 
-def preset_html(preset, store):
-    # (R) marks render as noise pixels at LED scale -- drop them on slides.
-    title = str(preset.get("title", "")).replace("®", "").strip()
-    cta = escape(str(preset.get("sub", "")).replace("®", "").strip())
-    emphasis = str(preset.get("emphasis", "")).strip()
-    headline = escape(title)
-    if emphasis:
-        at = title.lower().find(emphasis.lower())
-        if at >= 0:
-            before, word, after = (title[:at], title[at:at + len(emphasis)],
-                                   title[at + len(emphasis):])
-            headline = (escape(before)
-                        + '<span class="chip"><span class="chip-inner">'
-                        + escape(word) + "</span></span>" + escape(after))
-    cta_html = f'<div class="cta">{cta}</div>' if cta else ""
-    return f"""    <div class="slide">
-      {cross("width:96px;height:96px;right:-26px;top:-30px;")}
-      {cross("width:84px;height:84px;right:-20px;bottom:-34px;")}
-      <div class="mini"><span class="wordmark"><span class="store">{escape(store)}</span><span class="redbar"></span></span></div>
-      <div class="headline">{headline}</div>
-      {cta_html}
-    </div>"""
-
-
-def weave(deals, presets):
-    """Spread preset slides evenly through the deal rotation."""
-    if not presets:
-        return deals
-    if not deals:
-        return presets
-    step = max(1, round(len(deals) / (len(presets) + 1)))
-    out, index = [], 0
-    for position, slide in enumerate(deals, start=1):
-        out.append(slide)
-        if index < len(presets) and position == step * (index + 1):
-            out.append(presets[index])
-            index += 1
-    out.extend(presets[index:])
-    return out
-
-
-def page(cfg, items, dates_line, presets):
-    store_raw = cfg.get("store_name", "Weekly Specials")
-    store = escape(store_raw)
+def page(cfg, items, dates_line):
+    """Deal slides only. Eric supplies brand/promo slides in ViPlex weekly;
+    the lone exception is the scrape-failure fallback (items empty), which
+    shows a single evergreen brand card rather than a blank sign."""
+    store = escape(cfg.get("store_name", "Weekly Specials"))
     sub = escape(cfg.get("brand_sub", "This Week's Specials"))
-    brand = f"""    <div class="slide">
+    if items:
+        slides = "\n".join(slide_html(item) for item in items)
+    else:
+        slides = f"""    <div class="slide">
       {cross("width:140px;height:140px;right:-40px;top:-50px;")}
       {cross("width:84px;height:84px;right:44px;bottom:-28px;")}
       <div class="brand-block">
@@ -266,9 +230,6 @@ def page(cfg, items, dates_line, presets):
       </div>
       <div class="dates">{escape(dates_line)}</div>
     </div>"""
-    slides = "\n".join([brand] + weave(
-        [slide_html(item) for item in items],
-        [preset_html(p, store_raw) for p in presets]))
     # ES5 only, no external assets: the ViPlex player webview is old and may
     # be firewalled to this one page.
     return f"""<!DOCTYPE html>
@@ -318,18 +279,6 @@ def page(cfg, items, dates_line, presets):
               text-transform:uppercase; color:{FG}; }}
   .dates {{ position:absolute; left:20px; top:122px; font-size:12px;
             color:{LIGHT}; z-index:3; }}
-  .mini {{ position:absolute; left:12px; top:10px; z-index:3; }}
-  .mini .store {{ font-size:16px; line-height:18px; }}
-  .mini .redbar {{ height:3px; margin-top:2px; }}
-  .headline {{ position:absolute; left:12px; top:40px; width:300px;
-               font-size:26px; line-height:31px; color:{FG};
-               text-transform:uppercase; z-index:3; }}
-  .chip {{ display:inline-block; background:{RED}; padding:0 7px 2px;
-           -webkit-transform:skewX(-6deg); transform:skewX(-6deg); }}
-  .chip-inner {{ display:inline-block;
-                 -webkit-transform:skewX(6deg); transform:skewX(6deg); }}
-  .cta {{ position:absolute; left:12px; top:122px; font-size:13px;
-          color:{FG}; z-index:3; }}
 </style>
 </head>
 <body>
@@ -379,20 +328,14 @@ def main():
             if pub.get("valid_from") and pub.get("valid_to"):
                 dates_line = f"{pub['valid_from']} to {pub['valid_to']}"
 
-    presets = [p for p in cfg.get("preset_slides", []) if p.get("enabled", True)]
-    preset_lines = [" \u2014 ".join(part for part in
-                               (str(p.get("title", "")).strip(),
-                                str(p.get("sub", "")).strip()) if part)
-                    for p in presets]
-
     if args.fallback or not items:
         if not args.fallback:
             print("No items available -- building fallback so the sign "
                   "never shows stale prices.", file=sys.stderr)
-        lines = cfg.get("fallback_lines", ["Weekly specials in store now"]) + preset_lines
+        lines = cfg.get("fallback_lines", ["Weekly specials in store now"])
         (out_dir / "sign-feed.xml").write_text(rss(channel, lines, link), encoding="utf-8")
         (out_dir / "index.html").write_text(
-            page(cfg, [], "See flyer in store", presets), encoding="utf-8")
+            page(cfg, [], "See flyer in store"), encoding="utf-8")
         print(f"Fallback build written to {out_dir}/")
         return
 
@@ -404,12 +347,11 @@ def main():
                                     item.get("price", "")) if p)
         return f"{item['name']} \u2014 {deal}" if deal else item["name"]
 
-    lines = [ticker(item) for item in items] + preset_lines
+    lines = [ticker(item) for item in items]
     (out_dir / "sign-feed.xml").write_text(rss(channel, lines, link), encoding="utf-8")
-    (out_dir / "index.html").write_text(page(cfg, items, dates_line, presets),
+    (out_dir / "index.html").write_text(page(cfg, items, dates_line),
                                         encoding="utf-8")
-    print(f"Wrote {len(items)} deal slides + {len(presets)} preset slides "
-          f"+ RSS to {out_dir}/")
+    print(f"Wrote {len(items)} deal slides + RSS to {out_dir}/")
 
 
 if __name__ == "__main__":

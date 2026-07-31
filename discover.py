@@ -81,14 +81,6 @@ DEFAULTS = {
         ["skin care", "lotion", "moisturizer", "sunscreen", "lip care"],
         ["cosmetics", "nail", "mascara", "lipstick"],
     ],
-    "preset_slides": [
-        {"title": "Free Local Delivery", "emphasis": "Free",
-         "sub": "Ask us for details.", "enabled": True},
-        {"title": "Seniors Day Every Thursday", "emphasis": "Thursday",
-         "sub": "Ask us in store.", "enabled": False},
-        {"title": "Feeling better starts here®", "emphasis": "better",
-         "sub": "Your local pharmacy®", "enabled": True},
-    ],
     "fallback_lines": [
         "Weekly specials in store now",
         "Ask us about this week's flyer deals",
