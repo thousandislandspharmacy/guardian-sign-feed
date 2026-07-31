@@ -47,13 +47,37 @@ DEFAULTS = {
     # feet tall on King St. Keywords match name+description; categories
     # match Flipp's merchant tags and Google taxonomy labels.
     "exclude_keywords": [
-        "incontinence", "diarrhea", "laxative", "hemorrhoid", "constipation",
+        "diarrhea", "laxative", "hemorrhoid", "constipation",
         "lice", "wart", "condom", "pregnancy test", "feminine", "yeast",
         "enema", "stool", "suppositor", "tampon",
         "nicotine", "zonnic", "smoking",
     ],
     "exclude_categories": [
         "feminine", "sexual", "fertility", "tobacco", "smoking cessation",
+    ],
+    # Merchandising tiers: the week's deal in each slot always makes the
+    # sign; the rest alternates house brand with one pick per variety group.
+    "priority_slots": [
+        {"label": "incontinence", "max": 2, "keywords": [
+            "incontinence", "tena", "poise", "depend", "always discreet",
+            "bladder"]},
+        {"label": "vitamins", "max": 2, "keywords": [
+            "vitamin", "multivitamin", "jamieson", "webber", "ddrops",
+            "omega", "calcium", "magnesium", "b12", "probiotic",
+            "supplement"]},
+        {"label": "meal replacement", "max": 2, "keywords": [
+            "boost", "ensure", "glucerna", "meal replacement",
+            "nutritional shake"]},
+    ],
+    "brand_fill_keywords": ["option+"],
+    "variety_groups": [
+        ["dental", "oral care", "toothpaste", "toothbrush", "mouthwash",
+         "floss", "denture"],
+        ["hair care", "shampoo", "conditioner", "hair colour", "styling"],
+        ["personal care", "deodorant", "antiperspirant", "body wash",
+         "soap", "bath", "shave", "razor"],
+        ["skin care", "lotion", "moisturizer", "sunscreen", "lip care"],
+        ["cosmetics", "nail", "mascara", "lipstick"],
     ],
     "preset_slides": [
         {"title": "Free Local Delivery", "sub": "Ask us for details",

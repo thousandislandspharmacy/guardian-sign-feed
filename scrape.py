@@ -188,7 +188,70 @@ def keep(item, cfg):
         "image": image or "",
         "story": story,
         "_score": discount_score(item),
+        "_match": f"{lowered} | {cats}",
     }
+
+
+def matches(entry, terms):
+    return any(str(t).lower() in entry["_match"] for t in terms)
+
+
+def select_items(normalized, cfg):
+    """Merchandising tiers, all lists score-sorted before we get here.
+
+    1. priority_slots -- the week's incontinence / vitamin / meal-replacement
+       deal always makes the sign (a slot with no match this week just skips).
+    2. Remainder alternates house-brand items (brand_fill_keywords) with one
+       pick per variety_groups bucket in rotation, so no category floods the
+       sign. Backfill by discount if the pools run dry.
+    """
+    max_items = int(cfg.get("max_items", 12))
+    chosen, used = [], set()
+
+    def add(entry):
+        if id(entry) not in used and len(chosen) < max_items:
+            chosen.append(entry)
+            used.add(id(entry))
+
+    for slot in cfg.get("priority_slots", []):
+        picks = [n for n in normalized if matches(n, slot.get("keywords", []))]
+        for entry in picks[:int(slot.get("max", 2))]:
+            add(entry)
+        if picks:
+            print(f"  slot {slot.get('label', '?')}: "
+                  + "; ".join(p["name"][:50] for p in picks[:int(slot.get('max', 2))]))
+        else:
+            print(f"  slot {slot.get('label', '?')}: nothing on this week")
+
+    brand = [n for n in normalized if id(n) not in used
+             and matches(n, cfg.get("brand_fill_keywords", []))]
+    groups = [[n for n in normalized if id(n) not in used and matches(n, g)]
+              for g in cfg.get("variety_groups", [])]
+    group_index, take_brand = 0, True
+    while len(chosen) < max_items and (brand or any(groups)):
+        pool = None
+        if take_brand and brand:
+            pool = brand
+        elif groups:
+            for _ in range(len(groups)):
+                candidate = groups[group_index % len(groups)]
+                group_index += 1
+                if candidate:
+                    pool = candidate
+                    break
+        if pool is None:
+            pool = brand or next((g for g in groups if g), None)
+        if pool is None:
+            break
+        entry = pool.pop(0)
+        add(entry)
+        brand = [n for n in brand if id(n) not in used]
+        groups = [[n for n in g if id(n) not in used] for g in groups]
+        take_brand = not take_brand
+
+    for entry in normalized:  # backfill by discount depth
+        add(entry)
+    return chosen
 
 
 def main():
@@ -244,9 +307,8 @@ def main():
             "Send data/raw_sample.json to Claude -- likely a field-name mismatch.", 1)
 
     normalized.sort(key=lambda item: item["_score"], reverse=True)
-    max_items = int(cfg.get("max_items", 12))
     items = [{k: v for k, v in item.items() if not k.startswith("_")}
-             for item in normalized[:max_items]]
+             for item in select_items(normalized, cfg)]
 
     payload = {
         "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
