@@ -89,9 +89,9 @@ def clean_cutout(data):
     from PIL import Image
 
     img = Image.open(io.BytesIO(data)).convert("RGBA")
+    if max(img.size) > 1600:  # phone-camera originals: shrink before the fill
+        img.thumbnail((1600, 1600), Image.LANCZOS)
     w, h = img.size
-    if w * h > 4_000_000:
-        return None
     px = img.load()
     threshold = 235  # JPEG-artifact tolerant "white"
 
@@ -124,6 +124,25 @@ def clean_cutout(data):
     return out.getvalue()
 
 
+def find_override(name):
+    """Hand-made hero shot from overrides/, matched by filename keyword.
+
+    overrides/tena.png matches any item whose name contains "tena";
+    dashes/underscores in the filename become spaces ("always-discreet.png").
+    """
+    folder = ROOT / "overrides"
+    if not folder.is_dir():
+        return None
+    lowered = str(name).lower()
+    for path in sorted(folder.iterdir()):
+        if path.suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp"):
+            continue
+        keyword = path.stem.lower().replace("-", " ").replace("_", " ").strip()
+        if keyword and keyword in lowered:
+            return path
+    return None
+
+
 def download_images(items, out_dir):
     """Self-host cutouts under docs/img/. On any failure keep the remote URL."""
     import requests  # imported here so --no-download works without network
@@ -134,14 +153,20 @@ def download_images(items, out_dir):
     (img_dir / ".gitkeep").write_text("", encoding="utf-8")
     for index, item in enumerate(items):
         url = item.get("image")
-        if not url:
+        override = find_override(item.get("name", ""))
+        if not url and not override:
             continue
         try:
-            resp = requests.get(url, timeout=15,
-                                headers={"User-Agent": "Mozilla/5.0 (pharmacy sign feed)"})
-            resp.raise_for_status()
-            data = resp.content
-            suffix = ".png" if ".png" in url.lower() else ".jpg"
+            if override:
+                data = override.read_bytes()
+                suffix = override.suffix.lower()
+                print(f"  image {index:02d}: override {override.name}")
+            else:
+                resp = requests.get(url, timeout=15,
+                                    headers={"User-Agent": "Mozilla/5.0 (pharmacy sign feed)"})
+                resp.raise_for_status()
+                data = resp.content
+                suffix = ".png" if ".png" in url.lower() else ".jpg"
             try:
                 cleaned = clean_cutout(data)
             except Exception as exc:  # noqa: BLE001 -- cleanup is best-effort

@@ -101,6 +101,19 @@ built around that:
 Items are ranked by discount depth when Flipp provides an original price,
 so the deepest cuts lead.
 
+## Hero image overrides (overrides/)
+
+Drop a product photo into `overrides/` and it replaces the scraped flyer
+image whenever that product is on sale — the filename is the match
+keyword: `tena.png` covers any item whose name contains "tena",
+`always-discreet.png` matches "always discreet". PNG with transparent
+background looks best (products float on the sign's black canvas), but
+any photo works — the build trims it, lifts a white background, and
+resizes automatically. Add files by committing them, or on github.com:
+open the `overrides` folder → **Add file → Upload files**. An override
+only ever appears in a week when the flyer actually features that
+product, so nothing can go stale.
+
 ## Honest caveats
 
 This rides Flipp's **unofficial** embedded-viewer API, reading your own
