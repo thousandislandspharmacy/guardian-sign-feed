@@ -74,6 +74,56 @@ def rss(channel_title, lines, link):
 """
 
 
+def clean_cutout(data):
+    """Deterministic packshot cleanup for a black LED canvas.
+
+    Lifts the near-white studio background (flood fill from the edges only,
+    so white areas INSIDE the packaging are untouched), trims the margins,
+    and downscales to ~3x display size. No AI, no redrawing -- product
+    pixels are never modified. Returns PNG bytes, or None to keep the
+    original file.
+    """
+    import io
+    from collections import deque
+
+    from PIL import Image
+
+    img = Image.open(io.BytesIO(data)).convert("RGBA")
+    w, h = img.size
+    if w * h > 4_000_000:
+        return None
+    px = img.load()
+    threshold = 235  # JPEG-artifact tolerant "white"
+
+    def is_bg(p):
+        return p[3] == 0 or (p[0] >= threshold and p[1] >= threshold
+                             and p[2] >= threshold)
+
+    seen = bytearray(w * h)
+    queue = deque()
+    queue.extend((x, y) for x in range(w) for y in (0, h - 1))
+    queue.extend((x, y) for y in range(h) for x in (0, w - 1))
+    while queue:
+        x, y = queue.popleft()
+        if not (0 <= x < w and 0 <= y < h) or seen[y * w + x]:
+            continue
+        seen[y * w + x] = 1
+        if not is_bg(px[x, y]):
+            continue
+        px[x, y] = (0, 0, 0, 0)
+        queue.extend(((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)))
+
+    bbox = img.getbbox()
+    if not bbox:
+        return None  # image was entirely background -- keep the original
+    img = img.crop(bbox)
+    if max(img.size) > 400:
+        img.thumbnail((400, 400), Image.LANCZOS)
+    out = io.BytesIO()
+    img.save(out, "PNG", optimize=True)
+    return out.getvalue()
+
+
 def download_images(items, out_dir):
     """Self-host cutouts under docs/img/. On any failure keep the remote URL."""
     import requests  # imported here so --no-download works without network
@@ -86,13 +136,21 @@ def download_images(items, out_dir):
         url = item.get("image")
         if not url:
             continue
-        suffix = ".png" if ".png" in url.lower() else ".jpg"
-        local = img_dir / f"{index:02d}{suffix}"
         try:
             resp = requests.get(url, timeout=15,
                                 headers={"User-Agent": "Mozilla/5.0 (pharmacy sign feed)"})
             resp.raise_for_status()
-            local.write_bytes(resp.content)
+            data = resp.content
+            suffix = ".png" if ".png" in url.lower() else ".jpg"
+            try:
+                cleaned = clean_cutout(data)
+            except Exception as exc:  # noqa: BLE001 -- cleanup is best-effort
+                print(f"  image {index:02d} kept as-is ({exc})", file=sys.stderr)
+                cleaned = None
+            if cleaned:
+                data, suffix = cleaned, ".png"
+            local = img_dir / f"{index:02d}{suffix}"
+            local.write_bytes(data)
             item["image"] = f"img/{local.name}"
         except Exception as exc:  # noqa: BLE001 -- any failure => hotlink instead
             print(f"  image {index:02d} kept remote ({exc})", file=sys.stderr)
