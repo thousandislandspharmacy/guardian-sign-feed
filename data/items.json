@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T15:11:45+00:00",
+  "generated_at": "2026-07-31T15:18:26+00:00",
   "publication": {
     "id": 8036503,
     "name": "Promotional Flyer 25 km",
@@ -15,17 +15,10 @@
       "story": ""
     },
     {
-      "name": "Option+ Vitamin Ddrops",
-      "price": "$6.99",
+      "name": "JAMIESON or YOUTHEORY Vitamins, Gummies, Minerals or Supplements Selected Types and Sizes",
+      "price": "40% OFF",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23709914/7587f756-81ef-11f1-8da8-521a4b1ec6c6/x_large",
-      "story": "Save up to $7"
-    },
-    {
-      "name": "EMERGEN-C Vitamins, Minerals, Supplements or Gummies Selected Types and Sizes",
-      "price": "$10.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23709918/6492847a-81ef-11f1-bd57-f2d8281fd99c/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/23709909/657c84bc-81ef-11f1-bef1-eaf2bfe4a490/x_large",
       "story": ""
     },
     {
@@ -43,6 +36,20 @@
       "story": ""
     },
     {
+      "name": "Option+ Vitamin Ddrops",
+      "price": "$6.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23709914/7587f756-81ef-11f1-8da8-521a4b1ec6c6/x_large",
+      "story": "Save up to $7"
+    },
+    {
+      "name": "REACH, PLACKERS OR STERIPOD Toothbrush, Flossers, or Toothbrush Protector Selected Types",
+      "price": "20% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23709918/6c396266-81ef-11f1-bd57-f2d8281fd99c/x_large",
+      "story": ""
+    },
+    {
       "name": "Option+ Eye or Ear Care Accessories Selected Types",
       "price": "$2.99",
       "qualifier": "",
@@ -50,10 +57,10 @@
       "story": "Save up to $2.50"
     },
     {
-      "name": "COLGATE or G-U-M TOTAL, ADVANCED, ENAMEL HEALTH, OPTIC WHITE, SENSITIVE PRO-RELIEF Toothpaste, Manual Toothbrush, Twin Packs, Mouthwash 500mL, EASY THREAD Floss or Toothbrush Selected Types",
+      "name": "GARNIER FRUCTIS or WHOLE BLENDS Hair Care or COLOR SENSATION Colour Retouch Demi Permanent Hair Dye Selected Types and Sizes",
       "price": "$4.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23709909/7a614dea-81ef-11f1-bef1-eaf2bfe4a490/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/23709909/6d1510f4-81ef-11f1-bef1-eaf2bfe4a490/x_large",
       "story": ""
     },
     {
@@ -64,11 +71,11 @@
       "story": "Save up to $10"
     },
     {
-      "name": "GARNIER FRUCTIS or WHOLE BLENDS Hair Care or COLOR SENSATION Colour Retouch Demi Permanent Hair Dye Selected Types and Sizes",
-      "price": "$4.99",
+      "name": "Kit Bath Sponges Selected Products",
+      "price": "$1.49",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23709909/6d1510f4-81ef-11f1-bef1-eaf2bfe4a490/x_large",
-      "story": ""
+      "image": "https://f.wishabi.net/page_pdf_images/23709916/66c1ab5e-81ef-11f1-85f8-a29085117425/x_large",
+      "story": "Save up to $1.50"
     },
     {
       "name": "Option+ 24Hr Nasal Allergy Relief 120 Sprays",
@@ -78,18 +85,11 @@
       "story": "Save up to $11"
     },
     {
-      "name": "Kit Bath Sponges Selected Products",
-      "price": "$1.49",
+      "name": "NIVEA Skin Care, or Men Facial Care Products Selected Types and Sizes",
+      "price": "25% OFF",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23709916/66c1ab5e-81ef-11f1-85f8-a29085117425/x_large",
-      "story": "Save up to $1.50"
-    },
-    {
-      "name": "Option+ Dairy Digestive Regular Strength Caplets 100's",
-      "price": "$15.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23709914/74d88ffa-81ef-11f1-8da8-521a4b1ec6c6/x_large",
-      "story": "Save up to $8"
+      "image": "https://f.wishabi.net/page_pdf_images/23709909/6ca9ca60-81ef-11f1-bef1-eaf2bfe4a490/x_large",
+      "story": ""
     }
   ]
 }

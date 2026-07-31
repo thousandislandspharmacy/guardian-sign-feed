@@ -21,6 +21,7 @@ back to Claude and the key lists below get a one-line fix.
 import datetime
 import json
 import pathlib
+import re
 import sys
 
 import requests
@@ -38,6 +39,10 @@ PRICE_TEXT_KEYS = ["price_text", "sale_price_text"]
 PRICE_NUM_KEYS = ["current_price", "price", "sale_price", "price_text"]
 VALID_FROM_KEYS = ["valid_from", "available_from", "start_date"]
 VALID_TO_KEYS = ["valid_to", "available_to", "end_date"]
+
+# "40% OFF*" deals ship with an empty price field; the story IS the price.
+PERCENT_OFF_RE = re.compile(r"(\d{1,2})\s*%\s*off", re.I)
+DISCLAIMER_RE = re.compile(r"\*+\s*(our regular retail price)?", re.I)
 
 
 def die(msg, code=1):
@@ -138,6 +143,9 @@ def discount_score(item):
             return (original - current) / original
     except (TypeError, ValueError):
         pass
+    percent = PERCENT_OFF_RE.search(str(item.get("sale_story") or ""))
+    if percent:
+        return int(percent.group(1)) / 100.0
     return 0.0
 
 
@@ -176,6 +184,12 @@ def keep(item, cfg):
     if any(bad.lower() in cats for bad in cfg.get("exclude_categories", [])):
         return None
     price, qualifier = price_parts(item)
+    if not price:
+        percent = PERCENT_OFF_RE.search(story)
+        if percent:
+            price = f"{percent.group(1)}% OFF"
+            story = PERCENT_OFF_RE.sub("", story, count=1)
+            story = DISCLAIMER_RE.sub("", story).strip(" ,-–—")
     image = pick(item, IMAGE_KEYS)
     if cfg.get("require_price", True) and not price:
         return None
@@ -214,7 +228,14 @@ def select_items(normalized, cfg):
             used.add(id(entry))
 
     for slot in cfg.get("priority_slots", []):
-        picks = [n for n in normalized if matches(n, slot.get("keywords", []))]
+        keywords = slot.get("keywords", [])
+        picks = [n for n in normalized if matches(n, keywords)]
+        # Keyword order is preference order (national brand first), then
+        # discount depth -- "40% off Jamieson" beats the house-brand vitamin.
+        def rank(entry):
+            return next(i for i, kw in enumerate(keywords)
+                        if str(kw).lower() in entry["_match"])
+        picks.sort(key=lambda n: (rank(n), -n["_score"]))
         for entry in picks[:int(slot.get("max", 2))]:
             add(entry)
         if picks:

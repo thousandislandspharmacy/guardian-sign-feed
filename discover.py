@@ -49,22 +49,24 @@ DEFAULTS = {
     "exclude_keywords": [
         "diarrhea", "laxative", "hemorrhoid", "constipation",
         "lice", "wart", "condom", "pregnancy test", "feminine", "yeast",
-        "enema", "stool", "suppositor", "tampon",
-        "nicotine", "zonnic", "smoking",
+        "enema", "stool", "suppositor", "tampon", "menstrual",
+        "preparation h", "canesoral", "rephresh",
+        "nicotine", "zonnic", "smoking", "nicorette", "nicoderm",
     ],
     "exclude_categories": [
         "feminine", "sexual", "fertility", "tobacco", "smoking cessation",
     ],
     # Merchandising tiers: the week's deal in each slot always makes the
     # sign; the rest alternates house brand with one pick per variety group.
+    # Keyword order within a slot is preference order (national brand first).
     "priority_slots": [
         {"label": "incontinence", "max": 2, "keywords": [
-            "incontinence", "tena", "poise", "depend", "always discreet",
+            "tena", "poise", "depend", "always discreet", "incontinence",
             "bladder"]},
-        {"label": "vitamins", "max": 2, "keywords": [
-            "vitamin", "multivitamin", "jamieson", "webber", "ddrops",
-            "omega", "calcium", "magnesium", "b12", "probiotic",
-            "supplement"]},
+        {"label": "vitamins", "max": 1, "keywords": [
+            "jamieson", "webber", "youtheory", "olly", "sisu",
+            "vitamin", "multivitamin", "ddrops", "omega", "calcium",
+            "magnesium", "b12", "probiotic", "supplement"]},
         {"label": "meal replacement", "max": 2, "keywords": [
             "boost", "ensure", "glucerna", "meal replacement",
             "nutritional shake"]},
