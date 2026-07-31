@@ -118,8 +118,8 @@ def clean_cutout(data):
     if not bbox:
         return None  # image was entirely background -- keep the original
     img = img.crop(bbox)
-    if max(img.size) > 400:
-        img.thumbnail((400, 400), Image.LANCZOS)
+    if max(img.size) > 280:  # display box is 132px; keep ~2x for LED
+        img.thumbnail((280, 280), Image.LANCZOS)
     out = io.BytesIO()
     img.save(out, "PNG", optimize=True)
     return out.getvalue()
@@ -178,23 +178,72 @@ def download_images(items, out_dir):
             local = img_dir / f"{index:02d}{suffix}"
             local.write_bytes(data)
             item["image"] = f"img/{local.name}"
+            try:  # dimensions + data URI for the self-contained page
+                import base64
+                import io
+                from PIL import Image
+                with Image.open(io.BytesIO(data)) as im:
+                    item["_w"], item["_h"] = im.size
+                mime = "image/png" if suffix == ".png" else "image/jpeg"
+                item["_data_uri"] = (f"data:{mime};base64,"
+                                     + base64.b64encode(data).decode("ascii"))
+            except Exception:  # noqa: BLE001 -- fall back to the file path
+                pass
         except Exception as exc:  # noqa: BLE001 -- any failure => hotlink instead
             print(f"  image {index:02d} kept remote ({exc})", file=sys.stderr)
 
 
-def cross(style):
-    return (f'<div class="cross" style="{style}">'
-            '<div class="cross-v"></div><div class="cross-h"></div></div>')
+# The website's signature hexagon (snippets/section-hexes.liquid), ported:
+# same polygon, tonal on the field, mixed filled/outline, scattered so
+# consecutive slides don't repeat. Kept out of the text column (x < 200).
+HEX_POINTS = "50,6 88,28 88,72 50,94 12,72 12,28"
+HEX_SCATTERS = [
+    [("right:-45px;top:-40px;width:150px;height:150px;", True),
+     ("left:206px;bottom:-45px;width:90px;height:90px;", False),
+     ("right:84px;top:-22px;width:54px;height:54px;", True)],
+    [("right:-40px;bottom:-50px;width:150px;height:150px;", False),
+     ("right:104px;top:-30px;width:72px;height:72px;", True),
+     ("right:-18px;top:44px;width:44px;height:44px;", True)],
+    [("right:-50px;top:-55px;width:160px;height:160px;", False),
+     ("left:206px;bottom:-38px;width:84px;height:84px;", True),
+     ("right:60px;bottom:-20px;width:48px;height:48px;", False)],
+]
 
 
-def slide_html(item):
+def hexes(variant):
+    out = []
+    for style, filled in HEX_SCATTERS[variant % len(HEX_SCATTERS)]:
+        shape = (f'fill="{MOTIF}"' if filled
+                 else f'fill="none" stroke="{MOTIF}" stroke-width="3"')
+        out.append(f'<svg class="hex" style="{style}" viewBox="0 0 100 100">'
+                   f'<polygon points="{HEX_POINTS}" {shape} '
+                   'stroke-linejoin="round"/></svg>')
+    return "".join(out)
+
+
+def slide_html(item, index=0):
     name = escape(item["name"])
     price = escape(item.get("price", ""))
     qual = escape(item.get("qualifier", ""))
     story = escape(item.get("story", ""))
-    img = escape(item.get("image", ""), {'"': "&quot;", "'": "&#39;"})
-    pic = (f'<div class="pic" style="background-image:url(\'{img}\')"></div>'
-           if img else "")
+    # Preferred path: image embedded as a data URI and sized to exact pixels
+    # at build time -- no secondary request and no reliance on
+    # background-size/object-fit, neither of which the sign player's old
+    # webview is guaranteed to honor.
+    if item.get("_data_uri") and item.get("_w"):
+        w, h = item["_w"], item["_h"]
+        scale = min(132.0 / w, 132.0 / h)
+        w2 = max(1, int(round(w * scale)))
+        h2 = max(1, int(round(h * scale)))
+        left = 198 + (132 - w2) // 2
+        top = 6 + (132 - h2) // 2
+        pic = (f'<img class="pic-img" style="left:{left}px;top:{top}px;'
+               f'width:{w2}px;height:{h2}px;" src="{item["_data_uri"]}" alt="">')
+    elif item.get("image"):
+        img = escape(item["image"], {'"': "&quot;", "'": "&#39;"})
+        pic = f'<div class="pic" style="background-image:url(\'{img}\')"></div>'
+    else:
+        pic = ""
     # 44px core fits up to 6 chars ("$13.99") beside the product zone; longer
     # cores, and any plate carrying a qualifier line, drop to 34px so the
     # plate's bottom edge clears the savings line's fixed 122px anchor.
@@ -204,7 +253,7 @@ def slide_html(item):
                  if qual else "")
     story_html = f'<div class="story">{story}</div>' if story else ""
     return f"""    <div class="slide">
-      {cross("width:110px;height:110px;right:-28px;top:-22px;")}
+      {hexes(index)}
       {pic}
       <div class="name">{name}</div>
       <div class="{plate_cls}">{qual_html}<span class="plate-inner price">{price}</span></div>
@@ -219,11 +268,10 @@ def page(cfg, items, dates_line):
     store = escape(cfg.get("store_name", "Weekly Specials"))
     sub = escape(cfg.get("brand_sub", "This Week's Specials"))
     if items:
-        slides = "\n".join(slide_html(item) for item in items)
+        slides = "\n".join(slide_html(item, i) for i, item in enumerate(items))
     else:
         slides = f"""    <div class="slide">
-      {cross("width:140px;height:140px;right:-40px;top:-50px;")}
-      {cross("width:84px;height:84px;right:44px;bottom:-28px;")}
+      {hexes(0)}
       <div class="brand-block">
         <span class="wordmark"><span class="store">{store}</span><span class="redbar"></span></span>
         <div class="tagline">{sub}</div>
@@ -236,6 +284,7 @@ def page(cfg, items, dates_line):
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width={W}, initial-scale=1">
 <meta http-equiv="refresh" content="{RELOAD_SECONDS}">
 <title>{store}</title>
 <style>
@@ -246,13 +295,11 @@ def page(cfg, items, dates_line):
   body {{ width:{W}px; height:{H}px; position:relative; color:{FG};
          font-family:Arial, Helvetica, sans-serif; font-weight:bold; }}
   .slide {{ position:absolute; top:0; left:0; width:{W}px; height:{H}px;
-            background:{GREEN}; overflow:hidden; display:none; }}
-  .slide.on {{ display:block; }}
-  .cross {{ position:absolute; z-index:1; }}
-  .cross-v {{ position:absolute; left:33.33%; top:0; width:33.34%;
-              height:100%; background:{MOTIF}; border-radius:4px; }}
-  .cross-h {{ position:absolute; top:33.33%; left:0; width:100%;
-              height:33.34%; background:{MOTIF}; border-radius:4px; }}
+            background:{GREEN}; overflow:hidden; opacity:0;
+            -webkit-transition:opacity 0.7s; transition:opacity 0.7s; }}
+  .slide.on {{ opacity:1; }}
+  .hex {{ position:absolute; z-index:1; }}
+  .pic-img {{ position:absolute; z-index:2; border:0; }}
   .pic {{ position:absolute; left:198px; top:6px; width:132px; height:132px;
           background-size:contain; background-position:center center;
           background-repeat:no-repeat; z-index:2; }}
