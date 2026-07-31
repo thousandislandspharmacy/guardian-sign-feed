@@ -398,7 +398,24 @@ def main():
     (out_dir / "sign-feed.xml").write_text(rss(channel, lines, link), encoding="utf-8")
     (out_dir / "index.html").write_text(page(cfg, items, dates_line),
                                         encoding="utf-8")
-    print(f"Wrote {len(items)} deal slides + RSS to {out_dir}/")
+
+    # Machine-readable feed for the pharmacy website's "This Week's
+    # Specials" section (fetched cross-origin; GitHub Pages sends ACAO:*).
+    # Image paths are docs/-relative; the site resolves them against this
+    # feed's own URL. No data URIs here -- keep it light.
+    payload = json.loads((ROOT / "data" / "items.json").read_text(encoding="utf-8")) \
+        if (ROOT / "data" / "items.json").exists() else {}
+    specials = {
+        "publication": payload.get("publication", {}),
+        "generated_at": payload.get("generated_at", ""),
+        "flyer_url": link,
+        "items": [{k: item.get(k, "") for k in
+                   ("name", "price", "qualifier", "story", "image")}
+                  for item in items],
+    }
+    (out_dir / "specials.json").write_text(
+        json.dumps(specials, indent=1) + "\n", encoding="utf-8")
+    print(f"Wrote {len(items)} deal slides + RSS + specials.json to {out_dir}/")
 
 
 if __name__ == "__main__":
