@@ -1,6 +1,6 @@
 # Guardian flyer → LED sign feed
 
-Fully automatic pipeline: every Thursday morning a GitHub Action pulls the
+Fully automatic pipeline: every Friday morning a GitHub Action pulls the
 current Guardian flyer for store 7063802 from Flipp's API (the same data that
 powers the flyer page on guardian-ida-remedysrx.ca), picks the best deals, and
 publishes two things to GitHub Pages that the sign consumes:
@@ -10,7 +10,7 @@ publishes two things to GitHub Pages that the sign consumes:
 | `docs/index.html` | `https://YOURNAME.github.io/REPO/` | **Web page** — rotating 336×144 deal slides, product photos on white cards |
 | `docs/sign-feed.xml` | `https://YOURNAME.github.io/REPO/sign-feed.xml` | **RSS** — scrolling text ticker of the same deals |
 
-After the one-time setup below, you touch nothing. Flyer flips Thursday,
+After the one-time setup below, you touch nothing. Flyer flips Friday,
 sign updates itself.
 
 ## One-time setup
@@ -84,7 +84,7 @@ built around that:
   fallback — brand card only, generic "weekly specials in store" ticker
   lines from `fallback_lines` in config.json — and the job is marked
   **failed**, which sends you GitHub's failure email.
-- A Friday retry run self-heals a late-posted Thursday flyer.
+- A Saturday retry run self-heals a late-posted Friday flyer.
 - To fix a broken scrape: reload the flyer page, re-export the HAR, re-run
   `discover.py` (token rotation), or send `data/raw_sample.json` /
   `observed_urls` to Claude (field/endpoint changes).

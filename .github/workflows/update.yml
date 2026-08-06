@@ -2,10 +2,14 @@ name: Update sign feed
 
 on:
   schedule:
-    # Thursday + Friday retry, 11:00 UTC = 6am EST / 7am EDT.
-    # New Guardian flyers go live Thursday; Friday run self-heals a late post.
-    - cron: "0 11 * * 4"
+    # Fri + Sat retry + Thu freshness pass, 11:00 UTC = 6am EST / 7am EDT.
+    # This store's flyers run Friday through Thursday, so Friday is the flip
+    # run; Saturday self-heals a late post or a failed Friday. GitHub fires
+    # these late sometimes (hours, on bad days) -- that's fine, any
+    # successful run publishes whatever flyer is valid that day.
     - cron: "0 11 * * 5"
+    - cron: "0 11 * * 6"
+    - cron: "0 11 * * 4"
   workflow_dispatch: {}
 
 permissions:
