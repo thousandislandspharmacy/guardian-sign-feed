@@ -531,9 +531,7 @@ def badge_html(deal):
         num_html = (escape(num) + f'<span class="bsup" style="font-size:'
                     f'{int(round(main * 0.5))}px;top:-{lift}px">%</span>')
         rows.append((main, lambda t, h=main, x=num_html: _brow(t, h, h, x)))
-        rows.append((20, lambda t: _brow(t, 20, 18, "OFF*")))
-        rows.append((11, lambda t: _brow(
-            t, 11, 8, "*Our regular retail", "font-weight:normal;")))
+        rows.append((20, lambda t: _brow(t, 20, 18, "OFF")))
     elif deal["kind"] == "money":
         if deal["qual"]:
             q = escape(deal["qual"].upper())
