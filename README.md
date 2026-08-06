@@ -103,6 +103,18 @@ built around that:
 Items are ranked by discount depth when Flipp provides an original price,
 so the deepest cuts lead.
 
+## Evergreen slides (evergreen/)
+
+Any image dropped into `evergreen/` runs on the sign EVERY week,
+regardless of the flyer — store promos like prescriptions, vaccinations,
+or now-hiring. They play in filename order (keep the `01-`, `02-`
+prefixes), woven evenly between the deal slides, and they also run when
+a failed scrape puts the sign into fallback mode. Best supplied at
+exactly 336×144 (they embed untouched); other sizes get letterboxed
+onto the green field. Add or remove files the same way as overrides:
+commit them, or upload via github.com. Note the rotation gets longer
+with each slide added (7 s per slide).
+
 ## Hero image overrides (overrides/)
 
 Drop a product photo into `overrides/` and it replaces the scraped flyer

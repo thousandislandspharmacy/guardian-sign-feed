@@ -261,6 +261,59 @@ def card_packshot(data):
     return out.getvalue(), cw, ch
 
 
+# Evergreen slides: ready-made 336x144 images in evergreen/ that run every
+# week regardless of the flyer (store promos: prescriptions, vaccinations,
+# now-hiring...). Shown in filename order, woven evenly between deal slides,
+# and included in the scrape-failure fallback -- they can't go stale.
+EVERGREEN_DIR = ROOT / "evergreen"
+
+
+def evergreen_slide_uris():
+    from PIL import Image
+    uris = []
+    if not EVERGREEN_DIR.is_dir():
+        return uris
+    for path in sorted(EVERGREEN_DIR.iterdir()):
+        if path.suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp"):
+            continue
+        try:
+            data = path.read_bytes()
+            with Image.open(io.BytesIO(data)) as im:
+                if im.size == (W, H) and path.suffix.lower() == ".png":
+                    pass  # exact fit: embed the original bytes untouched
+                else:  # letterbox anything else onto the green field
+                    im = im.convert("RGB")
+                    im.thumbnail((W, H), Image.LANCZOS)
+                    canvas = Image.new("RGB", (W, H), GREEN_RGB)
+                    canvas.paste(im, ((W - im.width) // 2, (H - im.height) // 2))
+                    buf = io.BytesIO()
+                    canvas.save(buf, "PNG", optimize=True)
+                    data = buf.getvalue()
+            uris.append(data_uri(data))
+            print(f"  evergreen: {path.name}")
+        except Exception as exc:  # noqa: BLE001 -- a bad file skips, never breaks
+            print(f"  evergreen {path.name} skipped ({exc})", file=sys.stderr)
+    return uris
+
+
+def weave(primary, extra):
+    """Merge two slide lists proportionally so extras spread through the
+    rotation instead of clumping at the end."""
+    if not primary or not extra:
+        return primary or extra
+    merged = []
+    pi = ei = 0
+    while pi < len(primary) or ei < len(extra):
+        if pi < len(primary) and (ei >= len(extra)
+                                  or pi * len(extra) <= ei * len(primary)):
+            merged.append(primary[pi])
+            pi += 1
+        else:
+            merged.append(extra[ei])
+            ei += 1
+    return merged
+
+
 def find_override(name):
     """Hand-made hero shot from overrides/, matched by filename keyword.
 
@@ -662,11 +715,15 @@ def page(cfg, items, dates_line):
         "bgs": [data_uri(render_background(v)) for v in range(len(BG_VARIANTS))],
         "badge": data_uri(render_badge()),
     }
+    evergreen = [f'''    <div class="slide">
+      <img class="bg" src="{uri}" alt="">
+    </div>''' for uri in evergreen_slide_uris()]
     if items:
-        slides = "\n".join(slide_html(item, i, assets, brands)
-                           for i, item in enumerate(items))
+        deal_slides = [slide_html(item, i, assets, brands)
+                       for i, item in enumerate(items)]
+        slides = "\n".join(weave(deal_slides, evergreen))
     else:
-        slides = fallback_slide(cfg, assets, dates_line)
+        slides = "\n".join([fallback_slide(cfg, assets, dates_line)] + evergreen)
     # ES5 only, no external requests: the ViPlex player webview is old and
     # may be firewalled to this one page. Backgrounds, badge, cards and the
     # PT Sans subset all ride inside the HTML as data URIs.
