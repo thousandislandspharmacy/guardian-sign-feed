@@ -7,7 +7,7 @@ publishes two things to GitHub Pages that the sign consumes:
 
 | Output | URL after setup | ViPlex widget |
 |---|---|---|
-| `docs/index.html` | `https://YOURNAME.github.io/REPO/` | **Web page** — rotating 336×144 deal slides with product cutout images |
+| `docs/index.html` | `https://YOURNAME.github.io/REPO/` | **Web page** — rotating 336×144 deal slides, product photos on white cards |
 | `docs/sign-feed.xml` | `https://YOURNAME.github.io/REPO/sign-feed.xml` | **RSS** — scrolling text ticker of the same deals |
 
 After the one-time setup below, you touch nothing. Flyer flips Thursday,
@@ -95,8 +95,10 @@ built around that:
 - `exclude_keywords` — drop items by name substring (e.g., `"lottery"`).
 - `require_image` — set `false` to allow text-only slides.
 - `store_name`, `brand_sub`, `fallback_lines` — sign copy.
-- `download_images` — self-hosts cutouts under `docs/img/` (default true;
-  recommended so the sign never depends on Flipp's CDN).
+- `download_images` — self-hosts carded photos under `docs/img/` (default
+  true; recommended so the sign never depends on Flipp's CDN).
+- `display_brands` — extra brand names the slide titles can recognize at
+  the start of an item name (a built-in list covers the common ones).
 
 Items are ranked by discount depth when Flipp provides an original price,
 so the deepest cuts lead.
@@ -106,10 +108,10 @@ so the deepest cuts lead.
 Drop a product photo into `overrides/` and it replaces the scraped flyer
 image whenever that product is on sale — the filename is the match
 keyword: `tena.png` covers any item whose name contains "tena",
-`always-discreet.png` matches "always discreet". PNG with transparent
-background looks best (products float on the sign's black canvas), but
-any photo works — the build trims it, lifts a white background, and
-resizes automatically. Add files by committing them, or on github.com:
+`always-discreet.png` matches "always discreet". Any photo works — the
+build trims the margins, sets it on the slide's white rounded card, and
+resizes automatically (transparent PNGs land on the same white card).
+Add files by committing them, or on github.com:
 open the `overrides` folder → **Add file → Upload files**. An override
 only ever appears in a week when the flyer actually features that
 product, so nothing can go stale.
