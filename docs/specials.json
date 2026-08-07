@@ -1,95 +1,95 @@
 {
  "publication": {
-  "id": 8036503,
+  "id": 8037633,
   "name": "Promotional Flyer 25 km",
-  "valid_from": "2026-07-31",
-  "valid_to": "2026-08-06"
+  "valid_from": "2026-08-07",
+  "valid_to": "2026-08-13"
  },
- "generated_at": "2026-07-31T17:00:34+00:00",
+ "generated_at": "2026-08-07T13:06:46+00:00",
  "flyer_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
  "items": [
   {
-   "name": "TENA Incontinence Underwear Selected Types and Sizes",
-   "price": "$13.99",
+   "name": "CENTRUM Men's, Women's, Select, Forte or Prenatal Vitamins or Suplements Selected Types and Sizes",
+   "price": "30% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/00.png"
   },
   {
-   "name": "JAMIESON or YOUTHEORY Vitamins, Gummies, Minerals or Supplements Selected Types and Sizes",
-   "price": "40% OFF",
+   "name": "NUGENIX Free Testosterone Booster for Men",
+   "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/01.png"
   },
   {
-   "name": "BOOST Nutritional Value Pack 15x237mL Selected Types",
-   "price": "$29.99",
+   "name": "Ensure On Selected Products",
+   "price": "$10.99",
    "qualifier": "",
    "story": "",
    "image": "img/02.png"
   },
   {
-   "name": "BOOST CARB SMART, PLUS CALORIES or HIGH PROTEIN Nutritional Supplement Shakes Selected Types and Sizes",
-   "price": "$12.49",
+   "name": "Option+ Bismuth Regular Strength Liquid 230mL or Caplets 24's",
+   "price": "$4.49",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $5",
    "image": "img/03.png"
   },
   {
-   "name": "Option+ Vitamin Ddrops",
-   "price": "$6.99",
-   "qualifier": "",
-   "story": "Save up to $7",
-   "image": "img/04.png"
-  },
-  {
-   "name": "REACH, PLACKERS OR STERIPOD Toothbrush, Flossers, or Toothbrush Protector Selected Types",
+   "name": "WATERPIK Water Flossers Selected Types",
    "price": "20% OFF",
    "qualifier": "",
    "story": "",
+   "image": "img/04.png"
+  },
+  {
+   "name": "Option+ Extra Strength Allergy Relief 10mg Tablets 30's",
+   "price": "$12.99",
+   "qualifier": "",
+   "story": "Save up to $11",
    "image": "img/05.png"
   },
   {
-   "name": "Option+ Eye or Ear Care Accessories Selected Types",
-   "price": "$2.99",
+   "name": "Option+ Blue Shampoo 450mL Selected Types",
+   "price": "$3.99",
    "qualifier": "",
-   "story": "Save up to $2.50",
+   "story": "Save up to $3",
    "image": "img/06.png"
   },
   {
-   "name": "GARNIER FRUCTIS or WHOLE BLENDS Hair Care or COLOR SENSATION Colour Retouch Demi Permanent Hair Dye Selected Types and Sizes",
-   "price": "$4.99",
+   "name": "Option+ Anti Nausea Tablets 10's",
+   "price": "$2.99",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $2.30",
    "image": "img/07.png"
   },
   {
-   "name": "Option+ Desloratadine Allergy Tablets 20's",
-   "price": "$12.99",
+   "name": "Option+ Body Wash 709mL Selected Types",
+   "price": "$3.99",
    "qualifier": "",
-   "story": "Save up to $10",
+   "story": "Save up to $2.80",
    "image": "img/08.png"
   },
   {
-   "name": "Kit Bath Sponges Selected Products",
-   "price": "$1.49",
+   "name": "Option+ Sleep Aid Extra Strength Caplets 20's",
+   "price": "$4.99",
    "qualifier": "",
-   "story": "Save up to $1.50",
+   "story": "Save up to $3.80",
    "image": "img/09.png"
   },
   {
-   "name": "Option+ 24Hr Nasal Allergy Relief 120 Sprays",
-   "price": "$18.99",
-   "qualifier": "",
-   "story": "Save up to $11",
-   "image": "img/10.png"
-  },
-  {
-   "name": "NIVEA Skin Care, or Men Facial Care Products Selected Types and Sizes",
+   "name": "LIVE CLEAN, SUN BUM or AUSTRALIAN GOLD Sun Care Selected Types and Sizes",
    "price": "25% OFF",
    "qualifier": "",
    "story": "",
+   "image": "img/10.png"
+  },
+  {
+   "name": "Option+ Ginger Liquid Gel Capsules 24's",
+   "price": "$5.99",
+   "qualifier": "",
+   "story": "Save up to $4.50",
    "image": "img/11.png"
   }
  ]

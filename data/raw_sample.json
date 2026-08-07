@@ -66,111 +66,36 @@
   ],
   "first_two_products": [
     {
-      "id": 1027374561,
-      "name": "DOVE, MITCHUM or ST. IVES",
-      "sale_story": null,
-      "sku": null,
-      "description": "Antiperspirant/ Deodorant or ST. IVES Body Wash Selected Types and Sizes",
-      "disclaimer_text": null,
-      "valid_from_timestamp": "2026-07-31T00:00:00-04:00",
-      "valid_to_timestamp": "2026-08-06T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23709909/73004f24-81ef-11f1-bef1-eaf2bfe4a490/x_large",
-      "custom_id_field_1": null,
-      "custom_id_field_2": null,
-      "custom_id_field_3": null,
-      "custom_id_field_4": null,
-      "custom_id_field_5": null,
-      "custom_id_field_6": null,
-      "valid_from": "2026-07-31",
-      "valid_to": "2026-08-06",
-      "categories": [
-        "Grocery"
-      ],
-      "pre_price_text": "",
-      "price_text": "4.99",
-      "post_price_text": "ea.",
-      "hosted_coupon_image": null,
-      "hide_brand_in_pop": false,
-      "left": 275.94,
-      "bottom": -1131.82,
-      "right": 513.48,
-      "top": -921.56,
-      "page": 1,
-      "item_categories": {
-        "l1": {
-          "confidence": null,
-          "category_name": "Health & Beauty",
-          "google_category_id": 709
-        },
-        "l2": {
-          "confidence": null,
-          "category_name": "Personal Care",
-          "google_category_id": 727
-        },
-        "l3": {
-          "confidence": null,
-          "category_name": "Cosmetics",
-          "google_category_id": 729
-        },
-        "l4": {
-          "confidence": null,
-          "category_name": "Bath & Body",
-          "google_category_id": 3423
-        },
-        "l5": {
-          "confidence": null,
-          "category_name": "Body Wash",
-          "google_category_id": 3429
-        },
-        "l6": null,
-        "l7": null
-      },
-      "flyer_id": 8036503,
-      "page_destination": null,
-      "in_store_only": false,
-      "item_type": 1,
-      "average_rating": null,
-      "web_commission_url": null,
-      "item_web_url": null,
-      "brand": "DOVE | MITCHUM | ST. IVES",
-      "images": [
-        "https://f.wishabi.net/page_pdf_images/23709909/73004f24-81ef-11f1-bef1-eaf2bfe4a490/x_large"
-      ],
-      "original_price": null,
-      "hide_flyer_item_ttm_links_outside_validity": false,
-      "sub_items": []
-    },
-    {
-      "id": 1027374646,
-      "name": "VASELINE Intensive Care Dry Skin Repair, NOXZEMA or POND'S Skin Care Products",
+      "id": 1027509292,
+      "name": "RYDE",
       "sale_story": "20% OFF*",
       "sku": null,
-      "description": "Selected Types and Sizes",
+      "description": "Shots\nSelected Types and Sizes",
       "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-07-31T00:00:00-04:00",
-      "valid_to_timestamp": "2026-08-06T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23709916/6347945c-81ef-11f1-85f8-a29085117425/x_large",
+      "valid_from_timestamp": "2026-08-07T00:00:00-04:00",
+      "valid_to_timestamp": "2026-08-13T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23713255/9b5f341c-8285-11f1-8e1c-4a1b9c416ec4/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-07-31",
-      "valid_to": "2026-08-06",
+      "valid_from": "2026-08-07",
+      "valid_to": "2026-08-13",
       "categories": [
-        "Beauty"
+        "Health & Wellness"
       ],
       "pre_price_text": "",
       "price_text": "",
       "post_price_text": "",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 2754.75,
-      "bottom": -1685.83,
-      "right": 3096.76,
-      "top": -1411.42,
-      "page": 3,
+      "left": 8072.54,
+      "bottom": -1185.27,
+      "right": 8323.74,
+      "top": -913.73,
+      "page": 6,
       "item_categories": {
         "l1": {
           "confidence": null,
@@ -182,30 +107,89 @@
           "category_name": "Personal Care",
           "google_category_id": 727
         },
-        "l3": {
-          "confidence": null,
-          "category_name": "Cosmetics",
-          "google_category_id": 729
-        },
-        "l4": {
-          "confidence": null,
-          "category_name": "Skin Care",
-          "google_category_id": 3510
-        },
+        "l3": null,
+        "l4": null,
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8036503,
+      "flyer_id": 8037633,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Vaseline",
+      "brand": "Ryde",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/23709916/6347945c-81ef-11f1-85f8-a29085117425/x_large"
+        "https://f.wishabi.net/page_pdf_images/23713255/9b5f341c-8285-11f1-8e1c-4a1b9c416ec4/x_large"
+      ],
+      "original_price": null,
+      "hide_flyer_item_ttm_links_outside_validity": false,
+      "sub_items": []
+    },
+    {
+      "id": 1027509211,
+      "name": "HUGGIES",
+      "sale_story": null,
+      "sku": null,
+      "description": "Wipes, LITTLE SWIMMERS, PULL-UPS, or GOODNITES",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-08-07T00:00:00-04:00",
+      "valid_to_timestamp": "2026-08-13T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23713253/9cefa88e-8285-11f1-ae5e-668aa74620aa/x_large",
+      "custom_id_field_1": null,
+      "custom_id_field_2": null,
+      "custom_id_field_3": null,
+      "custom_id_field_4": null,
+      "custom_id_field_5": null,
+      "custom_id_field_6": null,
+      "valid_from": "2026-08-07",
+      "valid_to": "2026-08-13",
+      "categories": [
+        "Health & Wellness"
+      ],
+      "pre_price_text": "",
+      "price_text": "13.99",
+      "post_price_text": "ea.",
+      "hosted_coupon_image": null,
+      "hide_brand_in_pop": false,
+      "left": 7192.41,
+      "bottom": -625.05,
+      "right": 7522.08,
+      "top": -102.91,
+      "page": 5,
+      "item_categories": {
+        "l1": {
+          "confidence": null,
+          "category_name": "Baby & Toddler",
+          "google_category_id": 123
+        },
+        "l2": {
+          "confidence": null,
+          "category_name": "Diapering",
+          "google_category_id": 163
+        },
+        "l3": {
+          "confidence": null,
+          "category_name": "Baby Wipes",
+          "google_category_id": 165
+        },
+        "l4": null,
+        "l5": null,
+        "l6": null,
+        "l7": null
+      },
+      "flyer_id": 8037633,
+      "page_destination": null,
+      "in_store_only": false,
+      "item_type": 1,
+      "average_rating": null,
+      "web_commission_url": null,
+      "item_web_url": null,
+      "brand": "Huggies",
+      "images": [
+        "https://f.wishabi.net/page_pdf_images/23713253/9cefa88e-8285-11f1-ae5e-668aa74620aa/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
