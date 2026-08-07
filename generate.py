@@ -454,7 +454,7 @@ def build_descriptor(rest):
     ALL-CAPS variant names become Title Case; other casing is left alone so
     proper nouns (Ddrops, mL) survive."""
     s = " ".join(rest)
-    s = re.sub(r"(?i)\bSelected (Types|Products|Varieties)( and Sizes)?\b",
+    s = re.sub(r"(?i)\b(?:On )?Selected (Types|Products|Varieties)( and Sizes)?\b",
                lambda m: "· selected " + m.group(1).lower()
                + (" & sizes" if m.group(2) else ""), s)
     words = []
