@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T15:08:07+00:00",
+  "generated_at": "2026-08-07T15:20:22+00:00",
   "publication": {
     "id": 8037633,
     "name": "Promotional Flyer 25 km",
@@ -19,6 +19,48 @@
       "price": "$13.99",
       "qualifier": "",
       "image": "https://f.wishabi.net/page_pdf_images/23713242/aab7f4a8-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
+    {
+      "name": "TYLENOL or MOTRIN Tablets or Caplets 18's-120's or Liquid Gels 72's Selected Types",
+      "price": "$9.49",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/95d85f5a-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
+    {
+      "name": "TYLENOL OR MOTRIN Pain Relief Tablets, Caplets, Liquid Gels 40's-150's or Easy Dissolve Powder 32's Selected Types",
+      "price": "$14.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/a36d6278-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
+    {
+      "name": "Band-Aid or Polysporin Bandages 5-80's or 15g Selected Types and Size",
+      "price": "20% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/a6955b9a-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
+    {
+      "name": "Reactine\u00ae or Benadryl\u00ae 25-36's Tablets Selected Types or 100 Caplets",
+      "price": "$19.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/a40a3530-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
+    {
+      "name": "3M, BENADRYL or MAGIC BAG NEXCARE bandages, Itch Relief or Selected Types and Sizes",
+      "price": "15% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713251/989432f0-8285-11f1-86ac-76f063a1bee1/x_large",
+      "story": ""
+    },
+    {
+      "name": "IMODIUM\u00ae Liquid Gel Capsules 12's, Quick Dissolve Tablets 10's or Liquid 240mL",
+      "price": "$13.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/a7cd7970-8285-11f1-a7b9-ca4d0f1d0926/x_large",
       "story": ""
     },
     {
@@ -57,46 +99,18 @@
       "story": "Save up to $3"
     },
     {
+      "name": "Nosh & Co. Popcorn 180g-220g",
+      "price": "$3.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/a2889670-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": "OUR TRUSTED BRAND"
+    },
+    {
       "name": "Option+ Extra Strength Allergy Relief 10mg Tablets 30's",
       "price": "$12.99",
       "qualifier": "",
       "image": "https://f.wishabi.net/page_pdf_images/23713255/9712b7bc-8285-11f1-8e1c-4a1b9c416ec4/x_large",
       "story": "Save up to $11"
-    },
-    {
-      "name": "Option+ Anti Nausea Tablets 10's",
-      "price": "$2.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713251/a0bc8946-8285-11f1-86ac-76f063a1bee1/x_large",
-      "story": "Save up to $2.30"
-    },
-    {
-      "name": "OPTION+ Cold + Sinus 200mg Caplets 72's",
-      "price": "$14.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713249/9af0027c-8285-11f1-bf53-cad7a1b2653e/x_large",
-      "story": "Save up to $9.50"
-    },
-    {
-      "name": "Option+ Sleep Aid Extra Strength Caplets 20's",
-      "price": "$4.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713251/a125b1c8-8285-11f1-86ac-76f063a1bee1/x_large",
-      "story": "Save up to $3.80"
-    },
-    {
-      "name": "LAX-A-DAY or LAX-A-SENNA Laxatives Selected Types and Sizes",
-      "price": "25% OFF",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713242/96ac207e-8285-11f1-a7b9-ca4d0f1d0926/x_large",
-      "story": ""
-    },
-    {
-      "name": "Option+ Blue Shampoo 450mL Selected Types",
-      "price": "$3.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/97d438ec-8285-11f1-8e1c-4a1b9c416ec4/x_large",
-      "story": "Save up to $3"
     },
     {
       "name": "FOOTNER OR CANESTEN Exfoliating Socks or Topical Cream 15 or 30g",
@@ -106,18 +120,25 @@
       "story": ""
     },
     {
-      "name": "Option+ Ginger Liquid Gel Capsules 24's",
-      "price": "$5.99",
+      "name": "Option+ Anti Nausea Tablets 10's",
+      "price": "$2.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/976f4d4c-8285-11f1-8e1c-4a1b9c416ec4/x_large",
-      "story": "Save up to $4.50"
+      "image": "https://f.wishabi.net/page_pdf_images/23713251/a0bc8946-8285-11f1-86ac-76f063a1bee1/x_large",
+      "story": "Save up to $2.30"
     },
     {
-      "name": "Nosh & Co. Popcorn 180g-220g",
+      "name": "Option+ Blue Shampoo 450mL Selected Types",
       "price": "$3.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/a2889670-8285-11f1-8e1c-4a1b9c416ec4/x_large",
-      "story": "OUR TRUSTED BRAND"
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/97d438ec-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": "Save up to $3"
+    },
+    {
+      "name": "Option+ Sleep Aid Extra Strength Caplets 20's",
+      "price": "$4.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713251/a125b1c8-8285-11f1-86ac-76f063a1bee1/x_large",
+      "story": "Save up to $3.80"
     },
     {
       "name": "Option+ Body Wash 709mL Selected Types",
@@ -125,13 +146,6 @@
       "qualifier": "",
       "image": "https://f.wishabi.net/page_pdf_images/23713249/98a1f0f2-8285-11f1-bf53-cad7a1b2653e/x_large",
       "story": "Save up to $2.80"
-    },
-    {
-      "name": "Sally Hansen INSTA DRI Nail Polish Selected Types and Shades",
-      "price": "$6.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713253/aab5b4c2-8285-11f1-ae5e-668aa74620aa/x_large",
-      "story": "Save up to $3"
     }
   ]
 }

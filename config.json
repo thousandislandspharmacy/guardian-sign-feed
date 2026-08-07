@@ -8,7 +8,7 @@
   "store_name": "Thousand Islands Pharmacy",
   "brand_sub": "This Week's Specials",
   "flyer_public_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
-  "max_items": 18,
+  "max_items": 20,
   "require_image": true,
   "require_price": true,
   "exclude_keywords": [
@@ -23,6 +23,14 @@
   "priority_slots": [
     {"label": "incontinence", "max": 2, "keywords": [
       "tena", "poise", "depend", "always discreet", "incontinence", "bladder"]},
+    {"label": "pain relief", "max": 2, "keywords": [
+      "tylenol", "motrin", "advil"]},
+    {"label": "first aid", "max": 2, "keywords": [
+      "band-aid", "band aid", "polysporin"]},
+    {"label": "allergy brands", "max": 2, "keywords": [
+      "reactine", "benadryl"]},
+    {"label": "gastro brands", "max": 1, "keywords": [
+      "imodium"]},
     {"label": "vitamins", "max": 1, "keywords": [
       "jamieson", "webber", "youtheory", "olly", "sisu",
       "vitamin", "multivitamin", "ddrops", "omega", "calcium", "magnesium",
@@ -33,15 +41,15 @@
   "brand_fill_keywords": ["option+"],
   "variety_groups": [
     ["dental", "oral care", "toothpaste", "toothbrush", "mouthwash", "floss", "denture"],
+    ["candy", "chocolate", "nosh", "chewing gum", "licorice", "snack"],
+    ["foot care", "foot", "insole", "callus", "corn remover", "antifungal", "athlete's foot"],
+    ["hair care", "shampoo", "conditioner", "hair colour", "styling", "hair dye"],
+    ["deodorant", "antiperspirant", "body wash", "soap", "bath", "shave", "razor"],
+    ["gastrointestinal", "antacid", "heartburn", "acid reducer", "digestive", "probiotic", "fibre", "laxative", "diarrhea", "gas relief", "stool"],
     ["cough", "cold relief", "cold & flu", "cold and flu", "flu relief", "lozenge", "sore throat", "mucus", "expectorant"],
     ["allergy", "antihistamine", "allergies"],
     ["nasal", "sinus", "decongestant", "saline"],
-    ["gastrointestinal", "antacid", "heartburn", "acid reducer", "digestive", "probiotic", "fibre", "laxative", "diarrhea", "gas relief", "stool"],
-    ["foot care", "foot", "insole", "callus", "corn remover", "antifungal", "athlete's foot"],
-    ["candy", "chocolate", "nosh", "chewing gum", "licorice", "snack"],
     ["kit", "bath sponge", "sponge", "accessories", "cotton", "nail"],
-    ["hair care", "shampoo", "conditioner", "hair colour", "styling", "hair dye"],
-    ["deodorant", "antiperspirant", "body wash", "soap", "bath", "shave", "razor"],
     ["skin care", "lotion", "moisturizer", "sunscreen", "lip care"],
     ["cosmetics", "mascara", "lipstick"]
   ],
