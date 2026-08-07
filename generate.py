@@ -92,7 +92,9 @@ DEFAULT_BRANDS = [
     "refresh", "biotrue", "renu", "opti-free", "blink", "visine",
     "thermacare", "salonpas", "icy hot", "motion medicine", "biofreeze",
     "natural factors", "new nordic", "a. vogel", "boiron", "echinaforce",
-    "kit", "life brand", "option+", "nature's bounty",
+    "kit", "life brand", "option+", "nature's bounty", "sally hansen",
+    "nosh & co.", "nosh & co", "french formula", "johnson's", "canesten",
+    "footner", "honibe", "centrum silver",
 ]
 
 
@@ -450,13 +452,13 @@ def split_title(name, brands):
 
 def build_descriptor(rest):
     """Remainder tokens -> the hand-made slides' descriptor voice:
-    "Carb Smart, Plus Calories or High Protein ... · selected types & sizes".
+    "Carb Smart, Plus Calories or High Protein ... · Selected Types & Sizes".
     ALL-CAPS variant names become Title Case; other casing is left alone so
     proper nouns (Ddrops, mL) survive."""
     s = " ".join(rest)
     s = re.sub(r"(?i)\b(?:On )?Selected (Types|Products|Varieties)( and Sizes)?\b",
-               lambda m: "· selected " + m.group(1).lower()
-               + (" & sizes" if m.group(2) else ""), s)
+               lambda m: "· Selected " + m.group(1).capitalize()
+               + (" & Sizes" if m.group(2) else ""), s)
     words = []
     for t in s.split():
         if _norm(t) == "and":
@@ -466,7 +468,8 @@ def build_descriptor(rest):
         else:
             words.append(t)
     s = " ".join(words).strip(" ,")
-    return re.sub(r"\s+", " ", s)
+    s = re.sub(r"\s+", " ", s)
+    return s[1:].strip() if s.startswith("·") else s
 
 
 def parse_deal(item):

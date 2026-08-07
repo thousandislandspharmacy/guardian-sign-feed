@@ -8,18 +8,20 @@
   "store_name": "Thousand Islands Pharmacy",
   "brand_sub": "This Week's Specials",
   "flyer_public_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
-  "max_items": 12,
+  "max_items": 18,
   "require_image": true,
   "require_price": true,
   "exclude_keywords": [
-    "diarrhea", "laxative", "hemorrhoid", "constipation",
+    "hemorrhoid",
     "lice", "wart", "condom", "pregnancy test", "feminine", "yeast",
-    "enema", "stool", "suppositor", "tampon", "menstrual",
+    "enema", "suppositor", "tampon", "menstrual",
+    "vaginal", "fluconazole", "cystoplus", "phemme",
     "preparation h", "canesoral", "rephresh",
-    "nicotine", "zonnic", "smoking", "nicorette", "nicoderm"
+    "nicotine", "zonnic", "smoking", "nicorette", "nicoderm",
+    "waterpik", "water pik", "nugenix"
   ],
   "exclude_categories": [
-    "feminine", "sexual", "fertility", "tobacco", "smoking cessation"
+    "feminine", "sexual", "fertility", "tobacco products", "smoking cessation"
   ],
   "priority_slots": [
     {"label": "incontinence", "max": 2, "keywords": [
@@ -34,10 +36,17 @@
   "brand_fill_keywords": ["option+"],
   "variety_groups": [
     ["dental", "oral care", "toothpaste", "toothbrush", "mouthwash", "floss", "denture"],
-    ["hair care", "shampoo", "conditioner", "hair colour", "styling"],
-    ["personal care", "deodorant", "antiperspirant", "body wash", "soap", "bath", "shave", "razor"],
+    ["cough", "cold relief", "cold & flu", "cold and flu", "flu relief", "lozenge", "sore throat", "mucus", "expectorant"],
+    ["allergy", "antihistamine", "allergies"],
+    ["nasal", "sinus", "decongestant", "saline"],
+    ["gastrointestinal", "antacid", "heartburn", "acid reducer", "digestive", "probiotic", "fibre", "laxative", "diarrhea", "gas relief", "stool"],
+    ["foot care", "foot", "insole", "callus", "corn remover", "antifungal", "athlete's foot"],
+    ["candy", "chocolate", "nosh", "chewing gum", "licorice", "snack"],
+    ["kit", "bath sponge", "sponge", "accessories", "cotton", "nail"],
+    ["hair care", "shampoo", "conditioner", "hair colour", "styling", "hair dye"],
+    ["deodorant", "antiperspirant", "body wash", "soap", "bath", "shave", "razor"],
     ["skin care", "lotion", "moisturizer", "sunscreen", "lip care"],
-    ["cosmetics", "nail", "mascara", "lipstick"]
+    ["cosmetics", "mascara", "lipstick"]
   ],
   "fallback_lines": [
     "Weekly specials in store now",

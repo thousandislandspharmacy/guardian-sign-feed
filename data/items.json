@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T14:35:31+00:00",
+  "generated_at": "2026-08-07T13:59:06+00:00",
   "publication": {
     "id": 8037633,
     "name": "Promotional Flyer 25 km",
@@ -12,13 +12,6 @@
       "price": "30% OFF",
       "qualifier": "",
       "image": "https://f.wishabi.net/page_pdf_images/23713242/971738aa-8285-11f1-a7b9-ca4d0f1d0926/x_large",
-      "story": ""
-    },
-    {
-      "name": "NUGENIX Free Testosterone Booster for Men",
-      "price": "25% OFF",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/9b0ad624-8285-11f1-8e1c-4a1b9c416ec4/x_large",
       "story": ""
     },
     {
@@ -36,10 +29,10 @@
       "story": "Save up to $5"
     },
     {
-      "name": "WATERPIK Water Flossers Selected Types",
-      "price": "20% OFF",
+      "name": "PLACKERS or REACH Dental Flossers or Toothbrush Selected Types and Sizes",
+      "price": "15% OFF",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/9e432f76-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/23713253/9afb6e5a-8285-11f1-ae5e-668aa74620aa/x_large",
       "story": ""
     },
     {
@@ -50,11 +43,11 @@
       "story": "Save up to $11"
     },
     {
-      "name": "Option+ Blue Shampoo 450mL Selected Types",
-      "price": "$3.99",
+      "name": "OPTION+ Extra Strength Allergy Sinus Caplets 40's",
+      "price": "$10.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/97d438ec-8285-11f1-8e1c-4a1b9c416ec4/x_large",
-      "story": "Save up to $3"
+      "image": "https://f.wishabi.net/page_pdf_images/23713247/94dd8d46-8285-11f1-b9d4-02a77ebebb65/x_large",
+      "story": "COMPARE & SAVE $4"
     },
     {
       "name": "Option+ Anti Nausea Tablets 10's",
@@ -64,11 +57,11 @@
       "story": "Save up to $2.30"
     },
     {
-      "name": "Option+ Body Wash 709mL Selected Types",
-      "price": "$3.99",
+      "name": "OPTION+ Cold + Sinus 200mg Caplets 72's",
+      "price": "$14.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713249/98a1f0f2-8285-11f1-bf53-cad7a1b2653e/x_large",
-      "story": "Save up to $2.80"
+      "image": "https://f.wishabi.net/page_pdf_images/23713249/9af0027c-8285-11f1-bf53-cad7a1b2653e/x_large",
+      "story": "Save up to $9.50"
     },
     {
       "name": "Option+ Sleep Aid Extra Strength Caplets 20's",
@@ -78,10 +71,24 @@
       "story": "Save up to $3.80"
     },
     {
-      "name": "LIVE CLEAN, SUN BUM or AUSTRALIAN GOLD Sun Care Selected Types and Sizes",
+      "name": "LAX-A-DAY or LAX-A-SENNA Laxatives Selected Types and Sizes",
       "price": "25% OFF",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/9342258c-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/96ac207e-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
+    {
+      "name": "Option+ Blue Shampoo 450mL Selected Types",
+      "price": "$3.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/97d438ec-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": "Save up to $3"
+    },
+    {
+      "name": "FOOTNER OR CANESTEN Exfoliating Socks or Topical Cream 15 or 30g",
+      "price": "30% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/945f980a-8285-11f1-8e1c-4a1b9c416ec4/x_large",
       "story": ""
     },
     {
@@ -90,6 +97,41 @@
       "qualifier": "",
       "image": "https://f.wishabi.net/page_pdf_images/23713255/976f4d4c-8285-11f1-8e1c-4a1b9c416ec4/x_large",
       "story": "Save up to $4.50"
+    },
+    {
+      "name": "Nosh & Co. Popcorn 180g-220g",
+      "price": "$3.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/a2889670-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": "OUR TRUSTED BRAND"
+    },
+    {
+      "name": "Option+ Body Wash 709mL Selected Types",
+      "price": "$3.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713249/98a1f0f2-8285-11f1-bf53-cad7a1b2653e/x_large",
+      "story": "Save up to $2.80"
+    },
+    {
+      "name": "Sally Hansen INSTA DRI Nail Polish Selected Types and Shades",
+      "price": "$6.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713253/aab5b4c2-8285-11f1-ae5e-668aa74620aa/x_large",
+      "story": "Save up to $3"
+    },
+    {
+      "name": "Option+ Baby Toiletries Selected Types and Sizes",
+      "price": "$4.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713249/992b829a-8285-11f1-bf53-cad7a1b2653e/x_large",
+      "story": "Save up to $3.30"
+    },
+    {
+      "name": "CERAVE OR FRENCH FORMULA Hair Care Selected Types and Sizes",
+      "price": "$7.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/a0d1c3c4-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": ""
     }
   ]
 }
