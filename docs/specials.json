@@ -5,133 +5,133 @@
   "valid_from": "2026-08-07",
   "valid_to": "2026-08-13"
  },
- "generated_at": "2026-08-07T13:59:06+00:00",
+ "generated_at": "2026-08-07T14:57:47+00:00",
  "flyer_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
  "items": [
+  {
+   "name": "TENA Incontinence Pads or Liners 20's-50's Selected Types",
+   "price": "$6.99",
+   "qualifier": "",
+   "story": "",
+   "image": "img/00.png"
+  },
+  {
+   "name": "ALWAYS DISCREET Incontinence Underwear or Pads Selected Types and Sizes",
+   "price": "$13.99",
+   "qualifier": "",
+   "story": "",
+   "image": "img/01.png"
+  },
   {
    "name": "CENTRUM Men's, Women's, Select, Forte or Prenatal Vitamins or Suplements Selected Types and Sizes",
    "price": "30% OFF",
    "qualifier": "",
    "story": "",
-   "image": "img/00.png"
+   "image": "img/02.png"
   },
   {
    "name": "Ensure On Selected Products",
    "price": "$10.99",
    "qualifier": "",
    "story": "",
-   "image": "img/01.png"
+   "image": "img/03.png"
   },
   {
    "name": "Option+ Bismuth Regular Strength Liquid 230mL or Caplets 24's",
    "price": "$4.49",
    "qualifier": "",
    "story": "Save up to $5",
-   "image": "img/02.png"
+   "image": "img/04.png"
   },
   {
    "name": "PLACKERS or REACH Dental Flossers or Toothbrush Selected Types and Sizes",
    "price": "15% OFF",
    "qualifier": "",
    "story": "",
-   "image": "img/03.png"
+   "image": "img/05.png"
   },
   {
    "name": "Option+ Extra Strength Allergy Relief 10mg Tablets 30's",
    "price": "$12.99",
    "qualifier": "",
    "story": "Save up to $11",
-   "image": "img/04.png"
+   "image": "img/06.png"
   },
   {
    "name": "OPTION+ Extra Strength Allergy Sinus Caplets 40's",
    "price": "$10.99",
    "qualifier": "",
    "story": "COMPARE & SAVE $4",
-   "image": "img/05.png"
+   "image": "img/07.png"
   },
   {
    "name": "Option+ Anti Nausea Tablets 10's",
    "price": "$2.99",
    "qualifier": "",
    "story": "Save up to $2.30",
-   "image": "img/06.png"
+   "image": "img/08.png"
   },
   {
    "name": "OPTION+ Cold + Sinus 200mg Caplets 72's",
    "price": "$14.99",
    "qualifier": "",
    "story": "Save up to $9.50",
-   "image": "img/07.png"
+   "image": "img/09.png"
   },
   {
    "name": "Option+ Sleep Aid Extra Strength Caplets 20's",
    "price": "$4.99",
    "qualifier": "",
    "story": "Save up to $3.80",
-   "image": "img/08.png"
+   "image": "img/10.png"
   },
   {
    "name": "LAX-A-DAY or LAX-A-SENNA Laxatives Selected Types and Sizes",
    "price": "25% OFF",
    "qualifier": "",
    "story": "",
-   "image": "img/09.png"
+   "image": "img/11.png"
   },
   {
    "name": "Option+ Blue Shampoo 450mL Selected Types",
    "price": "$3.99",
    "qualifier": "",
    "story": "Save up to $3",
-   "image": "img/10.png"
+   "image": "img/12.png"
   },
   {
    "name": "FOOTNER OR CANESTEN Exfoliating Socks or Topical Cream 15 or 30g",
    "price": "30% OFF",
    "qualifier": "",
    "story": "",
-   "image": "img/11.png"
+   "image": "img/13.png"
   },
   {
    "name": "Option+ Ginger Liquid Gel Capsules 24's",
    "price": "$5.99",
    "qualifier": "",
    "story": "Save up to $4.50",
-   "image": "img/12.png"
+   "image": "img/14.png"
   },
   {
    "name": "Nosh & Co. Popcorn 180g-220g",
    "price": "$3.99",
    "qualifier": "",
    "story": "OUR TRUSTED BRAND",
-   "image": "img/13.png"
+   "image": "img/15.png"
   },
   {
    "name": "Option+ Body Wash 709mL Selected Types",
    "price": "$3.99",
    "qualifier": "",
    "story": "Save up to $2.80",
-   "image": "img/14.png"
+   "image": "img/16.png"
   },
   {
    "name": "Sally Hansen INSTA DRI Nail Polish Selected Types and Shades",
    "price": "$6.99",
    "qualifier": "",
    "story": "Save up to $3",
-   "image": "img/15.png"
-  },
-  {
-   "name": "Option+ Baby Toiletries Selected Types and Sizes",
-   "price": "$4.99",
-   "qualifier": "",
-   "story": "Save up to $3.30",
-   "image": "img/16.png"
-  },
-  {
-   "name": "CERAVE OR FRENCH FORMULA Hair Care Selected Types and Sizes",
-   "price": "$7.99",
-   "qualifier": "",
-   "story": "",
    "image": "img/17.png"
   }
  ]

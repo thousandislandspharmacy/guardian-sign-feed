@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T13:59:06+00:00",
+  "generated_at": "2026-08-07T14:57:47+00:00",
   "publication": {
     "id": 8037633,
     "name": "Promotional Flyer 25 km",
@@ -7,6 +7,20 @@
     "valid_to": "2026-08-13"
   },
   "items": [
+    {
+      "name": "TENA Incontinence Pads or Liners 20's-50's Selected Types",
+      "price": "$6.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713247/934f01b2-8285-11f1-b9d4-02a77ebebb65/x_large",
+      "story": ""
+    },
+    {
+      "name": "ALWAYS DISCREET Incontinence Underwear or Pads Selected Types and Sizes",
+      "price": "$13.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/aab7f4a8-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
     {
       "name": "CENTRUM Men's, Women's, Select, Forte or Prenatal Vitamins or Suplements Selected Types and Sizes",
       "price": "30% OFF",
@@ -118,20 +132,6 @@
       "qualifier": "",
       "image": "https://f.wishabi.net/page_pdf_images/23713253/aab5b4c2-8285-11f1-ae5e-668aa74620aa/x_large",
       "story": "Save up to $3"
-    },
-    {
-      "name": "Option+ Baby Toiletries Selected Types and Sizes",
-      "price": "$4.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713249/992b829a-8285-11f1-bf53-cad7a1b2653e/x_large",
-      "story": "Save up to $3.30"
-    },
-    {
-      "name": "CERAVE OR FRENCH FORMULA Hair Care Selected Types and Sizes",
-      "price": "$7.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/a0d1c3c4-8285-11f1-8e1c-4a1b9c416ec4/x_large",
-      "story": ""
     }
   ]
 }
