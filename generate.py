@@ -469,6 +469,14 @@ def build_descriptor(rest):
             words.append(t)
     s = " ".join(words).strip(" ,")
     s = re.sub(r"\s+", " ", s)
+    # The name—description separator from scrape.py lands at the start of
+    # the remainder (or against the qualifier dot) once the title is split
+    # off; a dangling connector can survive odd phrasings too. Neither
+    # reads as anything at sign scale -- drop them.
+    s = re.sub(r"^[—–-]\s*", "", s)
+    s = re.sub(r"(?:\s*[—–-])+\s*(?=·)", " ", s)
+    s = re.sub(r"\s(?:or|&|and)\s(?=·)", " ", s, flags=re.I)
+    s = re.sub(r"\s+", " ", s).strip(" ,")
     return s[1:].strip() if s.startswith("·") else s
 
 

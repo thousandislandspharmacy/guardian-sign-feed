@@ -167,11 +167,19 @@ def keep(item, cfg):
     display = str(name).strip()
     # PDF-derived flyers split brand and product across `name` and
     # `description` ("Option+" / "Diarrhea Relief Caplets") -- join them so
-    # the slide says what the product actually is.
+    # the slide says what the product actually is. An em dash, not a space:
+    # multi-brand combos ("3M, BENADRYL or MAGIC BAG" + "NEXCARE bandages,
+    # ...") would otherwise fuse into one all-caps run that generate.py
+    # reads as a single brand line.
     desc = str(item.get("description") or "").strip()
     if desc and desc.lower() not in display.lower():
-        display = f"{display} {desc}"
+        display = f"{display} — {desc}"
     display = " ".join(display.split())  # descriptions carry literal newlines
+    # Combo deals whose third option is just the brand leave a connector
+    # dangling before the qualifier ("Itch Relief or Selected Types and
+    # Sizes") -- "or Selected..." is never a real alternative, drop it.
+    display = re.sub(r"\s(?:or|and|&)(?=\s(?:on\s)?selected\s)", "",
+                     display, flags=re.I)
     story = " ".join(str(item.get("sale_story") or "").split())
     # Some descriptions repeat the sale story ("... Caplets Save up to $8");
     # the story gets its own line on the slide, so trim the duplicate.
