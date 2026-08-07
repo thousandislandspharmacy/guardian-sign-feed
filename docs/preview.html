@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign preview — all slides</title>
+<style>
+  /* Contact sheet for eyeballing the week's copy. Fetches the live
+     index.html (same origin) and lays every slide out at once, so this
+     file never needs rebuilding -- it always shows whatever the sign
+     is showing. Viewed in a modern browser, not the sign's webview. */
+  body { margin:0; padding:20px 24px; background:#1c1c1c; color:#ddd; }
+  h1, #meta, .tag { font-family: Arial, Helvetica, sans-serif; }
+  h1 { font-size:18px; margin:0 0 4px; color:#fff; }
+  #meta { font-size:13px; color:#9a9a9a; margin:0 0 18px; }
+  #grid { display:flex; flex-wrap:wrap; gap:22px; }
+  .cell { width:336px; zoom:2; }
+  @media (max-width: 760px) { .cell { zoom:1; } }
+  .tag { font-size:11px; line-height:1.7; color:#bbb; }
+  .frame { position:relative; width:336px; height:144px; overflow:hidden;
+           outline:1px solid #444; }
+  .frame .slide { position:relative !important; top:0 !important;
+                  left:0 !important; opacity:1 !important; }
+</style>
+</head>
+<body>
+<h1>Thousand Islands Pharmacy — sign preview</h1>
+<div id="meta">Loading current sign page…</div>
+<div id="grid"></div>
+<script>
+(async () => {
+  const meta = document.getElementById('meta');
+  const grid = document.getElementById('grid');
+  try {
+    const res = await fetch('index.html', {cache: 'no-store'});
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const doc = new DOMParser().parseFromString(await res.text(), 'text/html');
+
+    // Adopt the sign page's own CSS so slides render with the real fonts
+    // and classes...
+    for (const st of doc.querySelectorAll('style')) {
+      const clone = document.createElement('style');
+      clone.textContent = st.textContent;
+      document.head.appendChild(clone);
+    }
+    // ...then re-assert this page's layout: the sign CSS pins body to a
+    // 336x144 canvas. Fonts/colors are left alone so slides inherit the
+    // embedded PT Sans exactly as on the sign.
+    const fix = document.createElement('style');
+    fix.textContent = `
+      html, body { width:auto !important; height:auto !important;
+                   overflow:visible !important; background:#1c1c1c !important; }
+      body { margin:0 !important; padding:20px 24px !important;
+             position:static !important; }`;
+    document.head.appendChild(fix);
+
+    const slides = doc.querySelectorAll('.slide');
+    let n = 0;
+    for (const s of slides) {
+      n += 1;
+      const kind = s.querySelector('.tline, .brow') ? 'deal' : 'evergreen';
+      const cell = document.createElement('div');
+      cell.className = 'cell';
+      const tag = document.createElement('div');
+      tag.className = 'tag';
+      tag.textContent = String(n).padStart(2, '0') + ' · ' + kind;
+      const frame = document.createElement('div');
+      frame.className = 'frame';
+      frame.appendChild(document.adoptNode(s));
+      cell.appendChild(tag);
+      cell.appendChild(frame);
+      grid.appendChild(cell);
+    }
+
+    let line = slides.length + ' slides in rotation';
+    try {
+      const sp = await (await fetch('specials.json', {cache: 'no-store'})).json();
+      if (sp.publication && sp.publication.valid_from) {
+        line = 'Flyer ' + sp.publication.valid_from + ' to '
+             + sp.publication.valid_to + ' · ' + line;
+        if (sp.generated_at) line += ' · built ' + sp.generated_at;
+      }
+    } catch (e) { /* fallback builds may leave specials.json stale */ }
+    meta.textContent = line;
+  } catch (err) {
+    meta.textContent = 'Could not load the sign page (' + err.message + '). '
+      + 'Open this via the live site URL, not as a local file.';
+  }
+})();
+</script>
+</body>
+</html>

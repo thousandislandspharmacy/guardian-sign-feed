@@ -13,6 +13,11 @@ publishes two things to GitHub Pages that the sign consumes:
 After the one-time setup below, you touch nothing. Flyer flips Friday,
 sign updates itself.
 
+To proofread a week's slides, open
+`https://YOURNAME.github.io/REPO/preview.html` — a contact sheet showing
+every slide in the current rotation at once. It reads the live sign page,
+so it is always current; check it Friday morning after the flip.
+
 ## One-time setup
 
 ### 1. Capture the Flipp API calls (2 minutes, once)
