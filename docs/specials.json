@@ -5,7 +5,7 @@
   "valid_from": "2026-08-07",
   "valid_to": "2026-08-13"
  },
- "generated_at": "2026-08-07T14:57:47+00:00",
+ "generated_at": "2026-08-07T15:08:07+00:00",
  "flyer_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
  "items": [
   {
@@ -51,17 +51,17 @@
    "image": "img/05.png"
   },
   {
+   "name": "Option+ Pads or Liners Selected Types and Sizes",
+   "price": "$2.99",
+   "qualifier": "",
+   "story": "Save up to $3",
+   "image": "img/06.png"
+  },
+  {
    "name": "Option+ Extra Strength Allergy Relief 10mg Tablets 30's",
    "price": "$12.99",
    "qualifier": "",
    "story": "Save up to $11",
-   "image": "img/06.png"
-  },
-  {
-   "name": "OPTION+ Extra Strength Allergy Sinus Caplets 40's",
-   "price": "$10.99",
-   "qualifier": "",
-   "story": "COMPARE & SAVE $4",
    "image": "img/07.png"
   },
   {

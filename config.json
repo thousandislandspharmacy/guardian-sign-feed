@@ -12,18 +12,13 @@
   "require_image": true,
   "require_price": true,
   "exclude_keywords": [
-    "hemorrhoid",
-    "lice", "wart", "condom", "pregnancy test", "feminine", "yeast",
-    "enema", "suppositor", "tampon", "menstrual",
-    "vaginal", "fluconazole", "cystoplus", "phemme",
-    "tampax", "kotex", "maxi pad", "pantiliner", "panty liner",
-    "option+ pads or liners",
-    "preparation h", "canesoral", "rephresh",
     "nicotine", "zonnic", "smoking", "nicorette", "nicoderm",
+    "condom", "trojan", "durex", "lubricant", "k-y", "astroglide",
+    "pregnancy test", "ovulation", "fertility",
     "waterpik", "water pik", "nugenix"
   ],
   "exclude_categories": [
-    "sexual", "fertility", "tobacco products", "smoking cessation"
+    "sexual", "fertility", "family planning", "tobacco products", "smoking cessation"
   ],
   "priority_slots": [
     {"label": "incontinence", "max": 2, "keywords": [
