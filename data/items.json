@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T16:31:14+00:00",
+  "generated_at": "2026-08-09T15:18:09+00:00",
   "publication": {
     "id": 8037633,
     "name": "Promotional Flyer 25 km",
@@ -99,11 +99,11 @@
       "story": "Save up to $3"
     },
     {
-      "name": "Nosh & Co. \u2014 Popcorn 180g-220g",
-      "price": "$3.99",
+      "name": "DOVE \u2014 Dry Spray Antiperspirant or Deodorant Selected Types and Sizes",
+      "price": "$7.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/a2889670-8285-11f1-8e1c-4a1b9c416ec4/x_large",
-      "story": "OUR TRUSTED BRAND"
+      "image": "https://f.wishabi.net/page_pdf_images/23713253/adfd06f8-8285-11f1-ae5e-668aa74620aa/x_large",
+      "story": ""
     },
     {
       "name": "Option+ \u2014 Extra Strength Allergy Relief 10mg Tablets 30's",
@@ -113,10 +113,10 @@
       "story": "Save up to $11"
     },
     {
-      "name": "FOOTNER OR CANESTEN \u2014 Exfoliating Socks or Topical Cream 15 or 30g",
-      "price": "30% OFF",
+      "name": "PARISSA , SKINTIMATE, SCHICK OR INTUITION \u2014 Hair Removal Products or Razors Selected Types and Sizes",
+      "price": "20% OFF",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/945f980a-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/23713253/9f7fb99a-8285-11f1-ae5e-668aa74620aa/x_large",
       "story": ""
     },
     {
@@ -127,11 +127,11 @@
       "story": "Save up to $2.30"
     },
     {
-      "name": "Option+ \u2014 Blue Shampoo 450mL Selected Types",
-      "price": "$3.99",
+      "name": "LAX-A-DAY or LAX-A-SENNA \u2014 Laxatives Selected Types and Sizes",
+      "price": "25% OFF",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713255/97d438ec-8285-11f1-8e1c-4a1b9c416ec4/x_large",
-      "story": "Save up to $3"
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/96ac207e-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
     },
     {
       "name": "Option+ \u2014 Sleep Aid Extra Strength Caplets 20's",
@@ -141,11 +141,116 @@
       "story": "Save up to $3.80"
     },
     {
-      "name": "Option+ \u2014 Body Wash 709mL Selected Types",
+      "name": "SCOTTIES or SAVVY \u2014 2ply or 3ply Facial Tissue 2 Rolls Paper Towel",
+      "price": "$5.00",
+      "qualifier": "4/",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/99b89f40-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
+    {
+      "name": "Option+ \u2014 Blue Shampoo 450mL Selected Types",
       "price": "$3.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23713249/98a1f0f2-8285-11f1-bf53-cad7a1b2653e/x_large",
-      "story": "Save up to $2.80"
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/97d438ec-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": "Save up to $3"
+    },
+    {
+      "name": "LIVE CLEAN, SUN BUM or AUSTRALIAN GOLD \u2014 Sun Care Selected Types and Sizes",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/9342258c-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": ""
+    },
+    {
+      "name": "Option+ \u2014 Ginger Liquid Gel Capsules 24's",
+      "price": "$5.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/976f4d4c-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": "Save up to $4.50"
+    },
+    {
+      "name": "Nosh & Co. \u2014 Popcorn 180g-220g",
+      "price": "$3.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/a2889670-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": "OUR TRUSTED BRAND"
+    },
+    {
+      "name": "FOOTNER OR CANESTEN \u2014 Exfoliating Socks or Topical Cream 15 or 30g",
+      "price": "30% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/945f980a-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": ""
+    },
+    {
+      "name": "CERAVE OR FRENCH FORMULA \u2014 Hair Care Selected Types and Sizes",
+      "price": "$7.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/a0d1c3c4-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": ""
+    },
+    {
+      "name": "SINUTAB \u2014 Extra Strength Sinus & Allergy Caplets 48's",
+      "price": "$14.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713247/921414d6-8285-11f1-b9d4-02a77ebebb65/x_large",
+      "story": ""
+    },
+    {
+      "name": "HYDRASENSE or NETIRINSE \u2014 Nasal Congestion Relief Products Selected Types and Sizes",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/9692ee92-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": ""
+    },
+    {
+      "name": "Sally Hansen \u2014 INSTA DRI Nail Polish Selected Types and Shades",
+      "price": "$6.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713253/aab5b4c2-8285-11f1-ae5e-668aa74620aa/x_large",
+      "story": "Save up to $3"
+    },
+    {
+      "name": "MAYBELLINE NEW YORK \u2014 FIT ME Foundation, Primer, Concealer, Loose Powder, Powder or Blush Cosmetics Selected Types and Shades",
+      "price": "$9.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713253/a8e09446-8285-11f1-ae5e-668aa74620aa/x_large",
+      "story": "Save up to $5.50"
+    },
+    {
+      "name": "GERBER OR NUK \u2014 Baby Accessories Selected Products",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713253/94888012-8285-11f1-ae5e-668aa74620aa/x_large",
+      "story": ""
+    },
+    {
+      "name": "COLGATE \u2014 OPTIC WHITE PRO-SERIES, or TOTAL WHITENING Battery-Operated Toothbrush",
+      "price": "$18.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713255/9cbf5922-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "story": ""
+    },
+    {
+      "name": "SECRET, OLD SPICE or GILLETTE \u2014 Antiperspirant/ Deodorant Selected Types and Sizes",
+      "price": "$5.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/936ccada-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
+    {
+      "name": "Aveeno\u00ae \u2014 Moisturizing Lotion or Body Wash 532mL Selected Types",
+      "price": "$9.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713242/a4e0df4a-8285-11f1-a7b9-ca4d0f1d0926/x_large",
+      "story": ""
+    },
+    {
+      "name": "CULTURELLE \u2014 Digestive Health Daily Probiotic Formula Capsules 30s-50s or Baby Drops 8mL Selected Types",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23713251/a2c27278-8285-11f1-86ac-76f063a1bee1/x_large",
+      "story": ""
     }
   ]
 }

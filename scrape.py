@@ -252,14 +252,21 @@ def select_items(normalized, cfg):
         else:
             print(f"  slot {slot.get('label', '?')}: nothing on this week")
 
-    brand = [n for n in normalized if id(n) not in used
-             and matches(n, cfg.get("brand_fill_keywords", []))]
-    groups = [[n for n in normalized if id(n) not in used and matches(n, g)]
+    fill_kw = cfg.get("brand_fill_keywords", [])
+    brand = [n for n in normalized if id(n) not in used and matches(n, fill_kw)]
+    # House-brand items ride ONLY the brand track: their deep house discounts
+    # would otherwise outscore the national brands inside every variety
+    # bucket and the sign fills up with one label. brand_fill_max caps the
+    # track so growing max_items grows national-brand variety, not house.
+    groups = [[n for n in normalized if id(n) not in used
+               and not matches(n, fill_kw) and matches(n, g)]
               for g in cfg.get("variety_groups", [])]
+    max_brand = int(cfg.get("brand_fill_max", max_items))
+    brand_picks = 0
     group_index, take_brand = 0, True
     while len(chosen) < max_items and (brand or any(groups)):
         pool = None
-        if take_brand and brand:
+        if take_brand and brand and brand_picks < max_brand:
             pool = brand
         elif groups:
             for _ in range(len(groups)):
@@ -269,9 +276,12 @@ def select_items(normalized, cfg):
                     pool = candidate
                     break
         if pool is None:
-            pool = brand or next((g for g in groups if g), None)
+            pool = (brand if brand_picks < max_brand else None) \
+                or next((g for g in groups if g), None)
         if pool is None:
             break
+        if pool is brand:
+            brand_picks += 1
         entry = pool.pop(0)
         add(entry)
         brand = [n for n in brand if id(n) not in used]

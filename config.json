@@ -8,7 +8,8 @@
   "store_name": "Thousand Islands Pharmacy",
   "brand_sub": "This Week's Specials",
   "flyer_public_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
-  "max_items": 20,
+  "max_items": 35,
+  "brand_fill_max": 7,
   "require_image": true,
   "require_price": true,
   "exclude_keywords": [
@@ -41,17 +42,20 @@
   "brand_fill_keywords": ["option+"],
   "variety_groups": [
     ["dental", "oral care", "toothpaste", "toothbrush", "mouthwash", "floss", "denture"],
+    ["deodorant", "antiperspirant", "dry spray"],
+    ["body wash", "soap", "shave", "razor", "hair removal"],
+    ["gastrointestinal", "antacid", "heartburn", "acid reducer", "digestive", "probiotic", "pepto", "bismol", "bismuth", "nausea", "fibre", "laxative", "diarrhea", "gas relief", "stool"],
+    ["bathroom tissue", "toilet paper", "paper towel", "facial tissue", "household paper", "flushable wipes"],
+    ["skin care", "sun care", "suncare", "sunscreen", "spf", "after sun", "lotion", "moisturizer", "lip care"],
     ["candy", "chocolate", "nosh", "chewing gum", "licorice", "snack"],
     ["foot care", "foot", "insole", "callus", "corn remover", "antifungal", "athlete's foot"],
     ["hair care", "shampoo", "conditioner", "hair colour", "styling", "hair dye"],
-    ["deodorant", "antiperspirant", "body wash", "soap", "bath", "shave", "razor"],
-    ["gastrointestinal", "antacid", "heartburn", "acid reducer", "digestive", "probiotic", "fibre", "laxative", "diarrhea", "gas relief", "stool"],
     ["cough", "cold relief", "cold & flu", "cold and flu", "flu relief", "lozenge", "sore throat", "mucus", "expectorant"],
     ["allergy", "antihistamine", "allergies"],
     ["nasal", "sinus", "decongestant", "saline"],
     ["kit", "bath sponge", "sponge", "accessories", "cotton", "nail"],
-    ["skin care", "lotion", "moisturizer", "sunscreen", "lip care"],
-    ["cosmetics", "mascara", "lipstick"]
+    ["cosmetics", "mascara", "lipstick"],
+    ["baby", "diaper", "infant"]
   ],
   "fallback_lines": [
     "Weekly specials in store now",

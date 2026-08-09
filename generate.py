@@ -553,9 +553,12 @@ def badge_html(deal):
             main -= 4
         rows.append((main, lambda t, m=main: _brow(
             t, m, m, _money_row_html(deal["dollars"], deal["cents"], m))))
-        bottom = deal["story"] or "each"
-        rows.append((13, lambda t, b=bottom: _brow(
-            t, 13, _fit_size(b, (12, 11, 10, 9), 700, 60), escape(b))))
+        # "each" is the default unit line, but on multi-buy pricing ("2 FOR
+        # $13") it contradicts the qualifier -- show it only for unit deals.
+        bottom = deal["story"] or ("" if deal["qual"] else "each")
+        if bottom:
+            rows.append((13, lambda t, b=bottom: _brow(
+                t, 13, _fit_size(b, (12, 11, 10, 9), 700, 60), escape(b))))
     else:
         text = deal["text"] or "SEE FLYER"
         size = _fit_size(text, (20, 17, 14, 12), 700, 78)
