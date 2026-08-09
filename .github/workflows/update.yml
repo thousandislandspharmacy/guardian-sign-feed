@@ -2,11 +2,15 @@ name: Update sign feed
 
 on:
   schedule:
-    # Fri + Sat retry + Thu freshness pass, 11:00 UTC = 6am EST / 7am EDT.
-    # This store's flyers run Friday through Thursday, so Friday is the flip
-    # run; Saturday self-heals a late post or a failed Friday. GitHub fires
-    # these late sometimes (hours, on bad days) -- that's fine, any
-    # successful run publishes whatever flyer is valid that day.
+    # This store's flyers run Friday through Thursday and the store opens
+    # 8am Eastern, so Friday gets an EARLY flip at 08:00 UTC (4am EDT /
+    # 3am EST) -- the scrape step below then retries every 20 min until
+    # Flipp posts the new flyer. 11:00 UTC Friday is the backup flip,
+    # Saturday self-heals a late post or a failed Friday, Thursday is a
+    # freshness pass. GitHub fires crons late sometimes (hours, on bad
+    # days) -- that's fine, any successful run publishes whatever flyer
+    # is valid that day.
+    - cron: "0 8 * * 5"
     - cron: "0 11 * * 5"
     - cron: "0 11 * * 6"
     - cron: "0 11 * * 4"
@@ -14,6 +18,12 @@ on:
 
 permissions:
   contents: write
+
+# The early Friday run can still be in its retry loop when the backup run
+# fires -- queue them so two jobs never push over each other.
+concurrency:
+  group: sign-feed
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -28,9 +38,22 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Exit 2 means "no publication valid today" -- on early-Friday runs
+      # that usually means Flipp hasn't posted the new flyer yet, so wait
+      # and retry (11 tries x 20 min covers ~4:00-7:20am ET). Any other
+      # failure is real and fails immediately. Runs where a flyer is
+      # already live succeed on the first try, so Thu/Sat behave as before.
       - name: Scrape current flyer
         id: scrape
-        run: python scrape.py
+        run: |
+          for attempt in $(seq 1 11); do
+            python scrape.py && exit 0
+            rc=$?
+            if [ "$rc" -ne 2 ]; then exit "$rc"; fi
+            echo "No flyer posted yet (attempt $attempt/11); retrying in 20 min."
+            sleep 1200
+          done
+          exit 2
 
       - name: Generate sign content
         if: success()

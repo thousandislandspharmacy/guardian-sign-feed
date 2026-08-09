@@ -50,7 +50,10 @@ GREEN_RGB = (0, 100, 60)
 MOTIF_RGB = (18, 114, 74)
 RED_RGB = (238, 49, 36)
 SLIDE_SECONDS = 7
-RELOAD_SECONDS = 21600  # webview re-pulls the page every 6 h
+RELOAD_SECONDS = 1800  # webview re-pulls the page every 30 min, so a
+                       # Friday-morning flip reaches the sign before the
+                       # store opens at 8 (was 6 h, which could lag a
+                       # 7am build until 11am)
 
 # Geometry, sign px. Measured off the hand-made slides.
 BADGE_X, BADGE_Y, BADGE_W, BADGE_H = 10, 26, 88, 92   # red hexagon badge
