@@ -586,21 +586,72 @@ def badge_html(deal):
 
 # --- slide assembly ------------------------------------------------------
 
+def _title_segments(tokens):
+    """Brand-list title tokens -> brand segments, split at connectors and
+    trailing commas ("A, B or C" -> [[A], [B], [C]])."""
+    segs, cur = [], []
+    for t in tokens:
+        if _norm(t) in CONNECTORS:
+            if cur:
+                segs.append(cur)
+                cur = []
+            continue
+        cur.append(t)
+        if t.endswith(","):
+            segs.append(cur)
+            cur = []
+    if cur:
+        segs.append(cur)
+    return segs
+
+
+def _shortened_titles(tokens):
+    """Progressively drop trailing brands from a combo title, appending
+    "& MORE" -- longest first: "A, B & MORE", then "A & MORE"."""
+    out = []
+    segs = _title_segments(tokens)
+    for keep_n in range(len(segs) - 1, 0, -1):
+        toks = []
+        for i, seg in enumerate(segs[:keep_n]):
+            seg = [t.rstrip(",") for t in seg]
+            if i:
+                toks[-1] += ","
+            toks.extend(seg)
+        out.append(toks + ["&", "MORE"])
+    return out
+
+
 def title_lines_html(tokens, col_w):
     """Fit the brand title: bold caps, connectors small + lowercase.
-    Returns (font_size, [line_html]), wrapped at build time."""
-    for size in (32, 28, 25, 22, 19, 17, 15, 13):
-        small = max(11, int(round(size * 0.6)))
-        words = []
-        for t in tokens:
-            if _norm(t) in CONNECTORS:
-                words.append((t.lower(), text_w(t.lower(), small, 400)))
-            else:
-                disp = t.upper()
-                words.append((disp, text_w(disp, size)))
-        lines = wrap_words(words, col_w, 2, text_w(" ", size))
-        if lines:
-            break
+    A combo brand list that would only fit tiny (or clipped) drops its
+    trailing brands for "& MORE" instead -- on a drive-by sign, big and
+    partial beats complete and unreadable. Returns (font_size,
+    [line_html]), wrapped at build time."""
+    def fit(toks, sizes):
+        for size in sizes:
+            small = max(11, int(round(size * 0.6)))
+            words = []
+            for t in toks:
+                if _norm(t) in CONNECTORS:
+                    words.append((t.lower(), text_w(t.lower(), small, 400)))
+                else:
+                    disp = t.upper()
+                    words.append((disp, text_w(disp, size)))
+            lines = wrap_words(words, col_w, 2, text_w(" ", size))
+            if lines:
+                return size, small, lines
+        return None
+
+    hit = fit(tokens, (32, 28, 25, 22, 19, 17))
+    if not hit:
+        for short in _shortened_titles(tokens):
+            hit = fit(short, (32, 28, 25, 22, 19))
+            if hit:
+                break
+    if not hit:
+        hit = fit(tokens, (15, 13))
+    if hit:
+        size, small, lines = hit
     else:
         lines = [" ".join(t.upper() for t in tokens)]
         size, small = 13, 11
