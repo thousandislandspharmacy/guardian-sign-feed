@@ -17,7 +17,8 @@
     "condom", "trojan", "durex", "lubricant", "k-y", "astroglide",
     "pregnancy test", "ovulation", "fertility",
     "waterpik", "water pik", "nugenix",
-    "gerber", "enfamil"
+    "gerber", "enfamil",
+    ["cerave", "hair"]
   ],
   "exclude_categories": [
     "sexual", "fertility", "family planning", "tobacco products", "smoking cessation",

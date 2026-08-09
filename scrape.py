@@ -186,8 +186,15 @@ def keep(item, cfg):
     if story and display.lower().endswith(story.lower()):
         display = display[:-len(story)].rstrip(" -–—,")
     lowered = display.lower()
-    if any(bad.lower() in lowered for bad in cfg.get("exclude_keywords", [])):
-        return None
+    # An exclude entry may be a plain substring, or a LIST of substrings
+    # that must ALL match (["cerave", "hair"] kills CeraVe hair-care combo
+    # deals while CeraVe facial products stay advertisable).
+    for bad in cfg.get("exclude_keywords", []):
+        if isinstance(bad, list):
+            if bad and all(str(b).lower() in lowered for b in bad):
+                return None
+        elif str(bad).lower() in lowered:
+            return None
     cats = " | ".join(category_names(item)).lower()
     if any(bad.lower() in cats for bad in cfg.get("exclude_categories", [])):
         return None
