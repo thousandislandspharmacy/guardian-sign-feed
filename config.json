@@ -16,10 +16,12 @@
     "nicotine", "zonnic", "smoking", "nicorette", "nicoderm",
     "condom", "trojan", "durex", "lubricant", "k-y", "astroglide",
     "pregnancy test", "ovulation", "fertility",
-    "waterpik", "water pik", "nugenix"
+    "waterpik", "water pik", "nugenix",
+    "gerber", "enfamil"
   ],
   "exclude_categories": [
-    "sexual", "fertility", "family planning", "tobacco products", "smoking cessation"
+    "sexual", "fertility", "family planning", "tobacco products", "smoking cessation",
+    "baby & toddler"
   ],
   "priority_slots": [
     {"label": "incontinence", "max": 2, "keywords": [
@@ -54,8 +56,7 @@
     ["allergy", "antihistamine", "allergies"],
     ["nasal", "sinus", "decongestant", "saline"],
     ["kit", "bath sponge", "sponge", "accessories", "cotton", "nail"],
-    ["cosmetics", "mascara", "lipstick"],
-    ["baby", "diaper", "infant"]
+    ["cosmetics", "mascara", "lipstick"]
   ],
   "fallback_lines": [
     "Weekly specials in store now",

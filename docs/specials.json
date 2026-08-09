@@ -5,7 +5,7 @@
   "valid_from": "2026-08-07",
   "valid_to": "2026-08-13"
  },
- "generated_at": "2026-08-09T15:18:09+00:00",
+ "generated_at": "2026-08-09T15:27:47+00:00",
  "flyer_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
  "items": [
   {
@@ -219,37 +219,37 @@
    "image": "img/29.png"
   },
   {
-   "name": "GERBER OR NUK \u2014 Baby Accessories Selected Products",
-   "price": "25% OFF",
-   "qualifier": "",
-   "story": "",
-   "image": "img/30.png"
-  },
-  {
    "name": "COLGATE \u2014 OPTIC WHITE PRO-SERIES, or TOTAL WHITENING Battery-Operated Toothbrush",
    "price": "$18.99",
    "qualifier": "",
    "story": "",
-   "image": "img/31.png"
+   "image": "img/30.png"
   },
   {
    "name": "SECRET, OLD SPICE or GILLETTE \u2014 Antiperspirant/ Deodorant Selected Types and Sizes",
    "price": "$5.99",
    "qualifier": "",
    "story": "",
-   "image": "img/32.png"
+   "image": "img/31.png"
   },
   {
    "name": "Aveeno\u00ae \u2014 Moisturizing Lotion or Body Wash 532mL Selected Types",
    "price": "$9.99",
    "qualifier": "",
    "story": "",
-   "image": "img/33.png"
+   "image": "img/32.png"
   },
   {
    "name": "CULTURELLE \u2014 Digestive Health Daily Probiotic Formula Capsules 30s-50s or Baby Drops 8mL Selected Types",
    "price": "25% OFF",
    "qualifier": "",
+   "story": "",
+   "image": "img/33.png"
+  },
+  {
+   "name": "COTTONELLE \u2014 Bathroom Tissue Mega Roll 6's or Flushable Wipes 84's",
+   "price": "$10.00",
+   "qualifier": "2/",
    "story": "",
    "image": "img/34.png"
   }
