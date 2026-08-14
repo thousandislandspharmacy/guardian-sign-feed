@@ -13,51 +13,241 @@
   "require_image": true,
   "require_price": true,
   "exclude_keywords": [
-    "nicotine", "zonnic", "smoking", "nicorette", "nicoderm",
-    "condom", "trojan", "durex", "lubricant", "k-y", "astroglide",
-    "pregnancy test", "ovulation", "fertility",
-    "waterpik", "water pik", "nugenix",
-    "gerber", "enfamil",
-    ["cerave", "hair"]
+    "nicotine",
+    "zonnic",
+    "smoking",
+    "nicorette",
+    "nicoderm",
+    "condom",
+    "trojan",
+    "durex",
+    "lubricant",
+    "k-y",
+    "astroglide",
+    "pregnancy test",
+    "ovulation",
+    "fertility",
+    "waterpik",
+    "water pik",
+    "nugenix",
+    "gerber",
+    "enfamil",
+    [
+      "cerave",
+      "hair"
+    ],
+    [
+      "diarrhea relief",
+      "dissolv"
+    ]
   ],
   "exclude_categories": [
-    "sexual", "fertility", "family planning", "tobacco products", "smoking cessation",
+    "sexual",
+    "fertility",
+    "family planning",
+    "tobacco products",
+    "smoking cessation",
     "baby & toddler"
   ],
   "priority_slots": [
-    {"label": "incontinence", "max": 2, "keywords": [
-      "tena", "poise", "depend", "always discreet", "incontinence", "bladder"]},
-    {"label": "pain relief", "max": 2, "keywords": [
-      "tylenol", "motrin", "advil"]},
-    {"label": "first aid", "max": 2, "keywords": [
-      "band-aid", "band aid", "polysporin"]},
-    {"label": "allergy brands", "max": 2, "keywords": [
-      "reactine", "benadryl"]},
-    {"label": "gastro brands", "max": 1, "keywords": [
-      "imodium"]},
-    {"label": "vitamins", "max": 1, "keywords": [
-      "jamieson", "webber", "youtheory", "olly", "sisu",
-      "vitamin", "multivitamin", "ddrops", "omega", "calcium", "magnesium",
-      "b12", "probiotic", "supplement"]},
-    {"label": "meal replacement", "max": 2, "keywords": [
-      "boost", "ensure", "glucerna", "meal replacement", "nutritional shake"]}
+    {
+      "label": "incontinence",
+      "max": 2,
+      "keywords": [
+        "tena",
+        "poise",
+        "depend",
+        "always discreet",
+        "incontinence",
+        "bladder"
+      ]
+    },
+    {
+      "label": "pain relief",
+      "max": 2,
+      "keywords": [
+        "tylenol",
+        "motrin",
+        "advil"
+      ]
+    },
+    {
+      "label": "first aid",
+      "max": 2,
+      "keywords": [
+        "band-aid",
+        "band aid",
+        "polysporin"
+      ]
+    },
+    {
+      "label": "allergy brands",
+      "max": 2,
+      "keywords": [
+        "reactine",
+        "benadryl"
+      ]
+    },
+    {
+      "label": "gastro brands",
+      "max": 1,
+      "keywords": [
+        "imodium"
+      ]
+    },
+    {
+      "label": "vitamins",
+      "max": 1,
+      "keywords": [
+        "jamieson",
+        "webber",
+        "youtheory",
+        "olly",
+        "sisu",
+        "vitamin",
+        "multivitamin",
+        "ddrops",
+        "omega",
+        "calcium",
+        "magnesium",
+        "b12",
+        "probiotic",
+        "supplement"
+      ]
+    },
+    {
+      "label": "meal replacement",
+      "max": 2,
+      "keywords": [
+        "boost",
+        "ensure",
+        "glucerna",
+        "meal replacement",
+        "nutritional shake"
+      ]
+    }
   ],
-  "brand_fill_keywords": ["option+"],
+  "brand_fill_keywords": [
+    "option+"
+  ],
   "variety_groups": [
-    ["dental", "oral care", "toothpaste", "toothbrush", "mouthwash", "floss", "denture"],
-    ["deodorant", "antiperspirant", "dry spray"],
-    ["body wash", "soap", "shave", "razor", "hair removal"],
-    ["gastrointestinal", "antacid", "heartburn", "acid reducer", "digestive", "probiotic", "pepto", "bismol", "bismuth", "nausea", "fibre", "laxative", "diarrhea", "gas relief", "stool"],
-    ["bathroom tissue", "toilet paper", "paper towel", "facial tissue", "household paper", "flushable wipes"],
-    ["skin care", "sun care", "suncare", "sunscreen", "spf", "after sun", "lotion", "moisturizer", "lip care"],
-    ["candy", "chocolate", "nosh", "chewing gum", "licorice", "snack"],
-    ["foot care", "foot", "insole", "callus", "corn remover", "antifungal", "athlete's foot"],
-    ["hair care", "shampoo", "conditioner", "hair colour", "styling", "hair dye"],
-    ["cough", "cold relief", "cold & flu", "cold and flu", "flu relief", "lozenge", "sore throat", "mucus", "expectorant"],
-    ["allergy", "antihistamine", "allergies"],
-    ["nasal", "sinus", "decongestant", "saline"],
-    ["kit", "bath sponge", "sponge", "accessories", "cotton", "nail"],
-    ["cosmetics", "mascara", "lipstick"]
+    [
+      "dental",
+      "oral care",
+      "toothpaste",
+      "toothbrush",
+      "mouthwash",
+      "floss",
+      "denture"
+    ],
+    [
+      "deodorant",
+      "antiperspirant",
+      "dry spray"
+    ],
+    [
+      "body wash",
+      "soap",
+      "shave",
+      "razor",
+      "hair removal"
+    ],
+    [
+      "gastrointestinal",
+      "antacid",
+      "heartburn",
+      "acid reducer",
+      "digestive",
+      "probiotic",
+      "pepto",
+      "bismol",
+      "bismuth",
+      "nausea",
+      "fibre",
+      "laxative",
+      "diarrhea",
+      "gas relief",
+      "stool"
+    ],
+    [
+      "bathroom tissue",
+      "toilet paper",
+      "paper towel",
+      "facial tissue",
+      "household paper",
+      "flushable wipes"
+    ],
+    [
+      "skin care",
+      "sun care",
+      "suncare",
+      "sunscreen",
+      "spf",
+      "after sun",
+      "lotion",
+      "moisturizer",
+      "lip care"
+    ],
+    [
+      "candy",
+      "chocolate",
+      "nosh",
+      "chewing gum",
+      "licorice",
+      "snack"
+    ],
+    [
+      "foot care",
+      "foot",
+      "insole",
+      "callus",
+      "corn remover",
+      "antifungal",
+      "athlete's foot"
+    ],
+    [
+      "hair care",
+      "shampoo",
+      "conditioner",
+      "hair colour",
+      "styling",
+      "hair dye"
+    ],
+    [
+      "cough",
+      "cold relief",
+      "cold & flu",
+      "cold and flu",
+      "flu relief",
+      "lozenge",
+      "sore throat",
+      "mucus",
+      "expectorant"
+    ],
+    [
+      "allergy",
+      "antihistamine",
+      "allergies"
+    ],
+    [
+      "nasal",
+      "sinus",
+      "decongestant",
+      "saline"
+    ],
+    [
+      "kit",
+      "bath sponge",
+      "sponge",
+      "accessories",
+      "cotton",
+      "nail"
+    ],
+    [
+      "cosmetics",
+      "mascara",
+      "lipstick"
+    ]
   ],
   "fallback_lines": [
     "Weekly specials in store now",
