@@ -16,6 +16,9 @@
       "chips"
     ]
   ],
+  "display_brands": [
+    "Compound W"
+  ],
   "require_image": true,
   "require_price": true,
   "exclude_keywords": [
