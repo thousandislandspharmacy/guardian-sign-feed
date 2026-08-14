@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T13:14:02+00:00",
+  "generated_at": "2026-08-14T13:46:35+00:00",
   "publication": {
     "id": 8061703,
     "name": "Promotional Flyer 25 km",
@@ -7,6 +7,13 @@
     "valid_to": "2026-08-20"
   },
   "items": [
+    {
+      "name": "NOSH & CO. \u2014 Chips 130g-140g",
+      "price": "$1.79",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/23794324/65b7908a-8b8a-11f1-8bc0-be90ee9ec544/x_large",
+      "story": ""
+    },
     {
       "name": "DEPEND or POISE \u2014 Incontinence Underwear, Pads or Underpads Selected Types and Sizes",
       "price": "$13.99",
@@ -243,13 +250,6 @@
       "price": "25% OFF",
       "qualifier": "",
       "image": "https://f.wishabi.net/page_pdf_images/23794324/6377b05c-8b8a-11f1-8bc0-be90ee9ec544/x_large",
-      "story": ""
-    },
-    {
-      "name": "ORIGINAL \u2014 Sesame Bars 75g",
-      "price": "$1.49",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/23794331/4d00e974-8b8a-11f1-b184-cabaa41db08c/x_large",
       "story": ""
     }
   ]
