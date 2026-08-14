@@ -66,36 +66,36 @@
   ],
   "first_two_products": [
     {
-      "id": 1027509292,
-      "name": "RYDE",
-      "sale_story": "20% OFF*",
+      "id": 1030059786,
+      "name": "SOFTSOAP Liquid Hand Soap Pumps",
+      "sale_story": null,
       "sku": null,
-      "description": "Shots\nSelected Types and Sizes",
-      "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-08-07T00:00:00-04:00",
-      "valid_to_timestamp": "2026-08-13T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23713255/9b5f341c-8285-11f1-8e1c-4a1b9c416ec4/x_large",
+      "description": "332mL\nSelected Types",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-08-14T00:00:00-04:00",
+      "valid_to_timestamp": "2026-08-20T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23794341/615e87be-8b8a-11f1-bdde-aed6e7bde6b3/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-08-07",
-      "valid_to": "2026-08-13",
+      "valid_from": "2026-08-14",
+      "valid_to": "2026-08-20",
       "categories": [
-        "Health & Wellness"
+        "Grocery"
       ],
       "pre_price_text": "",
-      "price_text": "",
-      "post_price_text": "",
+      "price_text": "3.49",
+      "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 8072.54,
-      "bottom": -1185.27,
-      "right": 8323.74,
-      "top": -913.73,
-      "page": 6,
+      "left": 11546.0,
+      "bottom": -1715.26,
+      "right": 11788.5,
+      "top": -1454.48,
+      "page": 8,
       "item_categories": {
         "l1": {
           "confidence": null,
@@ -107,89 +107,101 @@
           "category_name": "Personal Care",
           "google_category_id": 727
         },
-        "l3": null,
-        "l4": null,
-        "l5": null,
+        "l3": {
+          "confidence": null,
+          "category_name": "Cosmetics",
+          "google_category_id": 729
+        },
+        "l4": {
+          "confidence": null,
+          "category_name": "Bath & Body",
+          "google_category_id": 3423
+        },
+        "l5": {
+          "confidence": null,
+          "category_name": "Liquid Hand Soap",
+          "google_category_id": 3431
+        },
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8037633,
+      "flyer_id": 8061703,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Ryde",
+      "brand": "Softsoap",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/23713255/9b5f341c-8285-11f1-8e1c-4a1b9c416ec4/x_large"
+        "https://f.wishabi.net/page_pdf_images/23794341/615e87be-8b8a-11f1-bdde-aed6e7bde6b3/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     },
     {
-      "id": 1027509211,
-      "name": "HUGGIES",
+      "id": 1030059815,
+      "name": "NOSH & CO Nuts and Mixes",
       "sale_story": null,
       "sku": null,
-      "description": "Wipes, LITTLE SWIMMERS, PULL-UPS, or GOODNITES",
+      "description": "200g-250g or Jar 525g-600g\nSelected Types",
       "disclaimer_text": null,
-      "valid_from_timestamp": "2026-08-07T00:00:00-04:00",
-      "valid_to_timestamp": "2026-08-13T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23713253/9cefa88e-8285-11f1-ae5e-668aa74620aa/x_large",
+      "valid_from_timestamp": "2026-08-14T00:00:00-04:00",
+      "valid_to_timestamp": "2026-08-20T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23794341/64c055c2-8b8a-11f1-bdde-aed6e7bde6b3/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-08-07",
-      "valid_to": "2026-08-13",
+      "valid_from": "2026-08-14",
+      "valid_to": "2026-08-20",
       "categories": [
-        "Health & Wellness"
+        "Grocery"
       ],
       "pre_price_text": "",
-      "price_text": "13.99",
+      "price_text": "4.99",
       "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 7192.41,
-      "bottom": -625.05,
-      "right": 7522.08,
-      "top": -102.91,
-      "page": 5,
+      "left": 11543.3,
+      "bottom": -1992.44,
+      "right": 11789.5,
+      "top": -1715.84,
+      "page": 8,
       "item_categories": {
         "l1": {
           "confidence": null,
-          "category_name": "Baby & Toddler",
-          "google_category_id": 123
+          "category_name": "Food, Beverages & Tobacco",
+          "google_category_id": 319
         },
         "l2": {
           "confidence": null,
-          "category_name": "Diapering",
-          "google_category_id": 163
+          "category_name": "Food Items",
+          "google_category_id": 342
         },
         "l3": {
           "confidence": null,
-          "category_name": "Baby Wipes",
-          "google_category_id": 165
+          "category_name": "Nuts & Seeds",
+          "google_category_id": 354
         },
         "l4": null,
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8037633,
+      "flyer_id": 8061703,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Huggies",
+      "brand": "Nosh & Co.",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/23713253/9cefa88e-8285-11f1-ae5e-668aa74620aa/x_large"
+        "https://f.wishabi.net/page_pdf_images/23794341/64c055c2-8b8a-11f1-bdde-aed6e7bde6b3/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
