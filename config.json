@@ -10,6 +10,12 @@
   "flyer_public_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
   "max_items": 35,
   "brand_fill_max": 7,
+  "force_include": [
+    [
+      "nosh",
+      "chips"
+    ]
+  ],
   "require_image": true,
   "require_price": true,
   "exclude_keywords": [

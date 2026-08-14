@@ -242,6 +242,20 @@ def select_items(normalized, cfg):
             chosen.append(entry)
             used.add(id(entry))
 
+    # 0. force_include -- owner-pinned items: the best-scoring match makes the
+    #    sign any week the flyer carries one. Entry shapes mirror
+    #    exclude_keywords: a substring, or a list = AND of substrings
+    #    (e.g. ["nosh", "chips"]). A pin with no match this week just skips.
+    for want in cfg.get("force_include", []):
+        terms = want if isinstance(want, list) else [want]
+        picks = [n for n in normalized
+                 if all(str(t).lower() in n["_match"] for t in terms)]
+        if picks:
+            add(picks[0])  # normalized arrives score-sorted
+            print(f"  pinned: {picks[0]['name'][:60]}")
+        else:
+            print(f"  pin {want!r}: nothing on this week")
+
     for slot in cfg.get("priority_slots", []):
         keywords = slot.get("keywords", [])
         picks = [n for n in normalized if matches(n, keywords)]
