@@ -20,6 +20,7 @@ Test helpers:
 import argparse
 import base64
 import datetime
+import hashlib
 import io
 import json
 import pathlib
@@ -50,10 +51,18 @@ GREEN_RGB = (0, 100, 60)
 MOTIF_RGB = (18, 114, 74)
 RED_RGB = (238, 49, 36)
 SLIDE_SECONDS = 7
-RELOAD_SECONDS = 1800  # webview re-pulls the page every 30 min, so a
-                       # Friday-morning flip reaches the sign before the
-                       # store opens at 8 (was 6 h, which could lag a
-                       # 7am build until 11am)
+RELOAD_SECONDS = 1800  # self-update check every 30 min, so a Friday-morning
+                       # flip reaches the sign before the store opens at 8.
+                       # The page XHRs itself and swaps slides in place -- it
+                       # NEVER navigates, because a webview that navigates
+                       # into a GitHub outage lands on the static unicorn
+                       # error page and is stuck there until someone
+                       # power-cycles the sign (happened 2026-08-28).
+RETRY_SECONDS = 300    # after a failed self-update check -- keep playing the
+                       # current deck, look again soon
+JS_VERSION = "2"       # bump whenever the inline <script> changes: a running
+                       # sign swaps CSS+slides in place (covered by the build
+                       # hash) and only whole-page reloads on a version change
 
 # Geometry, sign px. Measured off the hand-made slides.
 BADGE_X, BADGE_Y, BADGE_W, BADGE_H = 10, 26, 88, 92   # red hexagon badge
@@ -793,15 +802,7 @@ def page(cfg, items, dates_line):
     # ES5 only, no external requests: the ViPlex player webview is old and
     # may be firewalled to this one page. Backgrounds, badge, cards and the
     # PT Sans subset all ride inside the HTML as data URIs.
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width={W}, initial-scale=1">
-<meta http-equiv="refresh" content="{RELOAD_SECONDS}">
-<title>{store}</title>
-<style>
-  /* Palette: field {GREEN} / motif {MOTIF} / red device {RED}. Old webview:
+    css = f"""  /* Palette: field {GREEN} / motif {MOTIF} / red device {RED}. Old webview:
      absolute px layout, no transforms, no SVG -- shapes are baked PNGs;
      text is pre-wrapped at build time with the same PT Sans it renders. */
 {font_face_css()}
@@ -828,22 +829,111 @@ def page(cfg, items, dates_line):
   .dline {{ position:absolute; color:{FG}; font-weight:normal;
             white-space:nowrap; overflow:hidden; }}
   .dates {{ position:absolute; left:20px; top:122px; font-size:11px;
-            color:{LIGHT}; font-weight:normal; }}
+            color:{LIGHT}; font-weight:normal; }}"""
+    # The build hash covers everything the in-place swap replaces (CSS +
+    # deck); a Thu/Sat re-scrape of the same flyer hashes identical, so the
+    # sign skips the pointless swap.
+    build = hashlib.md5((css + slides).encode("utf-8")).hexdigest()[:12]
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width={W}, initial-scale=1">
+<title>{store}</title>
+<style>
+{css}
 </style>
 </head>
-<body>
+<body data-build="{build}" data-js="{JS_VERSION}">
+<div id="deck"><!--DECK-->
 {slides}
+<!--/DECK--></div>
 <script>
+  var RELOAD_MS = {RELOAD_SECONDS * 1000};
+  var RETRY_MS = {RETRY_SECONDS * 1000};
   var slides = document.getElementsByClassName('slide');
   var index = 0;
-  if (slides.length) slides[0].className += ' on';
-  if (slides.length > 1) {{
-    setInterval(function () {{
-      slides[index].className = slides[index].className.replace(' on', '');
-      index = (index + 1) % slides.length;
-      slides[index].className += ' on';
-    }}, {SLIDE_SECONDS * 1000});
+  var rotTimer = null;
+  function startRotation() {{
+    if (rotTimer) clearInterval(rotTimer);
+    rotTimer = null;
+    for (var i = 0; i < slides.length; i++) {{
+      slides[i].className = slides[i].className.replace(' on', '');
+    }}
+    index = 0;
+    if (slides.length) slides[0].className += ' on';
+    if (slides.length > 1) {{
+      rotTimer = setInterval(function () {{
+        slides[index].className = slides[index].className.replace(' on', '');
+        index = (index + 1) % slides.length;
+        slides[index].className += ' on';
+      }}, {SLIDE_SECONDS * 1000});
+    }}
   }}
+  /* Self-update without ever navigating: GitHub's error pages (the
+     unicorn) carry no reload of their own, so a webview that navigates
+     into an outage is stuck until someone power-cycles the sign. Fetch
+     the page over XHR instead and swap the deck in place, ONLY when the
+     response provably is a sign page -- on any failure the current
+     slides keep playing and we look again sooner. */
+  function grab(text, from, to) {{
+    var a = text.indexOf(from);
+    if (a < 0) return null;
+    a += from.length;
+    var b = text.indexOf(to, a);
+    return b < 0 ? null : text.substring(a, b);
+  }}
+  function applyUpdate(text) {{
+    var build = grab(text, 'data-build="', '"');
+    var jsv = grab(text, 'data-js="', '"');
+    var css = grab(text, '<style>', '</style>');
+    var deck = grab(text, '<!--DECK-->', '<!--/DECK-->');
+    if (!build || !jsv || !css || !deck ||
+        deck.indexOf('class="slide') < 0) return false;
+    var body = document.body;
+    if (build === body.getAttribute('data-build')) return true;
+    if (jsv !== body.getAttribute('data-js')) {{
+      /* This script itself changed upstream; swapping in place could
+         mismatch, so navigate -- the fetch that just succeeded says the
+         host is healthy right now. */
+      location.replace('index.html?v=' + new Date().getTime());
+      return true;
+    }}
+    document.getElementsByTagName('style')[0].textContent = css;
+    document.getElementById('deck').innerHTML = deck;
+    body.setAttribute('data-build', build);
+    startRotation();
+    return true;
+  }}
+  function tick() {{
+    var done = false;
+    var xhr = null;
+    var finish = function (ok) {{
+      if (done) return;
+      done = true;
+      setTimeout(tick, ok ? RELOAD_MS : RETRY_MS);
+    }};
+    try {{
+      xhr = new XMLHttpRequest();
+      xhr.open('GET', 'index.html?v=' + new Date().getTime(), true);
+      xhr.onreadystatechange = function () {{
+        if (xhr.readyState !== 4) return;
+        var ok = false;
+        if (xhr.status === 200 && xhr.responseText) {{
+          try {{ ok = applyUpdate(xhr.responseText); }} catch (e) {{}}
+        }}
+        finish(ok);
+      }};
+      xhr.send();
+      setTimeout(function () {{
+        if (done) return;
+        try {{ xhr.abort(); }} catch (e) {{}}
+        finish(false);
+      }}, 120000);
+    }} catch (e) {{ finish(false); }}
+  }}
+  startRotation();
+  setTimeout(tick, RELOAD_MS);
 </script>
 </body>
 </html>
