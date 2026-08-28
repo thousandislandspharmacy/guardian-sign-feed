@@ -1,254 +1,254 @@
 {
  "publication": {
-  "id": 8062227,
+  "id": 8067472,
   "name": "Promotional Flyer 25 km",
-  "valid_from": "2026-08-21",
-  "valid_to": "2026-08-27"
+  "valid_from": "2026-08-28",
+  "valid_to": "2026-09-03"
  },
- "generated_at": "2026-08-22T11:44:15+00:00",
+ "generated_at": "2026-08-28T12:25:08+00:00",
  "flyer_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
  "items": [
   {
-   "name": "ALWAYS DISCREET, DEPEND or POISE \u2014 Incontinence Pads or Underwear, Value Packs Selected types",
-   "price": "$24.99",
+   "name": "TENA \u2014 Incontinence Briefs, Underwear or Pads Selected Types and Sizes",
+   "price": "$14.99",
    "qualifier": "",
    "story": "",
    "image": "img/00.png"
   },
   {
-   "name": "TYLENOL COMPLETE \u2014 Cough & Cold Syrup 270ML, Tablets, Caplets or Liquid Gels 40's",
-   "price": "$16.99",
+   "name": "ALWAYS DISCREET \u2014 Incontinence Pads or Liners 20's-48's Selected Types and Sizes",
+   "price": "$6.99",
    "qualifier": "",
    "story": "",
    "image": "img/01.png"
   },
   {
-   "name": "ADVIL \u2014 Cold, Sinus or Flu Tablets, Caplets or Liqui-Gels 32's-40's Selected Types",
+   "name": "BENADRYL \u2014 Allergy Extra Strength TOTAL or NIGHTTIME Formula Caplets 24's-36's",
    "price": "$14.99",
    "qualifier": "",
    "story": "",
    "image": "img/02.png"
   },
   {
-   "name": "BAND-AID, POLYSPORIN or Option+ \u2014 Bandages 15g Heat Packs Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "Option+ \u2014 Vitamin Ddrops",
+   "price": "$6.99",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $7",
    "image": "img/03.png"
   },
   {
-   "name": "CLARITIN, AERIUS, REACTINE or BENADRYL \u2014 Allergy Tablets 10's-12's or Liquid 100mL-120mL Selected Types",
-   "price": "$9.99",
+   "name": "BOOST \u2014 CARB SMART, Plus Calories or High Protein Nutritional Supplement Shakes Selected Types and Sizes",
+   "price": "$12.49",
    "qualifier": "",
    "story": "",
    "image": "img/04.png"
   },
   {
-   "name": "JAMIESON OR YOUTHFUL \u2014 Vitamins, Gummies, Minerals or Supplementation Selected Types and Sizes",
-   "price": "40% OFF",
+   "name": "Option+ \u2014 Nasal Rinse Kit or Saline Solution Refills 100's",
+   "price": "$9.99",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $10",
    "image": "img/05.png"
   },
   {
-   "name": "ENSURE OR GLUCERNA Nutritional Drinks \u2014 Selected Types and Sizes",
-   "price": "$10.99",
+   "name": "SCOPE or CREST \u2014 Outlast, Original Mouthwash, 3D White Advanced Teeth Whitening Toothpaste, PRO-HEALTH or CrossAction toothbrushes Selected Types",
+   "price": "$5.99",
    "qualifier": "",
    "story": "",
    "image": "img/06.png"
   },
   {
-   "name": "Option+ \u2014 Extra Strength Allergy Relief Tablets 48's",
-   "price": "$14.99",
+   "name": "Option+ \u2014 Arthritis Pain Relief 650mg Caplets 50's",
+   "price": "$6.49",
    "qualifier": "",
-   "story": "Save up to $20",
+   "story": "Save up to $5.50",
    "image": "img/07.png"
   },
   {
-   "name": "SEA-BOND or XYLImelTS \u2014 Denture Adhesive, or Dry Mouth Stick-On Melts 40's Selected Types",
-   "price": "25% OFF",
+   "name": "GILLETTE Deodorant Clear Gel 2 Pack or TOM'S OF MAINE Deodorant \u2014 Selected Types and Sizes",
+   "price": "$9.99",
    "qualifier": "",
    "story": "",
    "image": "img/08.png"
   },
   {
-   "name": "Option+ \u2014 Reusable Underpad",
-   "price": "$8.99",
+   "name": "Option+ \u2014 Arthritis Pain Relief Caplets 650mg 100's",
+   "price": "$9.99",
    "qualifier": "",
-   "story": "Save up to $7.50",
+   "story": "Save up to $7",
    "image": "img/09.png"
   },
   {
-   "name": "NATIVE Deodorant \u2014 Selected Types and Sizes",
-   "price": "$12.99",
+   "name": "VEET, EOS or BIC \u2014 Hair Removal, Shave Cream 207mL, or Razors 1-4 ct Selected Types and Sizes",
+   "price": "20% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/10.png"
   },
   {
-   "name": "Option+ Antacid Regular or Extra Strength Tablets \u2014 72's-150's",
-   "price": "$3.49",
+   "name": "Option+ \u2014 Extra Strength Allergy Relief Tablets 20's",
+   "price": "$12.99",
    "qualifier": "",
-   "story": "Save up to $2.50",
+   "story": "Save up to $6",
    "image": "img/11.png"
   },
   {
-   "name": "SCHICK or INTUITION Razors, Edge or SKINTIMATE Shave Gel \u2014 198g Selected Types and Sizes",
+   "name": "RESTORALAX or RESTORAFIBRE \u2014 Powder 7-45 Doses, Sachet's 10's or Gummies 30's-140's",
    "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/12.png"
   },
   {
-   "name": "Option+ \u2014 Canes or Cane Tips Selected Types",
+   "name": "Option+ \u2014 Blood Pressure Monitors Selected Types",
    "price": "30% OFF",
    "qualifier": "",
-   "story": "Save up to $18.50",
+   "story": "Save up to $46.20",
    "image": "img/13.png"
   },
   {
-   "name": "GRAVOL Anti-Nausea Products or GASTROVOL Liquid Gel Caps \u2014 Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "CASHMERE, BONTERRA or PUREX Bathroom or SPONGETOWELS or BONTERRA or SCOTTIES \u2014 Bathroom Tissue 6, 8, 9 or 12 Rolls, or Papertowel 3's or Facial Tissue 6's",
+   "price": "$6.99",
    "qualifier": "",
    "story": "",
    "image": "img/14.png"
   },
   {
-   "name": "Option+ Diarrhea Relief Caplets 24's",
-   "price": "$11.99",
+   "name": "ODOR EATERS or Option+ \u2014 Footcare Products Selected Types",
+   "price": "25% OFF",
    "qualifier": "",
-   "story": "Save up to $4",
+   "story": "",
    "image": "img/15.png"
   },
   {
-   "name": "BOUNTY or CHARMIN \u2014 PaperTowel 3 Rolls or Bathroom Tissue Triple 8 Rolls",
-   "price": "$5.99",
+   "name": "AVEENO or LUBRIDERM \u2014 Body or Hand Lotion Selected Types and Sizes",
+   "price": "30% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/16.png"
   },
   {
-   "name": "Option+ \u2014 First Aid Kit 78 pieces",
-   "price": "$22.99",
+   "name": "Option+ \u2014 Electrolyte Powder Sachets 6x10g Selected Types",
+   "price": "$7.99",
    "qualifier": "",
-   "story": "Save up to $7",
+   "story": "Save up to $2.50",
    "image": "img/17.png"
   },
   {
-   "name": "EUCERIN, AQUAPHOR Cream, Lotion, Healing Ointment or NIVEA Skin Care \u2014 Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "LINDT \u2014 EXCELLENCE Bars 50g-100g",
+   "price": "$5.99",
    "qualifier": "",
    "story": "",
    "image": "img/18.png"
   },
   {
-   "name": "Option+ \u2014 Patient Aid Accessories Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "DR. SCHOLL'S \u2014 Foot Care Products Selected Types and Sizes",
+   "price": "30% OFF",
    "qualifier": "",
-   "story": "Save up to $2.96",
+   "story": "",
    "image": "img/19.png"
   },
   {
-   "name": "PURE PROTEIN or SPLENDA \u2014 Bars Value pack Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "DOVE or HEAD & SHOULDERS \u2014 Hair Care Selected Types and Sizes",
+   "price": "$4.99",
    "qualifier": "",
    "story": "",
    "image": "img/20.png"
   },
   {
-   "name": "DR. SCHOLL'S Foot Care Products \u2014 Selected Types and Sizes",
-   "price": "30% OFF",
+   "name": "NIC-HIT or THRIVE \u2014 Spray or Gum or Lozenges Selected Types and Sizes",
+   "price": "20% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/21.png"
   },
   {
-   "name": "GARNIER OLIA, L'OR\u00c9AL PARIS EXCELLENCE or SPLAT Hair Colour \u2014 Selected Shades",
-   "price": "$10.99",
+   "name": "CLARITIN or AERIUS or HYDRASENSE \u2014 Allergy Relief or Nasal Congestion Products Selected Types and Sizes",
+   "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/22.png"
   },
   {
-   "name": "ALLEGRA Allergy Tablets \u2014 10's-15's Selected Types",
-   "price": "$7.49",
+   "name": "RHINARIS or SECARIS \u2014 Nasal Treatments Selected Types and Sizes",
+   "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/23.png"
   },
   {
-   "name": "NASACORT \u2014 Allergy 24HR Nasal Spray 120 Doses",
-   "price": "$21.99",
+   "name": "MIRACLE GEL OR SALON EFFECTS Nail Products \u2014 Selected Types and Sizes",
+   "price": "$9.99",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $4",
    "image": "img/24.png"
   },
   {
-   "name": "Kit \u2014 Lice Comb Double-Sided Selected Types",
-   "price": "$2.79",
+   "name": "SUPERSTAY LUMI MATTE or LIFTER GLOW Foundation \u2014 Selected Types and Size",
+   "price": "$13.99",
    "qualifier": "",
-   "story": "Save up to $1",
+   "story": "Save up to $9",
    "image": "img/25.png"
   },
   {
-   "name": "COVERGIRL BROW MICRO, CLEAN FRESH, CLEAN MATTE, EXHIBITIONIST, PERFECT BLEND, PERFECT POINT or CLEAN INVISIBLE Cosmetics \u2014 Selected Types and Shades",
+   "name": "POLIGRIP or BIOTENE \u2014 40 comfort Strips 40's or Denture Adhesive Strong Hold 62.4g or Dry Mouth Oral Care Products Selected Types and Sizes",
    "price": "$8.99",
    "qualifier": "",
-   "story": "Save up to $4.50",
+   "story": "",
    "image": "img/26.png"
   },
   {
-   "name": "DENTEK or DENTA or G-U-M \u2014 Oral Products or Rinse Mouthwash, Moisturizing Spray for Dry Mouth or Mints or Peroxide Mouthwash Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "HELLO \u2014 deodorant Selected Types and Sizes",
+   "price": "$6.99",
    "qualifier": "",
    "story": "",
    "image": "img/27.png"
   },
   {
-   "name": "OLD SPICE, SECRET or DEGREE \u2014 Dry Spray Antiperspirant or Deodorant Selected Types and Sizes",
-   "price": "$5.99",
+   "name": "GILLETTE \u2014 VENUS, SENSOR, SKINGUARD LABS Razors Cartridges, Gel, Shave Foam or Moisturizer Bar Selected Types and Sizes",
+   "price": "20% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/28.png"
   },
   {
-   "name": "DIAL Liquid Hand Soap Pumps \u2014 221ML-325ml Selected Types",
-   "price": "$3.49",
+   "name": "SENOKOT \u2014 Laxative Tablets 60's-100's or Gummies 60's Selected Types",
+   "price": "$14.99",
    "qualifier": "",
    "story": "",
    "image": "img/29.png"
   },
   {
-   "name": "FLORASTOR \u2014 Probiotic Adults or Kids Capsules 20's-100's or Powder Sticks 30's Selected Types",
+   "name": "PANOXYL or CLEARASIL \u2014 Acne Products, or Ultra Skin Care Products Selected Types and Sizes",
    "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/30.png"
   },
   {
-   "name": "SAVVY \u2014 Paper Towel 6 Rolls or Facial Tissue 6's",
-   "price": "$6.99",
+   "name": "PRINGLES MINGLES or CHEEZ IT \u2014 155g or Crackers 213g",
+   "price": "$3.99",
    "qualifier": "",
    "story": "",
    "image": "img/31.png"
   },
   {
-   "name": "OLAY \u2014 Skin Care Products Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "FLEXITOL or PROFOOT \u2014 Foot Care Products Selected Types",
+   "price": "30% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/32.png"
   },
   {
-   "name": "LINDT EXCELLENCE Bars \u2014 50g-100g",
+   "name": "GARNIER FRUCTIS or HERBAL ESSENCE or LIVE CLEAN \u2014 Hair Care Products Selected Types and Sizes",
    "price": "$5.99",
    "qualifier": "",
    "story": "",
    "image": "img/33.png"
   },
   {
-   "name": "PANTENE PRO-V Hair Care \u2014 Selected Types and Sizes",
-   "price": "$4.29",
+   "name": "FISHERMAN'S FRIEND \u2014 Cough Lozenges 22's Selected Types",
+   "price": "$1.99",
    "qualifier": "",
    "story": "",
    "image": "img/34.png"

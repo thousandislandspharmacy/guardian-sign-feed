@@ -66,35 +66,35 @@
   ],
   "first_two_products": [
     {
-      "id": 1030221899,
-      "name": "EUCERIN, AQUAPHOR Cream, Lotion, Healing Ointment or NIVEA Skin Care",
-      "sale_story": "25% OFF*",
+      "id": 1030969449,
+      "name": "TENA",
+      "sale_story": null,
       "sku": null,
-      "description": "Selected Types and Sizes",
-      "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-08-21T00:00:00-04:00",
-      "valid_to_timestamp": "2026-08-27T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23798673/802faecc-8bc4-11f1-85d9-32b04bdd3af8/x_large",
+      "description": "Incontinence Briefs, Underwear or Pads\nSelected Types and Sizes",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-08-28T00:00:00-04:00",
+      "valid_to_timestamp": "2026-09-03T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23813346/308ca724-8f0e-11f1-afd2-2abff4940b56/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-08-21",
-      "valid_to": "2026-08-27",
+      "valid_from": "2026-08-28",
+      "valid_to": "2026-09-03",
       "categories": [
-        "Grocery"
+        "Health & Wellness"
       ],
       "pre_price_text": "",
-      "price_text": "",
-      "post_price_text": "",
+      "price_text": "14.99",
+      "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 773.05,
-      "bottom": -2160.72,
-      "right": 1006.18,
-      "top": -1894.59,
+      "left": 30.64,
+      "bottom": -663.47,
+      "right": 346.73,
+      "top": -337.17,
       "page": 1,
       "item_categories": {
         "l1": {
@@ -109,91 +109,95 @@
         },
         "l3": {
           "confidence": null,
-          "category_name": "Cosmetics",
-          "google_category_id": 729
+          "category_name": "Feminine Sanitary Supplies",
+          "google_category_id": 735
         },
         "l4": {
           "confidence": null,
-          "category_name": "Skin Care",
-          "google_category_id": 3510
+          "category_name": "Feminine Pads & Protectors",
+          "google_category_id": 3540
         },
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8062227,
+      "flyer_id": 8067472,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Eucerin",
+      "brand": "Tena",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/23798673/802faecc-8bc4-11f1-85d9-32b04bdd3af8/x_large"
+        "https://f.wishabi.net/page_pdf_images/23813346/308ca724-8f0e-11f1-afd2-2abff4940b56/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     },
     {
-      "id": 1030222019,
-      "name": "BARRIERE or CORTIZONE-10",
-      "sale_story": "15% OFF*",
+      "id": 1030969495,
+      "name": "LINDT",
+      "sale_story": null,
       "sku": null,
-      "description": "Cream Selected Types and Sizes",
-      "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-08-21T00:00:00-04:00",
-      "valid_to_timestamp": "2026-08-27T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23798679/80475fd6-8bc4-11f1-bb30-32d26ac0364b/x_large",
+      "description": "EXCELLENCE Bars\n50g-100g",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-08-28T00:00:00-04:00",
+      "valid_to_timestamp": "2026-09-03T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23813346/1a7bc050-8f0e-11f1-afd2-2abff4940b56/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-08-21",
-      "valid_to": "2026-08-27",
+      "valid_from": "2026-08-28",
+      "valid_to": "2026-09-03",
       "categories": [
-        "Health & Wellness"
+        "Grocery"
       ],
       "pre_price_text": "",
-      "price_text": "",
-      "post_price_text": "",
+      "price_text": "5.99",
+      "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 1725.35,
-      "bottom": -2080.24,
-      "right": 2051.56,
-      "top": -1828.24,
-      "page": 2,
+      "left": 767.31,
+      "bottom": -2155.02,
+      "right": 1005.79,
+      "top": -1891.63,
+      "page": 1,
       "item_categories": {
         "l1": {
           "confidence": null,
-          "category_name": "Health & Beauty",
-          "google_category_id": 709
+          "category_name": "Food, Beverages & Tobacco",
+          "google_category_id": 319
         },
         "l2": {
           "confidence": null,
-          "category_name": "Health Care",
-          "google_category_id": 710
+          "category_name": "Food Items",
+          "google_category_id": 342
         },
-        "l3": null,
+        "l3": {
+          "confidence": null,
+          "category_name": "Candy & Chocolate",
+          "google_category_id": 2682
+        },
         "l4": null,
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8062227,
+      "flyer_id": 8067472,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "BARRIERE | CORTIZONE-10",
+      "brand": "Lindt",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/23798679/80475fd6-8bc4-11f1-bb30-32d26ac0364b/x_large"
+        "https://f.wishabi.net/page_pdf_images/23813346/1a7bc050-8f0e-11f1-afd2-2abff4940b56/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
