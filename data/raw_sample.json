@@ -66,36 +66,99 @@
   ],
   "first_two_products": [
     {
-      "id": 1030969449,
-      "name": "TENA",
-      "sale_story": null,
+      "id": 1032041790,
+      "name": "BETADINE Solution, DR. SCHOLL'S Skin Tag Remover or Epson Salts",
+      "sale_story": "15% OFF*",
       "sku": null,
-      "description": "Incontinence Briefs, Underwear or Pads\nSelected Types and Sizes",
-      "disclaimer_text": null,
-      "valid_from_timestamp": "2026-08-28T00:00:00-04:00",
-      "valid_to_timestamp": "2026-09-03T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23813346/308ca724-8f0e-11f1-afd2-2abff4940b56/x_large",
+      "description": "4kg\nSelected Types and Sizes",
+      "disclaimer_text": "*Our regular retail price",
+      "valid_from_timestamp": "2026-09-04T00:00:00-04:00",
+      "valid_to_timestamp": "2026-09-10T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23842187/e317a48e-931e-11f1-8264-2adcc2a46276/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-08-28",
-      "valid_to": "2026-09-03",
+      "valid_from": "2026-09-04",
+      "valid_to": "2026-09-10",
+      "categories": [
+        "Grocery"
+      ],
+      "pre_price_text": "",
+      "price_text": "",
+      "post_price_text": "",
+      "hosted_coupon_image": null,
+      "hide_brand_in_pop": false,
+      "left": 6074.68,
+      "bottom": -1130.91,
+      "right": 6494.81,
+      "top": -867.63,
+      "page": 4,
+      "item_categories": {
+        "l1": {
+          "confidence": null,
+          "category_name": "Health & Beauty",
+          "google_category_id": 709
+        },
+        "l2": {
+          "confidence": null,
+          "category_name": "Health Care",
+          "google_category_id": 710
+        },
+        "l3": null,
+        "l4": null,
+        "l5": null,
+        "l6": null,
+        "l7": null
+      },
+      "flyer_id": 8075351,
+      "page_destination": null,
+      "in_store_only": false,
+      "item_type": 1,
+      "average_rating": null,
+      "web_commission_url": null,
+      "item_web_url": null,
+      "brand": "BETADINE | DR. SCHOLL'S",
+      "images": [
+        "https://f.wishabi.net/page_pdf_images/23842187/e317a48e-931e-11f1-8264-2adcc2a46276/x_large"
+      ],
+      "original_price": null,
+      "hide_flyer_item_ttm_links_outside_validity": false,
+      "sub_items": []
+    },
+    {
+      "id": 1032041932,
+      "name": "Skin Care Products",
+      "sale_story": "25% OFF* Our regular retail price",
+      "sku": null,
+      "description": "Selected Types and Sizes",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-09-04T00:00:00-04:00",
+      "valid_to_timestamp": "2026-09-10T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23842189/ece4daea-931e-11f1-bd15-f279f20f3c5a/x_large",
+      "custom_id_field_1": null,
+      "custom_id_field_2": null,
+      "custom_id_field_3": null,
+      "custom_id_field_4": null,
+      "custom_id_field_5": null,
+      "custom_id_field_6": null,
+      "valid_from": "2026-09-04",
+      "valid_to": "2026-09-10",
       "categories": [
         "Health & Wellness"
       ],
       "pre_price_text": "",
-      "price_text": "14.99",
-      "post_price_text": "ea.",
+      "price_text": "",
+      "post_price_text": "",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 30.64,
-      "bottom": -663.47,
-      "right": 346.73,
-      "top": -337.17,
-      "page": 1,
+      "left": 7199.52,
+      "bottom": -1993.0,
+      "right": 7538.03,
+      "top": -1734.04,
+      "page": 5,
       "item_categories": {
         "l1": {
           "confidence": null,
@@ -109,95 +172,28 @@
         },
         "l3": {
           "confidence": null,
-          "category_name": "Feminine Sanitary Supplies",
-          "google_category_id": 735
+          "category_name": "Cosmetics",
+          "google_category_id": 729
         },
         "l4": {
           "confidence": null,
-          "category_name": "Feminine Pads & Protectors",
-          "google_category_id": 3540
+          "category_name": "Skin Care",
+          "google_category_id": 3510
         },
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8067472,
+      "flyer_id": 8075351,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Tena",
+      "brand": "NEOSTRATA",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/23813346/308ca724-8f0e-11f1-afd2-2abff4940b56/x_large"
-      ],
-      "original_price": null,
-      "hide_flyer_item_ttm_links_outside_validity": false,
-      "sub_items": []
-    },
-    {
-      "id": 1030969495,
-      "name": "LINDT",
-      "sale_story": null,
-      "sku": null,
-      "description": "EXCELLENCE Bars\n50g-100g",
-      "disclaimer_text": null,
-      "valid_from_timestamp": "2026-08-28T00:00:00-04:00",
-      "valid_to_timestamp": "2026-09-03T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23813346/1a7bc050-8f0e-11f1-afd2-2abff4940b56/x_large",
-      "custom_id_field_1": null,
-      "custom_id_field_2": null,
-      "custom_id_field_3": null,
-      "custom_id_field_4": null,
-      "custom_id_field_5": null,
-      "custom_id_field_6": null,
-      "valid_from": "2026-08-28",
-      "valid_to": "2026-09-03",
-      "categories": [
-        "Grocery"
-      ],
-      "pre_price_text": "",
-      "price_text": "5.99",
-      "post_price_text": "ea.",
-      "hosted_coupon_image": null,
-      "hide_brand_in_pop": false,
-      "left": 767.31,
-      "bottom": -2155.02,
-      "right": 1005.79,
-      "top": -1891.63,
-      "page": 1,
-      "item_categories": {
-        "l1": {
-          "confidence": null,
-          "category_name": "Food, Beverages & Tobacco",
-          "google_category_id": 319
-        },
-        "l2": {
-          "confidence": null,
-          "category_name": "Food Items",
-          "google_category_id": 342
-        },
-        "l3": {
-          "confidence": null,
-          "category_name": "Candy & Chocolate",
-          "google_category_id": 2682
-        },
-        "l4": null,
-        "l5": null,
-        "l6": null,
-        "l7": null
-      },
-      "flyer_id": 8067472,
-      "page_destination": null,
-      "in_store_only": false,
-      "item_type": 1,
-      "average_rating": null,
-      "web_commission_url": null,
-      "item_web_url": null,
-      "brand": "Lindt",
-      "images": [
-        "https://f.wishabi.net/page_pdf_images/23813346/1a7bc050-8f0e-11f1-afd2-2abff4940b56/x_large"
+        "https://f.wishabi.net/page_pdf_images/23842189/ece4daea-931e-11f1-bd15-f279f20f3c5a/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
