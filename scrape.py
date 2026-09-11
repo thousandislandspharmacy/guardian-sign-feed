@@ -23,6 +23,7 @@ import json
 import pathlib
 import re
 import sys
+import unicodedata
 
 import requests
 
@@ -160,11 +161,48 @@ def category_names(item):
     return names
 
 
+def _alnum(text):
+    """Accent-stripped, lowercase, letters+digits only -- for loose matching
+    ("L'oreal paris" vs "L'ORÉAL", "Softsoap" vs "SOFT SOAP")."""
+    text = unicodedata.normalize("NFKD", str(text))
+    return "".join(c for c in text if c.isalnum()).lower()
+
+
+def brand_names(item):
+    """Flipp's `brand` field: one brand, or several joined by " | "."""
+    out = []
+    for raw in str(item.get("brand") or "").split("|"):
+        brand = " ".join(raw.split())
+        if brand and brand.lower() not in ("unknown", "n/a", "none"):
+            out.append(brand)
+    return out
+
+
+def _brand_in(brand, name):
+    """Is the brand already part of the name? Whole brand, or its first word
+    for multi-word brands ("L'oreal paris" is present in "L'ORÉAL")."""
+    words = brand.split()
+    if not words:
+        return True
+    hay = _alnum(name)
+    if _alnum(brand) in hay:
+        return True
+    return len(words) > 1 and _alnum(words[0]) in hay
+
+
 def keep(item, cfg):
     name = pick(item, NAME_KEYS)
     if not name:
         return None
     display = str(name).strip()
+    # Flipp keeps the brand in its own field, and PDF-derived items often
+    # leave it out of `name` ("hydraSense" / "Fast Acting Nasal congestion
+    # relief") -- the sign once titled that deal "FAST". Lead with the brand
+    # when the name doesn't already carry it, dash-separated so generate.py
+    # takes the brand as the title and the name as the descriptor.
+    brands = brand_names(item)
+    if brands and not any(_brand_in(b, display) for b in brands):
+        display = f"{' or '.join(b.upper() for b in brands)} — {display}"
     # PDF-derived flyers split brand and product across `name` and
     # `description` ("Option+" / "Diarrhea Relief Caplets") -- join them so
     # the slide says what the product actually is. An em dash, not a space:
@@ -216,6 +254,7 @@ def keep(item, cfg):
         "qualifier": qualifier,
         "image": image or "",
         "story": story,
+        "brands": brands,
         "_score": discount_score(item),
         "_match": f"{lowered} | {cats}",
     }

@@ -725,7 +725,11 @@ def slide_html(item, index, assets, brands):
         col_right = 218
 
     col_w = max(84, col_right - COL_X)
-    title_tokens, rest = split_title(name, brands)
+    # The item's own Flipp brands first: multi-word ones ("TEARS NATURALE",
+    # "MAYBELLINE NEW YORK") only chain correctly as a known sequence -- the
+    # caps-run fallback stopped at "TEARS" and titled the deal with that.
+    own = [b.strip().lower() for b in (item.get("brands") or []) if b.strip()]
+    title_tokens, rest = split_title(name, own + brands)
     t_size, t_lines = title_lines_html(title_tokens, col_w)
     d_size, d_lines = desc_lines(build_descriptor(rest), col_w)
 
