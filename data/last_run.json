@@ -1,5 +1,5 @@
 {
-  "status": "ok",
-  "detail": "35 items from publication 8101792",
-  "at": "2026-09-11T12:26:23+00:00"
+  "status": "error",
+  "detail": "Could not fetch products for publication 8101792: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+  "at": "2026-09-11T13:38:41+00:00"
 }
