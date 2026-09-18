@@ -66,35 +66,35 @@
   ],
   "first_two_products": [
     {
-      "id": 1035170191,
-      "name": "SENSODYNE Toothpaste, or POLIDENT Toothpaste 90mL or POLI-GRIP 40g",
+      "id": 1036254317,
+      "name": "L'OR\u00c9AL PARIS PREFERENCE or FERIA",
       "sale_story": null,
       "sku": null,
-      "description": "Selected Types",
+      "description": "Hair Colour or MAGIC ROOT COVER-UP Selected Shades",
       "disclaimer_text": null,
-      "valid_from_timestamp": "2026-09-11T00:00:00-04:00",
-      "valid_to_timestamp": "2026-09-17T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23964087/47485d74-9c0a-11f1-a44c-0ed7e666ac85/x_large",
+      "valid_from_timestamp": "2026-09-18T00:00:00-04:00",
+      "valid_to_timestamp": "2026-09-24T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23985928/530fd78c-9fce-11f1-8bab-baf6c5a8fef3/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-09-11",
-      "valid_to": "2026-09-17",
+      "valid_from": "2026-09-18",
+      "valid_to": "2026-09-24",
       "categories": [
-        "Grocery"
+        "Beauty"
       ],
       "pre_price_text": "",
-      "price_text": "4.99",
+      "price_text": "12.99",
       "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 29.36,
-      "bottom": -2165.25,
-      "right": 276.64,
-      "top": -1891.53,
+      "left": 794.18,
+      "bottom": -2413.87,
+      "right": 1021.83,
+      "top": -2159.78,
       "page": 1,
       "item_categories": {
         "l1": {
@@ -109,63 +109,63 @@
         },
         "l3": {
           "confidence": null,
-          "category_name": "Oral Care",
-          "google_category_id": 739
+          "category_name": "Hair Care",
+          "google_category_id": 737
         },
         "l4": {
           "confidence": null,
-          "category_name": "Toothpaste",
-          "google_category_id": 3598
+          "category_name": "Hair Color",
+          "google_category_id": 3549
         },
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8101792,
+      "flyer_id": 8107924,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Sensodyne",
+      "brand": "L'oreal | FERIA",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/23964087/47485d74-9c0a-11f1-a44c-0ed7e666ac85/x_large"
+        "https://f.wishabi.net/page_pdf_images/23985928/530fd78c-9fce-11f1-8bab-baf6c5a8fef3/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     },
     {
-      "id": 1035170166,
-      "name": "L'OR\u00c9AL",
-      "sale_story": "25% OFF*",
+      "id": 1036254320,
+      "name": "CANESTEN, MAXIDOL, MIDOL or PH-D",
+      "sale_story": "20% OFF*",
       "sku": null,
-      "description": "Skin Care Products\nSelected Types\nand\u00a0Sizes",
+      "description": "Feminine Care, Liquid Gels, PMS Caplets or Boric Acid\nSelected Types and\u00a0Sizes",
       "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-09-11T00:00:00-04:00",
-      "valid_to_timestamp": "2026-09-17T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/23964087/3338ae06-9c0a-11f1-a44c-0ed7e666ac85/x_large",
+      "valid_from_timestamp": "2026-09-18T00:00:00-04:00",
+      "valid_to_timestamp": "2026-09-24T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/23985928/54041b44-9fce-11f1-8bab-baf6c5a8fef3/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-09-11",
-      "valid_to": "2026-09-17",
+      "valid_from": "2026-09-18",
+      "valid_to": "2026-09-24",
       "categories": [
-        "Beauty"
+        "Health & Wellness"
       ],
       "pre_price_text": "",
       "price_text": "",
       "post_price_text": "",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 265.79,
-      "bottom": -1128.66,
-      "right": 512.73,
-      "top": -925.46,
+      "left": 560.1,
+      "bottom": -2414.02,
+      "right": 789.72,
+      "top": -2155.59,
       "page": 1,
       "item_categories": {
         "l1": {
@@ -175,33 +175,29 @@
         },
         "l2": {
           "confidence": null,
-          "category_name": "Personal Care",
-          "google_category_id": 727
+          "category_name": "Health Care",
+          "google_category_id": 710
         },
         "l3": {
           "confidence": null,
-          "category_name": "Cosmetics",
-          "google_category_id": 729
+          "category_name": "Medicine & Drugs",
+          "google_category_id": 719
         },
-        "l4": {
-          "confidence": null,
-          "category_name": "Skin Care",
-          "google_category_id": 3510
-        },
+        "l4": null,
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8101792,
+      "flyer_id": 8107924,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "L'oreal paris",
+      "brand": "CANESTEN | MAXIDOL | MIDOL | PH-D",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/23964087/3338ae06-9c0a-11f1-a44c-0ed7e666ac85/x_large"
+        "https://f.wishabi.net/page_pdf_images/23985928/54041b44-9fce-11f1-8bab-baf6c5a8fef3/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
