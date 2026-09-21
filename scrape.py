@@ -185,7 +185,13 @@ def _brand_in(brand, name):
     if not words:
         return True
     hay = _alnum(name)
-    if _alnum(brand) in hay:
+    key = _alnum(brand)
+    if key in hay:
+        return True
+    # Flipp's brand field and the flyer's own spelling disagree by a plural
+    # now and then ("Options" vs "Option+") -- the sign once titled that
+    # deal "OPTIONS". Drop a trailing s before giving up.
+    if len(key) > 4 and key.endswith("s") and key[:-1] in hay:
         return True
     return len(words) > 1 and _alnum(words[0]) in hay
 
