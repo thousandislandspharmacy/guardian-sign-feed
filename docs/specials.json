@@ -1,254 +1,254 @@
 {
  "publication": {
-  "id": 8107924,
+  "id": 8114931,
   "name": "Promotional Flyer 25 km",
-  "valid_from": "2026-09-18",
-  "valid_to": "2026-09-24"
+  "valid_from": "2026-09-25",
+  "valid_to": "2026-10-01"
  },
- "generated_at": "2026-09-24T15:34:46+00:00",
+ "generated_at": "2026-09-25T13:06:13+00:00",
  "flyer_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
  "items": [
   {
-   "name": "NOSH & CO. Chips \u2014 130g-140g",
-   "price": "$0.99",
+   "name": "TENA \u2014 Incontinence Briefs, Underwear or Pads Selected Types and Sizes",
+   "price": "$14.99",
    "qualifier": "",
    "story": "",
    "image": "img/00.png"
   },
   {
-   "name": "TENA or ALWAYS DISCREET \u2014 Incontinence Pads or Liners Selected Types and Sizes",
-   "price": "$6.99",
+   "name": "TYLENOL OR MOTRIN \u2014 Pain Relief Tablets, Caplets, Liquid Gels 40's-150's or Easy Dissolve Powder 32's Selected Types",
+   "price": "$14.99",
    "qualifier": "",
    "story": "",
    "image": "img/01.png"
   },
   {
-   "name": "DEPEND or POISE \u2014 Incontinence Underwear, Pads or Underpads Selected Types and Sizes",
+   "name": "TYLENOL or PRECISE \u2014 Back, Muscle and Body, Daytime Relief Tablets or Caplets 18's-80's or Pain Relief Cream 113g Selected Types",
    "price": "$13.99",
    "qualifier": "",
    "story": "",
    "image": "img/02.png"
   },
   {
-   "name": "BENYLIN Cough Liquid 250mL or TYLENOL Cold & Sinus Tablets 40's \u2014 Selected Types",
-   "price": "$12.99",
+   "name": "ELASTOPLAST OR POLYSPORIN \u2014 Bandages Selected Types and Sizes",
+   "price": "15% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/03.png"
   },
   {
-   "name": "TYLENOL Extra Strength EZ Tabs or Caplets Bonus \u2014 100+30's Selected Types",
-   "price": "$9.99",
+   "name": "Option+ \u2014 Vitamin Gummies",
+   "price": "30% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/04.png"
   },
   {
-   "name": "BAND-AID \u2014 Bandages, Gauze Pads or POLYSPORIN Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "BOOST CARB SMART, PLUS CALORIES OR HIGH PROTEIN NUTRITIONAL SUPPLEMENT SHAKES \u2014 Selected Types and Sizes",
+   "price": "$12.49",
    "qualifier": "",
    "story": "",
    "image": "img/05.png"
   },
   {
-   "name": "BURT'S BEE'S Acne Care, or BAND-AID Hydroseal Acne Patch 7 \u2014 Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "Option+ Menthol or Herbal Cough Lozenges \u2014 18's-30's Selected Types",
+   "price": "$2.29",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $3.20",
    "image": "img/06.png"
   },
   {
-   "name": "IMODIUM Liquid Gel Capsules 12's, Quick Dissolve Tablets 10's, Liquid 240mL or GAVISCON Fruit Blend Foamtabs 100's",
-   "price": "$13.99",
+   "name": "REACH, PLACKERS or STERIPOD \u2014 Toothbrush, Flossers, Toothbrush Sanitizer Selected Types",
+   "price": "20% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/07.png"
   },
   {
-   "name": "ONE A DAY, FLINTSTONES, SWISS or PEDIAVIT Vitamins, Minerals, Gummies or Supplementation \u2014 Selected Types",
-   "price": "30% OFF",
+   "name": "Option+ Toothbrushes \u2014 Selected Types",
+   "price": "$1.29",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $1.20",
    "image": "img/08.png"
   },
   {
-   "name": "ENSURE or GLUCERNA \u2014 Nutritional Drinks Selected Types and Sizes Rest of week $12.49",
-   "price": "$11.99",
+   "name": "GILLETTE Clear Gel Antiperspirant Deodorant \u2014 2x108g Selected Types",
+   "price": "$9.99",
    "qualifier": "",
    "story": "",
    "image": "img/09.png"
   },
   {
-   "name": "Option+ \u2014 Reusable Underpad",
-   "price": "$8.99",
+   "name": "Option+ \u2014 Dry Cough Relief Extra Strength Syrup 100mL or 250mL or Muscle Aches & Body Pain Relief Caplets 72's",
+   "price": "$7.99",
    "qualifier": "",
-   "story": "Save up to $7.50",
+   "story": "Save up to $6.50",
    "image": "img/10.png"
   },
   {
-   "name": "DENTEK\u2122 \u2014 DENTEK \u2014 Oral Products, DENTA RINSE Mouthwash, Moisturizing Spray for Dry Mouth, Gum, Mints or Peroxide Mouthwash Selected Types and Sizes",
+   "name": "VENUS OR GILLETTE \u2014 Disposable, GILLETTE Mach 3 Razors or King C GILLETTE Beard Wash, Balm or Oil Selected Types and Sizes",
    "price": "20% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/11.png"
   },
   {
-   "name": "Option+ \u2014 Incontinence pads",
-   "price": "$11.99",
+   "name": "Option+ Cough & Cold Complete Liquid Capsules 24's \u2014 Selected Types",
+   "price": "$7.99",
    "qualifier": "",
-   "story": "Save up to $9.80",
+   "story": "Save up to $6",
    "image": "img/12.png"
   },
   {
-   "name": "AXE \u2014 Hair Care, Antiperspirant, Deodorant, Body Spray, or Body Wash Selected Types and Sizes",
-   "price": "$9.99",
-   "qualifier": "3/",
+   "name": "METAMUCIL, BENEFIBER OR CULTURELLE \u2014 Fibre Supplement 72 Doses, Gummies 50's-72's, Capsules 100's or 284g-500g, On The Go Stick Packs 28's or Probiotic Capsules 30's-50's or Baby Drops 8mL Selected Types",
+   "price": "25% OFF",
+   "qualifier": "",
    "story": "",
    "image": "img/13.png"
   },
   {
-   "name": "Option+ \u2014 Arthritis Pain Relief Caplets 170's",
-   "price": "$14.99",
+   "name": "Option+ \u2014 Cough & Chest Congestion Syrup 100mL",
+   "price": "$5.99",
    "qualifier": "",
-   "story": "Save up to $10",
+   "story": "Save up to $4.30",
    "image": "img/14.png"
   },
   {
-   "name": "WILKINSON or BRYLCREEM \u2014 Grooming Products, Hair Cream or AQUA VELVA After Shave Cologne Selected Types",
-   "price": "20% OFF",
+   "name": "ROYALE \u2014 Bathroom Tissue 12 Double Rolls",
+   "price": "$6.99",
    "qualifier": "",
    "story": "",
    "image": "img/15.png"
   },
   {
-   "name": "Option+ \u2014 Ibuprofen Liquid Gel Capsules 200mg 72's",
-   "price": "$9.99",
+   "name": "Option+ \u2014 Ibuprofen Extra Strength Liquid Gels 24's or Children's Oral Suspension 120mL",
+   "price": "$6.99",
    "qualifier": "",
-   "story": "Save up to $6.30",
+   "story": "Save up to $4.50",
    "image": "img/16.png"
   },
   {
-   "name": "SENOKOT Laxative Tablets \u2014 18's-30's Selected Types",
-   "price": "$6.99",
+   "name": "DIVA \u2014 Cleanser, Moisturizer, REFRESHER or LUBRICATOR 50mL-150mL",
+   "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/17.png"
   },
   {
-   "name": "Option+ \u2014 Cold & Sinus Caplets 40's",
-   "price": "$9.99",
+   "name": "Option+ \u2014 Pain Relief Cream Maximum Strength 100g",
+   "price": "$6.99",
    "qualifier": "",
-   "story": "Save up to $5.30",
+   "story": "Save up to $4.50",
    "image": "img/18.png"
   },
   {
-   "name": "COTTONELLE Bathroom Tissue Mega Roll 6's or Flushable Wipes 84's",
-   "price": "$10.00",
-   "qualifier": "2/",
+   "name": "LINDT EXCELLENCE Bars \u2014 50g-100g",
+   "price": "$5.99",
+   "qualifier": "",
    "story": "",
    "image": "img/19.png"
   },
   {
-   "name": "Option+ Canes or Cane Tips \u2014 Selected Types",
+   "name": "DR. SCHOLL'S \u2014 Foot Care Products Selected Types and Sizes",
    "price": "30% OFF",
    "qualifier": "",
-   "story": "Save up to $18.50",
+   "story": "",
    "image": "img/20.png"
   },
   {
-   "name": "CERAVE Skin Care Products \u2014 Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "FINESSE or HASK \u2014 Hair Care Argan Oil Treatments Selected Types and Sizes",
+   "price": "$2.49",
    "qualifier": "",
    "story": "",
    "image": "img/21.png"
   },
   {
-   "name": "Option+ Bath Epsom Salts \u2014 2Kg Selected Types",
-   "price": "$8.99",
+   "name": "HELIXIA \u2014 Adult or Kids Cough Syrup 200mL Selected Types",
+   "price": "$9.99",
    "qualifier": "",
-   "story": "Save up to $3.80",
+   "story": "",
    "image": "img/22.png"
   },
   {
-   "name": "CADBURY or NESTL\u00c9 Chocolate Bars \u2014 90g-105g",
-   "price": "$3.49",
+   "name": "DRISTAN Long Lasting Nasal Spray or Mist \u2014 30mL",
+   "price": "$7.99",
    "qualifier": "",
    "story": "",
    "image": "img/23.png"
   },
   {
-   "name": "DR. SCHOLL'S Foot Care Products \u2014 Selected Types and Sizes",
-   "price": "30% OFF",
+   "name": "PEDIFIX or FUNGI \u2014 Nail Footcare products Selected Types",
+   "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/24.png"
   },
   {
-   "name": "NIZORAL \u2014 Hair Care Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "REVLON \u2014 SUPER LUSTROUS Lipstick or Gloss Selected Types",
+   "price": "$7.99",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $5.50",
    "image": "img/25.png"
   },
   {
-   "name": "BUCKLEY'S, ROBITUSSIN Cough & Cold Liquid 100mL-200mL or ZARBEE'S 59mL-118mL Children's Cold Relief Products \u2014 Selected Types",
-   "price": "$9.99",
+   "name": "SCOPE, CREST \u2014 SCOPE OUTLAST, Original Mouthwash, CREST 3D WHITE Advanced Teeth Whitening Toothpaste, PRO-HEALTH or CROSSACTION Toothbrushes Selected Types",
+   "price": "$5.99",
    "qualifier": "",
    "story": "",
    "image": "img/26.png"
   },
   {
-   "name": "CLARITIN \u2014 15's-30's or AERIUS 20's-24's Allergy Tablets or Liquid Capsules Selected Types Rest of week $18.99",
-   "price": "$16.99",
+   "name": "LADY SPEED STICK, ST IVES or LIVE CLEAN \u2014 65g-70g Deodorant, Body Wash or Hand soap Selected Types and Sizes",
+   "price": "$4.99",
    "qualifier": "",
    "story": "",
    "image": "img/27.png"
   },
   {
-   "name": "BIOS Fever Stickers or Nasal Aspirator",
-   "price": "25% OFF",
+   "name": "AVEENO OR DOVE \u2014 Body Wash or Scrub or Body Scrub Selected Types and Sizes",
+   "price": "$9.99",
    "qualifier": "",
    "story": "",
    "image": "img/28.png"
   },
   {
-   "name": "DASHING DIVA \u2014 Press-on Nails or Nail Strips Selected Types and Shades",
+   "name": "BIOGAIA \u2014 ProTectis Probiotic Tablets 30's or Liquid 5mL-10mL",
    "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/29.png"
   },
   {
-   "name": "COVERGIRL \u2014 BROW MICRO, CLEAN FRESH, CLEAN MATTE, EXHIBITIONIST, PERFECT BLEND, PERFECT POINT or CLEAN INVISIBLE Cosmetics Selected Types and Shades",
-   "price": "$8.99",
+   "name": "savvy Facial Tissue Singles",
+   "price": "$1.29",
    "qualifier": "",
-   "story": "Save up to $4.50",
+   "story": "",
    "image": "img/30.png"
   },
   {
-   "name": "COLGATE \u2014 Pro-Relief, Optic White, HELLO Toothpaste or Toothbrush Selected Types and Sizes",
-   "price": "$6.99",
+   "name": "NIVEA \u2014 Skin Care, or Men Facial Care Products Selected Types and Sizes",
+   "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/31.png"
   },
   {
-   "name": "NATIVE Whole Body Deodorant Spray or Stick or DOVE Deodorant Whole Body \u2014 Selected Types and Sizes",
-   "price": "$12.99",
-   "qualifier": "",
+   "name": "HARIBO OR NERDS \u2014 Bagged Candy 142g-175g",
+   "price": "$5.00",
+   "qualifier": "2/",
    "story": "",
    "image": "img/32.png"
   },
   {
-   "name": "GILLETTE, Venus Razors, Exfoliant, Shave Gel or Soothing Serum \u2014 Selected Types and Sizes",
-   "price": "$17.99",
+   "name": "BATISTE \u2014 Dry Shampoo 200mL Selected Types",
+   "price": "$8.99",
    "qualifier": "",
    "story": "",
    "image": "img/33.png"
   },
   {
-   "name": "PEPTO BISMOL Caplets or Chewable Tablets 24's or Liquid 230mL",
-   "price": "$5.99",
+   "name": "BUCKLEY'S, TYLENOL \u2014 BUCKLEY'S 100mL, Caplets 24's TYLENOL Cold, Flu or Sinus Tablets or Caplets 18's-20's Selected Types",
+   "price": "$8.99",
    "qualifier": "",
    "story": "",
    "image": "img/34.png"
