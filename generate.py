@@ -282,13 +282,16 @@ def card_packshot(data):
 EVERGREEN_DIR = ROOT / "evergreen"
 
 
-def evergreen_slide_uris():
+def evergreen_slide_uris(skip=()):
     from PIL import Image
     uris = []
     if not EVERGREEN_DIR.is_dir():
         return uris
     for path in sorted(EVERGREEN_DIR.iterdir()):
         if path.suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp"):
+            continue
+        if path.name in skip:
+            print(f"  evergreen: {path.name} OFF this week (flyer deal is cheaper)")
             continue
         try:
             data = path.read_bytes()
@@ -326,6 +329,68 @@ def weave(primary, extra):
             merged.append(extra[ei])
             ei += 1
     return merged
+
+
+def _unit_price(item):
+    """Per-unit dollar price of a deal, or None when it has no single-unit
+    dollar form (percent-off, raw text). "2/$3" and "$3" + "2 for" both
+    come back as 1.50."""
+    price = (item.get("price") or "").strip()
+    qual = (item.get("qualifier") or "").strip()
+    m = re.match(r"^(\d+)\s*/\s*\$\s*(\d+(?:\.\d{2})?)$", price)
+    if m:
+        return float(m.group(2)) / int(m.group(1))
+    m = re.match(r"^\$\s*(\d+(?:\.\d{2})?)$", price)
+    if not m:
+        return None
+    unit = float(m.group(1))
+    n = re.match(r"^(\d+)\b.*\bfor$", qual, re.I)  # "2 for", "3 cans for"
+    if n and int(n.group(1)) > 0:
+        unit /= int(n.group(1))
+    return unit
+
+
+def evergreen_yields(cfg, items):
+    """Evergreen slides that sit out this week because the flyer carries the
+    same product at least as cheap -- config `evergreen_yield_to_flyer`:
+    [{"file": "04-nosh-chips.png", "match": ["nosh", "chips"], "price": 1.49}].
+    `match` is an AND-list of name substrings (same shape as exclude_keywords)
+    and `price` is what the evergreen artwork says. A percent-off flyer deal
+    always counts as cheaper (it is off the regular price). The flyer deal
+    itself is force-pinned into the deck by scrape.py, so the sign shows ONE
+    price for the product that week -- the lower one -- instead of two.
+    Returns the evergreen filenames to skip."""
+    skip = set()
+    for rule in cfg.get("evergreen_yield_to_flyer") or []:
+        name = rule.get("file", "")
+        keys = rule.get("match") or []
+        if isinstance(keys, str):
+            keys = [keys]
+        keys = [k.lower() for k in keys if k]
+        try:
+            ceiling = float(str(rule.get("price", "")).replace("$", "").strip())
+        except ValueError:
+            ceiling = None
+        if not name or not keys or ceiling is None:
+            print(f"  evergreen_yield_to_flyer rule ignored (needs file, match, "
+                  f"price): {rule}", file=sys.stderr)
+            continue
+        for item in items:
+            text = (item.get("name") or "").lower()
+            if not all(k in text for k in keys):
+                continue
+            label = " ".join(p for p in (item.get("qualifier", ""),
+                                         item.get("price", "")) if p)
+            unit = _unit_price(item)
+            if parse_deal(item)["kind"] == "percent" or (
+                    unit is not None and unit <= ceiling + 1e-9):
+                skip.add(name)
+                print(f"  evergreen {name} yields to flyer: {item['name']} "
+                      f"{label} (evergreen says {ceiling:.2f})")
+                break
+            print(f"  evergreen {name} stays: flyer has {item['name']} at "
+                  f"{label}, not under {ceiling:.2f}")
+    return skip
 
 
 def find_override(name):
@@ -796,7 +861,7 @@ def page(cfg, items, dates_line):
     }
     evergreen = [f'''    <div class="slide">
       <img class="bg" src="{uri}" alt="">
-    </div>''' for uri in evergreen_slide_uris()]
+    </div>''' for uri in evergreen_slide_uris(evergreen_yields(cfg, items))]
     if items:
         deal_slides = [slide_html(item, i, assets, brands)
                        for i, item in enumerate(items)]

@@ -16,6 +16,16 @@
       "chips"
     ]
   ],
+  "evergreen_yield_to_flyer": [
+    {
+      "file": "04-nosh-chips.png",
+      "match": [
+        "nosh",
+        "chips"
+      ],
+      "price": 1.49
+    }
+  ],
   "display_brands": [
     "Compound W"
   ],

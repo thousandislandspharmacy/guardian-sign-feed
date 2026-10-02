@@ -120,6 +120,23 @@ onto the green field. Add or remove files the same way as overrides:
 commit them, or upload via github.com. Note the rotation gets longer
 with each slide added (7 s per slide).
 
+An evergreen slide that advertises a price can step aside in weeks the
+flyer beats it. Add a rule to `evergreen_yield_to_flyer` in config.json:
+
+```json
+{"file": "04-nosh-chips.png", "match": ["nosh", "chips"], "price": 1.49}
+```
+
+`match` works like `exclude_keywords` (every word must appear in the
+flyer item's name) and `price` is what the artwork says. When a matching
+flyer deal is at or under that price — or is a percent-off — the
+evergreen slide is left out of that week's build and the flyer's own
+deal slide carries the lower price; the evergreen returns automatically
+the week after. Pair the rule with a `force_include` entry so the flyer
+deal is guaranteed a slot. If the flyer price is higher (a bigger size,
+say) both slides run. Keep `price` in step whenever you re-render the
+artwork.
+
 ## Hero image overrides (overrides/)
 
 Drop a product photo into `overrides/` and it replaces the scraped flyer
