@@ -66,36 +66,36 @@
   ],
   "first_two_products": [
     {
-      "id": 1037240712,
-      "name": "SCOPE, CREST",
-      "sale_story": null,
+      "id": 1039367377,
+      "name": "Option+ Incontinence Pads or Liners",
+      "sale_story": "COMPARE & SAVE $2",
       "sku": null,
-      "description": "SCOPE OUTLAST, Original Mouthwash, CREST 3D WHITE Advanced Teeth Whitening Toothpaste, PRO-HEALTH or CROSSACTION Toothbrushes\n\nSelected Types",
+      "description": "Selected Types",
       "disclaimer_text": null,
-      "valid_from_timestamp": "2026-09-25T00:00:00-04:00",
-      "valid_to_timestamp": "2026-10-01T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24013791/9fd21d34-a2f6-11f1-a6fd-56fb435ffcaf/x_large",
+      "valid_from_timestamp": "2026-10-02T00:00:00-04:00",
+      "valid_to_timestamp": "2026-10-08T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24048092/6ba2d894-a82a-11f1-97cc-a24f3a3d1996/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-09-25",
-      "valid_to": "2026-10-01",
+      "valid_from": "2026-10-02",
+      "valid_to": "2026-10-08",
       "categories": [
         "Health & Wellness"
       ],
       "pre_price_text": "",
-      "price_text": "5.99",
+      "price_text": "4.99",
       "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 521.3,
-      "bottom": -1589.9,
-      "right": 766.42,
-      "top": -1323.34,
-      "page": 1,
+      "left": 3691.43,
+      "bottom": -2198.0,
+      "right": 4283.07,
+      "top": -1562.01,
+      "page": 3,
       "item_categories": {
         "l1": {
           "confidence": null,
@@ -109,64 +109,64 @@
         },
         "l3": {
           "confidence": null,
-          "category_name": "Oral Care",
-          "google_category_id": 739
+          "category_name": "Feminine Sanitary Supplies",
+          "google_category_id": 735
         },
         "l4": {
           "confidence": null,
-          "category_name": "Mouthwash",
-          "google_category_id": 3588
+          "category_name": "Feminine Pads & Protectors",
+          "google_category_id": 3540
         },
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8114931,
+      "flyer_id": 8123808,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "SCOPE | CREST",
+      "brand": "Option +",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24013791/9fd21d34-a2f6-11f1-a6fd-56fb435ffcaf/x_large"
+        "https://f.wishabi.net/page_pdf_images/24048092/6ba2d894-a82a-11f1-97cc-a24f3a3d1996/x_large"
       ],
-      "original_price": null,
+      "original_price": "6.99",
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     },
     {
-      "id": 1037240736,
-      "name": "DR. SCHOLL'S",
-      "sale_story": "30% OFF*",
+      "id": 1039367405,
+      "name": "NICODERM",
+      "sale_story": null,
       "sku": null,
-      "description": "Foot Care Products\nSelected Types and Sizes",
-      "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-09-25T00:00:00-04:00",
-      "valid_to_timestamp": "2026-10-01T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24013791/a1fc79ba-a2f6-11f1-a6fd-56fb435ffcaf/x_large",
+      "description": "24H Stop smoking system 14 patches",
+      "disclaimer_text": "\"This product is intended for smoking cessation only.\nDo not use if you are under 18 years of age.\nWARNING: This product contains nicotine. Nicotine is highly addictive\".",
+      "valid_from_timestamp": "2026-10-02T00:00:00-04:00",
+      "valid_to_timestamp": "2026-10-08T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24048092/6af83894-a82a-11f1-97cc-a24f3a3d1996/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-09-25",
-      "valid_to": "2026-10-01",
+      "valid_from": "2026-10-02",
+      "valid_to": "2026-10-08",
       "categories": [
         "Health & Wellness"
       ],
       "pre_price_text": "",
-      "price_text": "",
-      "post_price_text": "",
+      "price_text": "59.99",
+      "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 278.68,
-      "bottom": -1888.21,
-      "right": 516.09,
-      "top": -1598.86,
-      "page": 1,
+      "left": 3082.35,
+      "bottom": -1540.36,
+      "right": 3670.6,
+      "top": -1137.59,
+      "page": 3,
       "item_categories": {
         "l1": {
           "confidence": null,
@@ -175,29 +175,29 @@
         },
         "l2": {
           "confidence": null,
-          "category_name": "Personal Care",
-          "google_category_id": 727
+          "category_name": "Health Care",
+          "google_category_id": 710
         },
         "l3": {
           "confidence": null,
-          "category_name": "Foot Care",
-          "google_category_id": 736
+          "category_name": "Smoking Cessation",
+          "google_category_id": 724
         },
         "l4": null,
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8114931,
+      "flyer_id": 8123808,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Dr Scholls",
+      "brand": "Nicoderm",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24013791/a1fc79ba-a2f6-11f1-a6fd-56fb435ffcaf/x_large"
+        "https://f.wishabi.net/page_pdf_images/24048092/6af83894-a82a-11f1-97cc-a24f3a3d1996/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
