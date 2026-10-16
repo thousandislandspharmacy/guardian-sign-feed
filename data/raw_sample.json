@@ -66,126 +66,142 @@
   ],
   "first_two_products": [
     {
-      "id": 1042798099,
-      "name": "THRIVE, NICODERM OR Option+",
-      "sale_story": "20% OFF*",
+      "id": 1042799383,
+      "name": "ENERGIZER MAX",
+      "sale_story": null,
       "sku": null,
-      "description": "Gum or Lozenges, Stop Smoking System Patches 7s, Transdermal\nNicotine Patches or Gum\nSelected Types and Sizes",
-      "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-10-09T00:00:00-04:00",
-      "valid_to_timestamp": "2026-10-15T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24175374/03d4fc94-b697-11f1-93b7-fec2b3b5cf7b/x_large",
+      "description": "AA8, AAA4, 9V2, D4 or C4",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-10-16T00:00:00-04:00",
+      "valid_to_timestamp": "2026-10-22T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24175727/2ae84bca-b6a0-11f1-afc2-be29677b7282/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-10-09",
-      "valid_to": "2026-10-15",
+      "valid_from": "2026-10-16",
+      "valid_to": "2026-10-22",
       "categories": [
-        "Health & Wellness"
+        "Grocery"
       ],
       "pre_price_text": "",
-      "price_text": "",
-      "post_price_text": "",
+      "price_text": "10.00",
+      "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 765.82,
-      "bottom": -1585.6,
-      "right": 1005.27,
-      "top": -1320.56,
-      "page": 1,
+      "left": 13004.7,
+      "bottom": -1990.01,
+      "right": 13248.0,
+      "top": -1715.02,
+      "page": 9,
       "item_categories": {
         "l1": {
           "confidence": null,
-          "category_name": "Health & Beauty",
-          "google_category_id": 709
+          "category_name": "Electronics",
+          "google_category_id": 220
         },
         "l2": {
           "confidence": null,
-          "category_name": "Health Care",
-          "google_category_id": 710
+          "category_name": "Electronics Accessories",
+          "google_category_id": 255
         },
-        "l3": null,
-        "l4": null,
+        "l3": {
+          "confidence": null,
+          "category_name": "Power",
+          "google_category_id": 266
+        },
+        "l4": {
+          "confidence": null,
+          "category_name": "Batteries",
+          "google_category_id": 2570
+        },
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8156693,
+      "flyer_id": 8156883,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "THRIVE | NICODERM | Option+",
+      "brand": "Energizer",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24175374/03d4fc94-b697-11f1-93b7-fec2b3b5cf7b/x_large"
+        "https://f.wishabi.net/page_pdf_images/24175727/2ae84bca-b6a0-11f1-afc2-be29677b7282/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     },
     {
-      "id": 1042798345,
-      "name": "ICY HOT",
-      "sale_story": "25% OFF*",
+      "id": 1042799318,
+      "name": "HOT KID",
+      "sale_story": null,
       "sku": null,
-      "description": "Patches, Spray or Cream Selected Types and Sizes",
-      "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-10-09T00:00:00-04:00",
-      "valid_to_timestamp": "2026-10-15T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24175397/35697078-b697-11f1-bacb-fe1f442040e2/x_large",
+      "description": "Baby Mum-Mum Rice\n\nSelected Types",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-10-16T00:00:00-04:00",
+      "valid_to_timestamp": "2026-10-22T23:59:59-04:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24175725/2e10546e-b6a0-11f1-9ddc-c29107ea4627/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-10-09",
-      "valid_to": "2026-10-15",
+      "valid_from": "2026-10-16",
+      "valid_to": "2026-10-22",
       "categories": [
         "Health & Wellness"
       ],
       "pre_price_text": "",
-      "price_text": "",
-      "post_price_text": "",
+      "price_text": "3.50",
+      "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 18685.6,
-      "bottom": -372.57,
-      "right": 18936.4,
-      "top": -105.4,
-      "page": 12,
+      "left": 12373.6,
+      "bottom": -892.66,
+      "right": 12698.6,
+      "top": -627.85,
+      "page": 8,
       "item_categories": {
         "l1": {
           "confidence": null,
-          "category_name": "Health & Beauty",
-          "google_category_id": 709
+          "category_name": "Baby & Toddler",
+          "google_category_id": 123
         },
         "l2": {
           "confidence": null,
-          "category_name": "Health Care",
-          "google_category_id": 710
+          "category_name": "Nursing & Feeding",
+          "google_category_id": 175
         },
-        "l3": null,
-        "l4": null,
+        "l3": {
+          "confidence": null,
+          "category_name": "Baby & Toddler Food",
+          "google_category_id": 176
+        },
+        "l4": {
+          "confidence": null,
+          "category_name": "Baby Food",
+          "google_category_id": 2029
+        },
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8156693,
+      "flyer_id": 8156883,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Icy Hot",
+      "brand": "HOT KID",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24175397/35697078-b697-11f1-bacb-fe1f442040e2/x_large"
+        "https://f.wishabi.net/page_pdf_images/24175725/2e10546e-b6a0-11f1-9ddc-c29107ea4627/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
