@@ -1,254 +1,254 @@
 {
  "publication": {
-  "id": 8156883,
+  "id": 8169252,
   "name": "Promotional Flyer 25 km",
-  "valid_from": "2026-10-16",
-  "valid_to": "2026-10-22"
+  "valid_from": "2026-10-23",
+  "valid_to": "2026-10-29"
  },
- "generated_at": "2026-10-22T15:42:37+00:00",
+ "generated_at": "2026-10-23T12:57:11+00:00",
  "flyer_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
  "items": [
   {
-   "name": "TENA \u2014 Incontinence Underwear Selected Types and Sizes",
-   "price": "$15.00",
+   "name": "NOSH & CO. Kettle Cooked Chips \u2014 142g Selected Types",
+   "price": "$1.99",
    "qualifier": "",
    "story": "",
    "image": "img/00.png"
   },
   {
-   "name": "ALWAYS DISCREET \u2014 Incontinence Pads or Liners, 20's-48's Selected Types and Sizes",
-   "price": "$7.00",
+   "name": "TENA \u2014 Incontinence Pads or Liners 20's-50's Selected Types",
+   "price": "$6.99",
    "qualifier": "",
    "story": "",
    "image": "img/01.png"
   },
   {
-   "name": "TYLENOL \u2014 Extra Strength Pain Relief Tablets or Caplets 40's-200's Selected Types",
-   "price": "$17.00",
+   "name": "TENA \u2014 Incontinence Briefs, Underwear or Pads Selected Types and Sizes",
+   "price": "$14.99",
    "qualifier": "",
    "story": "",
    "image": "img/02.png"
   },
   {
-   "name": "ADVIL \u2014 Cold, Sinus or Flu Tablets, Caplets or Liqui-Gels 32's-40's Selected Types",
-   "price": "$15.00",
+   "name": "TYLENOL \u2014 Arthritis Pain 650mg Caplets 50's",
+   "price": "$10.99",
    "qualifier": "",
    "story": "",
    "image": "img/03.png"
   },
   {
-   "name": "BURT'S BEES or BAND-AID \u2014 All Natural Acne Care Products or Hydroseal Acne Patch 7 Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "TYLENOL \u2014 Sinus Extra Strength Nighttime Tablets 20's",
+   "price": "$7.99",
    "qualifier": "",
    "story": "",
    "image": "img/04.png"
   },
   {
-   "name": "WEBBER MACA and SPLENDA Sweetener \u2014 Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "BAND-AID OR POLYSPORIN OR Option+ \u2014 Deco Bandages, Gauze Pads or 28g-30g or Bandages Selected Types and Sizes",
+   "price": "15% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/05.png"
   },
   {
-   "name": "Ensure\u00ae Clear \u2014 Apple and Mixed Berry A clear liquid nutrition drink 6 X 237 mL on selected products",
-   "price": "$25.00",
-   "qualifier": "2/",
+   "name": "POLYSPORIN Cream, Ointment or Lotion \u2014 Selected Types and Sizes",
+   "price": "$9.99",
+   "qualifier": "",
    "story": "",
    "image": "img/06.png"
   },
   {
-   "name": "Option+ \u2014 Nighttime Cold & Flu Relief Liquid 354mL",
-   "price": "$9.00",
+   "name": "REACTINE \u2014 Extra Strength Allergy Relief 10mg Tablets 30's",
+   "price": "$22.99",
    "qualifier": "",
-   "story": "Save up to $5.99",
+   "story": "",
    "image": "img/07.png"
   },
   {
-   "name": "DENTEK OR DENTA RINSE \u2014 Oral Products or Mouthwash, Moisturizing Spray for Dry Mouth, Gum, Mints or Peroxide Mouthwash Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "IMODIUM Liqui-Gels \u2014 24's",
+   "price": "$19.99",
    "qualifier": "",
    "story": "",
    "image": "img/08.png"
   },
   {
-   "name": "Option+ Incontinence Underwear \u2014 Selected Types and Sizes",
-   "price": "$12.00",
+   "name": "JAMIESON or YOUTHEORY Vitamins, Gummies, Minerals or Supplements \u2014 Selected Types and Sizes",
+   "price": "40% OFF",
    "qualifier": "",
-   "story": "Save up to $6.50",
+   "story": "",
    "image": "img/09.png"
   },
   {
-   "name": "TOM'S OF MAINE \u2014 Deodorant Selected Types and Sizes",
-   "price": "$10.00",
+   "name": "BOOST, ENSURE, PEDIASURE or PREMIER PROTEIN \u2014 BOOST, ENSURE Max, PEDIASURE or PREMIER PROTEIN Selected Types and Sizes",
+   "price": "$11.99",
    "qualifier": "",
    "story": "",
    "image": "img/10.png"
   },
   {
-   "name": "Option+ \u2014 Sea Water Solution Nasal Spray 135mL Selected Types",
-   "price": "$10.00",
+   "name": "Option+ \u2014 Allergy Formula Caplets 36's",
+   "price": "$6.99",
    "qualifier": "",
-   "story": "Save up to $4.99",
+   "story": "Save up to $9.50",
    "image": "img/11.png"
   },
   {
-   "name": "WILKINSON or BRYLCREEM, AQUA VELVA \u2014 Grooming Products Hair Cream, After Shave Cologne Selected Types and Sizes",
+   "name": "REACH, PLACKERS or STERIPOD \u2014 Toothbrush, Flossers, or Toothbrush Sanitizer Selected Types",
    "price": "20% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/12.png"
   },
   {
-   "name": "Option+ \u2014 Allergy Formula Caplets 12's",
-   "price": "$5.00",
+   "name": "Option+ \u2014 Menthol, Antibacterial or Extra Strength Lozenges 16's-36's Selected Types",
+   "price": "$2.99",
    "qualifier": "",
-   "story": "Save up to $2.49",
+   "story": "Save up to $3.80",
    "image": "img/13.png"
   },
   {
-   "name": "GRAVOL or GASTROVOL \u2014 Anti-Nausea Products or Liquid Gel Caps Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "SECRET OR OLD SPICE \u2014 Antiperspirant/ Deodorant Selected Types and Sizes",
+   "price": "$3.99",
    "qualifier": "",
    "story": "",
    "image": "img/14.png"
   },
   {
-   "name": "Option+ \u2014 Vitamins or Suplements Selected Types",
-   "price": "30% OFF",
+   "name": "Option+ \u2014 Children's Acetaminophen Chewable Tablets 20's Selected Types",
+   "price": "$5.99",
    "qualifier": "",
-   "story": "Save up to $8.95",
+   "story": "Save up to $5",
    "image": "img/15.png"
   },
   {
-   "name": "CASHMERE, BONTERRA or PUREX or SPONGE TOWELS or SCOTTIES \u2014 Bathroom Tissue 6, 8, 9 or 12 Rolls, Paper Towel 3's or Facial Tissue 6's Selected Types",
-   "price": "$7.00",
+   "name": "NIVEA, DEGREE or SOFTSOAP \u2014 Antiperspirant/Deodorant or Body Wash Selected Types and Sizes",
+   "price": "$4.99",
    "qualifier": "",
    "story": "",
    "image": "img/16.png"
   },
   {
-   "name": "Option+ Hot or Cold Gel Packs \u2014 Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "Option+ \u2014 Cough & Cold Syrup 100mL Selected Types",
+   "price": "$5.99",
    "qualifier": "",
-   "story": "Save up to $6.80",
+   "story": "Save up to $5",
    "image": "img/17.png"
   },
   {
-   "name": "OLAY \u2014 Power Of 5 Serums In One",
-   "price": "25% OFF",
+   "name": "BIOGAIA ProTectis Probiotic Tablets 30's or Liquid 5mL-10mL",
+   "price": "20% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/18.png"
   },
   {
-   "name": "Option+ \u2014 Patient Aid Accessories Selected Types and Sizes",
-   "price": "20% OFF",
+   "name": "Option+ \u2014 Extra Strength Muscle & Back Pain Relief Caplets 40's",
+   "price": "$14.99",
    "qualifier": "",
-   "story": "Save up to $2.96",
+   "story": "COMPARE & SAVE $12",
    "image": "img/19.png"
   },
   {
-   "name": "JOSH CELLARS \u2014 NOSH & CO. Nuts \u2014 200g-350g",
-   "price": "$3.00",
+   "name": "SAVVY Facial Tissue Single, Rubber Gloves 1 pair or PALMOLIVE Dish Liquid \u2014 372mL",
+   "price": "$0.99",
    "qualifier": "",
    "story": "",
    "image": "img/20.png"
   },
   {
-   "name": "DR. SCHOLL'S Foot Care Products \u2014 Selected Types and Sizes",
-   "price": "30% OFF",
+   "name": "Option+ \u2014 Extra Strength Allergy Relief 10mg Tablets 30's",
+   "price": "$12.99",
    "qualifier": "",
-   "story": "",
+   "story": "COMPARE & SAVE $10",
    "image": "img/21.png"
   },
   {
-   "name": "AUSSIE or DIPPITY DO or HERBAL ESSENCES or JOHN FREIDA or GARNIER or OLD SPICE \u2014 FRUCTIS or All Hair Treatment or Styling Products Selected Types and Sizes",
+   "name": "Lip Balm, Lip Gloss, or Nail Polish \u2014 Selected Types and Shades",
    "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/22.png"
   },
   {
-   "name": "VICKS \u2014 DayQuil or NyQuil Kids Honey Cough & Cold Syrup 236mL",
-   "price": "$9.00",
+   "name": "Option+ Hydrocort Aloe Cream or Ointment 1% \u2014 30g Selected Types",
+   "price": "$5.99",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $4.50",
    "image": "img/23.png"
   },
   {
-   "name": "NeilMed \u2014 ALL-IN-ONE SALINE SPRAY \u2022 Preservative-free \u2022 Buffered solution \u2022 pH balanced \u2022 Drug-free \u2022 Isotonic \u2022 Sterile solution",
-   "price": "30% OFF",
+   "name": "NOSH & CO. \u2014 Candy 100g",
+   "price": "$0.99",
    "qualifier": "",
    "story": "",
    "image": "img/24.png"
   },
   {
-   "name": "Sally Hansen \u2014 MIRACLE GEL or SALON EFFECTS Nail Polish Selected Types and Shades",
-   "price": "$10.00",
+   "name": "PEDIFIX Footcare Products \u2014 Selected Types and Sizes",
+   "price": "30% OFF",
    "qualifier": "",
-   "story": "Save up to $3.99",
+   "story": "",
    "image": "img/25.png"
   },
   {
-   "name": "COVERGIRL \u2014 TRUBLEND, TRUNAKED, CLEAN FRESH, EXHIBITIONIST or LASH BLAST Cosmetics Selected Types and Shades",
-   "price": "$12.00",
+   "name": "JOHN FRIEDA Hair Care \u2014 Selected Types and Sizes",
+   "price": "$7.99",
    "qualifier": "",
-   "story": "Save up to $5.29",
+   "story": "",
    "image": "img/26.png"
   },
   {
-   "name": "LISTERINE \u2014 Multi-Benefit Mouthwash 1L Selected Types",
-   "price": "$8.00",
+   "name": "PROSPAN BY HELIXIA \u2014 HELIXIA \u2014 Adults or Children's Cough Syrup 100mL Selected Types",
+   "price": "$7.99",
    "qualifier": "",
    "story": "",
    "image": "img/27.png"
   },
   {
-   "name": "OLD SPICE OR ST-IVES \u2014 Antiperspirant, Deodorant, Body Spray, Body Wash, or Hair Care Products or Body Wash Selected Types and Sizes",
-   "price": "$5.00",
+   "name": "OTRIVIN Cold & Allergy Relief Spray with Moisturizers \u2014 0.1% 30mL",
+   "price": "$9.99",
    "qualifier": "",
    "story": "",
    "image": "img/28.png"
   },
   {
-   "name": "DOVE \u2014 Body Wash 591mL Selected Types",
-   "price": "$8.00",
+   "name": "SUDAFED or SINUTAB Sinus Caplets \u2014 20's-24's Selected Types",
+   "price": "$9.99",
    "qualifier": "",
    "story": "",
    "image": "img/29.png"
   },
   {
-   "name": "LAX-A-DAY or LAX-A-SENNA \u2014 Laxatives Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "SALLY HANSEN \u2014 COMPLETE SALON or GOODKINDPURE \u2014 Nail Polish Selected Types and Shades",
+   "price": "$7.99",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $3.80",
    "image": "img/30.png"
   },
   {
-   "name": "EUCERIN \u2014 Skin Care or AQUAPHOR Lip Repair and Lip Balm Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "FIT ME \u2014 Foundation, Primer, Concealer, Loose Powder, Powder or Blush Cosmetics or Color Sensational Lip Products Selected Types and Shades",
+   "price": "$9.49",
    "qualifier": "",
-   "story": "",
+   "story": "Save up to $6",
    "image": "img/31.png"
   },
   {
-   "name": "KINDER \u2014 Bueno or Chocolate Mini's 297g-330g",
-   "price": "$11.50",
+   "name": "FIXODENT \u2014 Adhesive Denture Cream",
+   "price": "$13.99",
    "qualifier": "",
    "story": "",
    "image": "img/32.png"
   },
   {
-   "name": "ODOR EATERS \u2014 Footcare Products Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "NATIVE \u2014 Whole Body Deodorant Spray or Stick Selected Types and Sizes",
+   "price": "$13.99",
    "qualifier": "",
    "story": "",
    "image": "img/33.png"
   },
   {
-   "name": "NIZORAL Hair Care \u2014 Selected Types and Sizes",
-   "price": "25% OFF",
+   "name": "DIAL \u2014 Body Wash 473mL Selected Types",
+   "price": "$3.99",
    "qualifier": "",
    "story": "",
    "image": "img/34.png"
