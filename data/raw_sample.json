@@ -66,23 +66,98 @@
   ],
   "first_two_products": [
     {
-      "id": 1044696845,
-      "name": "SECRET OR OLD SPICE",
+      "id": 1045507753,
+      "name": "ENERGIZER",
       "sale_story": null,
       "sku": null,
-      "description": "Antiperspirant/ Deodorant\nSelected Types and Sizes",
+      "description": "MAX Batteries AA4, AAA2, C2, D2, or 9V",
       "disclaimer_text": null,
-      "valid_from_timestamp": "2026-10-23T00:00:00-04:00",
-      "valid_to_timestamp": "2026-10-29T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24228269/1895b26e-bc68-11f1-af2f-1e152e88ed55/x_large",
+      "valid_from_timestamp": "2026-10-30T00:00:00-04:00",
+      "valid_to_timestamp": "2026-11-05T23:59:59-05:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24250993/39d86b88-bf06-11f1-80d9-1a2e515fff05/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-10-23",
-      "valid_to": "2026-10-29",
+      "valid_from": "2026-10-30",
+      "valid_to": "2026-11-05",
+      "categories": [
+        "Grocery"
+      ],
+      "pre_price_text": "",
+      "price_text": "5.49",
+      "post_price_text": "ea.",
+      "hosted_coupon_image": null,
+      "hide_brand_in_pop": false,
+      "left": 325.17,
+      "bottom": -2415.75,
+      "right": 557.34,
+      "top": -2162.72,
+      "page": 1,
+      "item_categories": {
+        "l1": {
+          "confidence": null,
+          "category_name": "Electronics",
+          "google_category_id": 220
+        },
+        "l2": {
+          "confidence": null,
+          "category_name": "Electronics Accessories",
+          "google_category_id": 255
+        },
+        "l3": {
+          "confidence": null,
+          "category_name": "Power",
+          "google_category_id": 266
+        },
+        "l4": {
+          "confidence": null,
+          "category_name": "Batteries",
+          "google_category_id": 2570
+        },
+        "l5": {
+          "confidence": null,
+          "category_name": "General Purpose Batteries",
+          "google_category_id": 2574
+        },
+        "l6": null,
+        "l7": null
+      },
+      "flyer_id": 8174783,
+      "page_destination": null,
+      "in_store_only": false,
+      "item_type": 1,
+      "average_rating": null,
+      "web_commission_url": null,
+      "item_web_url": null,
+      "brand": "Energizer",
+      "images": [
+        "https://f.wishabi.net/page_pdf_images/24250993/39d86b88-bf06-11f1-80d9-1a2e515fff05/x_large"
+      ],
+      "original_price": null,
+      "hide_flyer_item_ttm_links_outside_validity": false,
+      "sub_items": []
+    },
+    {
+      "id": 1045507774,
+      "name": "AXE, SPEED, STICK or DOVE",
+      "sale_story": null,
+      "sku": null,
+      "description": "Hair Care, Antiperspirant, Deodorant, Body Spray, or Body\nWash or Deodorant or Antiperspirant\nor Bar Soap 3pk\nSelected Types and\u00a0Sizes",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-10-30T00:00:00-04:00",
+      "valid_to_timestamp": "2026-11-05T23:59:59-05:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24250993/31aed8ac-bf06-11f1-80d9-1a2e515fff05/x_large",
+      "custom_id_field_1": null,
+      "custom_id_field_2": null,
+      "custom_id_field_3": null,
+      "custom_id_field_4": null,
+      "custom_id_field_5": null,
+      "custom_id_field_6": null,
+      "valid_from": "2026-10-30",
+      "valid_to": "2026-11-05",
       "categories": [
         "Health & Wellness"
       ],
@@ -91,10 +166,10 @@
       "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 764.79,
-      "bottom": -1844.95,
-      "right": 1005.08,
-      "top": -1583.24,
+      "left": 326.55,
+      "bottom": -1591.53,
+      "right": 561.98,
+      "top": -1323.8,
       "page": 1,
       "item_categories": {
         "l1": {
@@ -117,87 +192,16 @@
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8169252,
+      "flyer_id": 8174783,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "SECRET | OLD SPICE",
+      "brand": "AXE | SPEED | STICK | DOVE",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24228269/1895b26e-bc68-11f1-af2f-1e152e88ed55/x_large"
-      ],
-      "original_price": null,
-      "hide_flyer_item_ttm_links_outside_validity": false,
-      "sub_items": []
-    },
-    {
-      "id": 1044696867,
-      "name": "CHRISTIE",
-      "sale_story": null,
-      "sku": null,
-      "description": "Cookies\n251g-303g",
-      "disclaimer_text": null,
-      "valid_from_timestamp": "2026-10-23T00:00:00-04:00",
-      "valid_to_timestamp": "2026-10-29T23:59:59-04:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24228269/2e9f5362-bc68-11f1-af2f-1e152e88ed55/x_large",
-      "custom_id_field_1": null,
-      "custom_id_field_2": null,
-      "custom_id_field_3": null,
-      "custom_id_field_4": null,
-      "custom_id_field_5": null,
-      "custom_id_field_6": null,
-      "valid_from": "2026-10-23",
-      "valid_to": "2026-10-29",
-      "categories": [
-        "Grocery"
-      ],
-      "pre_price_text": "",
-      "price_text": "3.99",
-      "post_price_text": "ea.",
-      "hosted_coupon_image": null,
-      "hide_brand_in_pop": false,
-      "left": 763.58,
-      "bottom": -2414.21,
-      "right": 1003.7,
-      "top": -2163.24,
-      "page": 1,
-      "item_categories": {
-        "l1": {
-          "confidence": null,
-          "category_name": "Food, Beverages & Tobacco",
-          "google_category_id": 319
-        },
-        "l2": {
-          "confidence": null,
-          "category_name": "Food Items",
-          "google_category_id": 342
-        },
-        "l3": {
-          "confidence": null,
-          "category_name": "Bakery",
-          "google_category_id": 343
-        },
-        "l4": {
-          "confidence": null,
-          "category_name": "Cookies",
-          "google_category_id": 2671
-        },
-        "l5": null,
-        "l6": null,
-        "l7": null
-      },
-      "flyer_id": 8169252,
-      "page_destination": null,
-      "in_store_only": false,
-      "item_type": 1,
-      "average_rating": null,
-      "web_commission_url": null,
-      "item_web_url": null,
-      "brand": "Christie",
-      "images": [
-        "https://f.wishabi.net/page_pdf_images/24228269/2e9f5362-bc68-11f1-af2f-1e152e88ed55/x_large"
+        "https://f.wishabi.net/page_pdf_images/24250993/31aed8ac-bf06-11f1-80d9-1a2e515fff05/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
