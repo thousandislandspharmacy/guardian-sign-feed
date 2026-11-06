@@ -66,110 +66,35 @@
   ],
   "first_two_products": [
     {
-      "id": 1045507753,
-      "name": "ENERGIZER",
+      "id": 1047022565,
+      "name": "GAVISCON or BEANO or Option+",
       "sale_story": null,
       "sku": null,
-      "description": "MAX Batteries AA4, AAA2, C2, D2, or 9V",
+      "description": "Foamtabs 50's-100's, Liquid 340mL-600mL, Tablets 60's or Dairy Digestive Caplets 80's\nSelected Types\n\nFoamtabs 50's-100's, Liquide 340mL-600mL, Comprim\u00e9s 60's ou Caplets pour la digestion des produits laitiers 80's\nCertains types",
       "disclaimer_text": null,
-      "valid_from_timestamp": "2026-10-30T00:00:00-04:00",
-      "valid_to_timestamp": "2026-11-05T23:59:59-05:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24250993/39d86b88-bf06-11f1-80d9-1a2e515fff05/x_large",
+      "valid_from_timestamp": "2026-11-06T00:00:00-05:00",
+      "valid_to_timestamp": "2026-11-12T23:59:59-05:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24282299/8063e5ee-c48a-11f1-b1da-424311b2d717/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-10-30",
-      "valid_to": "2026-11-05",
-      "categories": [
-        "Grocery"
-      ],
-      "pre_price_text": "",
-      "price_text": "5.49",
-      "post_price_text": "ea.",
-      "hosted_coupon_image": null,
-      "hide_brand_in_pop": false,
-      "left": 325.17,
-      "bottom": -2415.75,
-      "right": 557.34,
-      "top": -2162.72,
-      "page": 1,
-      "item_categories": {
-        "l1": {
-          "confidence": null,
-          "category_name": "Electronics",
-          "google_category_id": 220
-        },
-        "l2": {
-          "confidence": null,
-          "category_name": "Electronics Accessories",
-          "google_category_id": 255
-        },
-        "l3": {
-          "confidence": null,
-          "category_name": "Power",
-          "google_category_id": 266
-        },
-        "l4": {
-          "confidence": null,
-          "category_name": "Batteries",
-          "google_category_id": 2570
-        },
-        "l5": {
-          "confidence": null,
-          "category_name": "General Purpose Batteries",
-          "google_category_id": 2574
-        },
-        "l6": null,
-        "l7": null
-      },
-      "flyer_id": 8174783,
-      "page_destination": null,
-      "in_store_only": false,
-      "item_type": 1,
-      "average_rating": null,
-      "web_commission_url": null,
-      "item_web_url": null,
-      "brand": "Energizer",
-      "images": [
-        "https://f.wishabi.net/page_pdf_images/24250993/39d86b88-bf06-11f1-80d9-1a2e515fff05/x_large"
-      ],
-      "original_price": null,
-      "hide_flyer_item_ttm_links_outside_validity": false,
-      "sub_items": []
-    },
-    {
-      "id": 1045507774,
-      "name": "AXE, SPEED, STICK or DOVE",
-      "sale_story": null,
-      "sku": null,
-      "description": "Hair Care, Antiperspirant, Deodorant, Body Spray, or Body\nWash or Deodorant or Antiperspirant\nor Bar Soap 3pk\nSelected Types and\u00a0Sizes",
-      "disclaimer_text": null,
-      "valid_from_timestamp": "2026-10-30T00:00:00-04:00",
-      "valid_to_timestamp": "2026-11-05T23:59:59-05:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24250993/31aed8ac-bf06-11f1-80d9-1a2e515fff05/x_large",
-      "custom_id_field_1": null,
-      "custom_id_field_2": null,
-      "custom_id_field_3": null,
-      "custom_id_field_4": null,
-      "custom_id_field_5": null,
-      "custom_id_field_6": null,
-      "valid_from": "2026-10-30",
-      "valid_to": "2026-11-05",
+      "valid_from": "2026-11-06",
+      "valid_to": "2026-11-12",
       "categories": [
         "Health & Wellness"
       ],
       "pre_price_text": "",
-      "price_text": "3.99",
+      "price_text": "14.99",
       "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 326.55,
-      "bottom": -1591.53,
-      "right": 561.98,
-      "top": -1323.8,
+      "left": 32.33,
+      "bottom": -1847.4,
+      "right": 279.34,
+      "top": -1583.04,
       "page": 1,
       "item_categories": {
         "l1": {
@@ -179,31 +104,98 @@
         },
         "l2": {
           "confidence": null,
-          "category_name": "Personal Care",
-          "google_category_id": 727
+          "category_name": "Health Care",
+          "google_category_id": 710
         },
         "l3": {
           "confidence": null,
-          "category_name": "Deodorant & Anti-Perspirant",
-          "google_category_id": 732
+          "category_name": "Medicine & Drugs",
+          "google_category_id": 719
         },
         "l4": null,
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8174783,
+      "flyer_id": 8184644,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "AXE | SPEED | STICK | DOVE",
+      "brand": "GAVISCON | BEANO | Option+",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24250993/31aed8ac-bf06-11f1-80d9-1a2e515fff05/x_large"
+        "https://f.wishabi.net/page_pdf_images/24282299/8063e5ee-c48a-11f1-b1da-424311b2d717/x_large"
       ],
       "original_price": null,
+      "hide_flyer_item_ttm_links_outside_validity": false,
+      "sub_items": []
+    },
+    {
+      "id": 1047022805,
+      "name": "Option+",
+      "sale_story": "Save up to $9.50",
+      "sku": null,
+      "description": "Cold + Sinus 200mg Caplets 72's",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-11-06T00:00:00-05:00",
+      "valid_to_timestamp": "2026-11-12T23:59:59-05:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24282305/7f7473c4-c48a-11f1-9a36-029b1e0a2622/x_large",
+      "custom_id_field_1": null,
+      "custom_id_field_2": null,
+      "custom_id_field_3": null,
+      "custom_id_field_4": null,
+      "custom_id_field_5": null,
+      "custom_id_field_6": null,
+      "valid_from": "2026-11-06",
+      "valid_to": "2026-11-12",
+      "categories": [
+        "Health & Wellness"
+      ],
+      "pre_price_text": "",
+      "price_text": "14.99",
+      "post_price_text": "ea.",
+      "hosted_coupon_image": null,
+      "hide_brand_in_pop": false,
+      "left": 3046.92,
+      "bottom": -721.27,
+      "right": 3683.15,
+      "top": -148.16,
+      "page": 3,
+      "item_categories": {
+        "l1": {
+          "confidence": null,
+          "category_name": "Health & Beauty",
+          "google_category_id": 709
+        },
+        "l2": {
+          "confidence": null,
+          "category_name": "Health Care",
+          "google_category_id": 710
+        },
+        "l3": {
+          "confidence": null,
+          "category_name": "Medicine & Drugs",
+          "google_category_id": 719
+        },
+        "l4": null,
+        "l5": null,
+        "l6": null,
+        "l7": null
+      },
+      "flyer_id": 8184644,
+      "page_destination": null,
+      "in_store_only": false,
+      "item_type": 1,
+      "average_rating": null,
+      "web_commission_url": null,
+      "item_web_url": null,
+      "brand": "Option +",
+      "images": [
+        "https://f.wishabi.net/page_pdf_images/24282305/7f7473c4-c48a-11f1-9a36-029b1e0a2622/x_large"
+      ],
+      "original_price": "24.49",
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     }
