@@ -5,7 +5,7 @@
   "valid_from": "2026-11-06",
   "valid_to": "2026-11-12"
  },
- "generated_at": "2026-11-06T17:51:49+00:00",
+ "generated_at": "2026-11-07T16:43:51+00:00",
  "flyer_url": "https://www.guardian-ida-remedysrx.ca/en/flyer?storeCode=7063802&retailerId=guardian",
  "items": [
   {
@@ -51,7 +51,7 @@
    "image": "img/05.png"
   },
   {
-   "name": "ONE A DAY, FLINTSTONES, SWISS or PEDIAVIT \u2014 Vitamins, Minerals, Gummies or Supplements Selected Types",
+   "name": "WAMPOLE OR ADORABLE \u2014 Vitamins, Minerals or Supplements Selected Types",
    "price": "30% OFF",
    "qualifier": "",
    "story": "",
@@ -86,8 +86,8 @@
    "image": "img/10.png"
   },
   {
-   "name": "SECRET Antiperspirant/ Deodorant or GILLETTE Clear Gel or DEGREE Dry Spray Antiperspirant or Deodorant \u2014 Selected Types and Sizes",
-   "price": "$5.99",
+   "name": "Assorted DOVE & AXE Deodorant or Body Wash Gift Sets \u2014 Selected Types and Sizes",
+   "price": "$17.99",
    "qualifier": "",
    "story": "",
    "image": "img/11.png"
@@ -142,7 +142,7 @@
    "image": "img/18.png"
   },
   {
-   "name": "NEUTROGENA \u2014 Skin Care Products Selected Types and Sizes",
+   "name": "DIVA \u2014 Cleanser, Moisturizer, Refresher or Lubricator 50mL-150mL",
    "price": "25% OFF",
    "qualifier": "",
    "story": "",
@@ -156,14 +156,14 @@
    "image": "img/20.png"
   },
   {
-   "name": "SWISS \u2014 TOFFIFEE \u2014 Box 400g",
-   "price": "$8.99",
+   "name": "NOSH & CO. \u2014 Nuts and Mixes 200g-250g or Jar 525g-600g Selected Types",
+   "price": "$4.99",
    "qualifier": "",
    "story": "",
    "image": "img/21.png"
   },
   {
-   "name": "DR. SCHOLL'S Foot Care Products \u2014 Selected Types and Sizes",
+   "name": "PEDIFIX Footcare Products \u2014 Selected Types and Sizes",
    "price": "30% OFF",
    "qualifier": "",
    "story": "",
@@ -219,15 +219,15 @@
    "image": "img/29.png"
   },
   {
-   "name": "SCHMIDTS or SPEED STICK or LADY SPEED STICK \u2014 Natural Deodorant or 2pk Antiperspirant Selected Types and Sizes D\u00e9sodorisant naturel ou Antisudorifique paq. de 2 Certains types et formats",
-   "price": "$9.99",
+   "name": "SECRET Antiperspirant/ Deodorant or GILLETTE Clear Gel or DEGREE Dry Spray Antiperspirant or Deodorant \u2014 Selected Types and Sizes",
+   "price": "$5.99",
    "qualifier": "",
    "story": "",
    "image": "img/30.png"
   },
   {
-   "name": "IRISH SPRING or OGX \u2014 6pk Bar Soap or Body Wash Selected Types and Sizes",
-   "price": "$7.99",
+   "name": "DIAL or SOFTSOAP \u2014 Liquid Hand Soap Refills 887mL or Hand Soap Refills 1.47L Selected Types",
+   "price": "$5.99",
    "qualifier": "",
    "story": "",
    "image": "img/31.png"
@@ -240,14 +240,14 @@
    "image": "img/32.png"
   },
   {
-   "name": "CETAPHIL or BIOR\u00c9 \u2014 Skin Care or Facial Cleanser, Scrub, Pore Strips & Towelettes Selected Types and Sizes",
+   "name": "NEUTROGENA \u2014 Skin Care Products Selected Types and Sizes",
    "price": "25% OFF",
    "qualifier": "",
    "story": "",
    "image": "img/33.png"
   },
   {
-   "name": "CADBURY Chocolate Bars \u2014 95g-100g",
+   "name": "FERRERO ROCHER Bars 90g",
    "price": "$3.49",
    "qualifier": "",
    "story": "",

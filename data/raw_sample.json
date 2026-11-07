@@ -66,15 +66,15 @@
   ],
   "first_two_products": [
     {
-      "id": 1047022565,
-      "name": "GAVISCON or BEANO or Option+",
-      "sale_story": null,
+      "id": 1047022961,
+      "name": "DIVA",
+      "sale_story": "25% OFF*",
       "sku": null,
-      "description": "Foamtabs 50's-100's, Liquid 340mL-600mL, Tablets 60's or Dairy Digestive Caplets 80's\nSelected Types\n\nFoamtabs 50's-100's, Liquide 340mL-600mL, Comprim\u00e9s 60's ou Caplets pour la digestion des produits laitiers 80's\nCertains types",
-      "disclaimer_text": null,
+      "description": "Cleanser,\nMoisturizer,\nRefresher or\nLubricator\n50mL-150mL",
+      "disclaimer_text": "*Our regular retail price",
       "valid_from_timestamp": "2026-11-06T00:00:00-05:00",
       "valid_to_timestamp": "2026-11-12T23:59:59-05:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24282299/8063e5ee-c48a-11f1-b1da-424311b2d717/x_large",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24282307/8e763c86-c48a-11f1-8bb0-e21f5e3637ac/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
@@ -87,15 +87,15 @@
         "Health & Wellness"
       ],
       "pre_price_text": "",
-      "price_text": "14.99",
-      "post_price_text": "ea.",
+      "price_text": "",
+      "post_price_text": "",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 32.33,
-      "bottom": -1847.4,
-      "right": 279.34,
-      "top": -1583.04,
-      "page": 1,
+      "left": 7047.73,
+      "bottom": -1123.42,
+      "right": 7379.06,
+      "top": -875.6,
+      "page": 5,
       "item_categories": {
         "l1": {
           "confidence": null,
@@ -104,16 +104,24 @@
         },
         "l2": {
           "confidence": null,
-          "category_name": "Health Care",
-          "google_category_id": 710
+          "category_name": "Personal Care",
+          "google_category_id": 727
         },
         "l3": {
           "confidence": null,
-          "category_name": "Medicine & Drugs",
-          "google_category_id": 719
+          "category_name": "Cosmetics",
+          "google_category_id": 729
         },
-        "l4": null,
-        "l5": null,
+        "l4": {
+          "confidence": null,
+          "category_name": "Skin Care",
+          "google_category_id": 3510
+        },
+        "l5": {
+          "confidence": null,
+          "category_name": "Facial Cleansers",
+          "google_category_id": 3516
+        },
         "l6": null,
         "l7": null
       },
@@ -124,24 +132,24 @@
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "GAVISCON | BEANO | Option+",
+      "brand": "DIVA",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24282299/8063e5ee-c48a-11f1-b1da-424311b2d717/x_large"
+        "https://f.wishabi.net/page_pdf_images/24282307/8e763c86-c48a-11f1-8bb0-e21f5e3637ac/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     },
     {
-      "id": 1047022805,
-      "name": "Option+",
-      "sale_story": "Save up to $9.50",
+      "id": 1047023178,
+      "name": "HOT WHEELS",
+      "sale_story": "20% OFF*",
       "sku": null,
-      "description": "Cold + Sinus 200mg Caplets 72's",
-      "disclaimer_text": null,
+      "description": "Hot Wheels Lift & Go Park Garage",
+      "disclaimer_text": "*Our regular retail price",
       "valid_from_timestamp": "2026-11-06T00:00:00-05:00",
       "valid_to_timestamp": "2026-11-12T23:59:59-05:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24282305/7f7473c4-c48a-11f1-9a36-029b1e0a2622/x_large",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24282327/89ed5546-c48a-11f1-893b-eeee95d2b508/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
@@ -151,35 +159,39 @@
       "valid_from": "2026-11-06",
       "valid_to": "2026-11-12",
       "categories": [
-        "Health & Wellness"
+        "Grocery"
       ],
       "pre_price_text": "",
-      "price_text": "14.99",
-      "post_price_text": "ea.",
+      "price_text": "",
+      "post_price_text": "",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 3046.92,
-      "bottom": -721.27,
-      "right": 3683.15,
-      "top": -148.16,
-      "page": 3,
+      "left": 11753.4,
+      "bottom": -2024.41,
+      "right": 12373.3,
+      "top": -1561.65,
+      "page": 8,
       "item_categories": {
         "l1": {
           "confidence": null,
-          "category_name": "Health & Beauty",
-          "google_category_id": 709
+          "category_name": "Toys & Games",
+          "google_category_id": 1232
         },
         "l2": {
           "confidence": null,
-          "category_name": "Health Care",
-          "google_category_id": 710
+          "category_name": "Toys",
+          "google_category_id": 1266
         },
         "l3": {
           "confidence": null,
-          "category_name": "Medicine & Drugs",
-          "google_category_id": 719
+          "category_name": "Play Vehicles",
+          "google_category_id": 1282
         },
-        "l4": null,
+        "l4": {
+          "confidence": null,
+          "category_name": "Toy Cars",
+          "google_category_id": 5415
+        },
         "l5": null,
         "l6": null,
         "l7": null
@@ -191,11 +203,11 @@
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Option +",
+      "brand": "Hot Wheels",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24282305/7f7473c4-c48a-11f1-9a36-029b1e0a2622/x_large"
+        "https://f.wishabi.net/page_pdf_images/24282327/89ed5546-c48a-11f1-893b-eeee95d2b508/x_large"
       ],
-      "original_price": "24.49",
+      "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     }
