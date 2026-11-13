@@ -66,23 +66,23 @@
   ],
   "first_two_products": [
     {
-      "id": 1047022961,
-      "name": "DIVA",
-      "sale_story": "25% OFF*",
+      "id": 1048257224,
+      "name": "POLYSPORIN or BAND-AID",
+      "sale_story": "20% OFF*",
       "sku": null,
-      "description": "Cleanser,\nMoisturizer,\nRefresher or\nLubricator\n50mL-150mL",
-      "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-11-06T00:00:00-05:00",
-      "valid_to_timestamp": "2026-11-12T23:59:59-05:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24282307/8e763c86-c48a-11f1-8bb0-e21f5e3637ac/x_large",
+      "description": "28g-30g or Option+ Hot or Cold Gel Packs, Selected Types and Sizes\n\nAdvanced Bandages\n10's-60's,",
+      "disclaimer_text": "Our regular retail price",
+      "valid_from_timestamp": "2026-11-13T00:00:00-05:00",
+      "valid_to_timestamp": "2026-11-19T23:59:59-05:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24309741/4a9e4a90-c9b6-11f1-ab34-c2e610199633/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-11-06",
-      "valid_to": "2026-11-12",
+      "valid_from": "2026-11-13",
+      "valid_to": "2026-11-19",
       "categories": [
         "Health & Wellness"
       ],
@@ -91,11 +91,11 @@
       "post_price_text": "",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 7047.73,
-      "bottom": -1123.42,
-      "right": 7379.06,
-      "top": -875.6,
-      "page": 5,
+      "left": 31.41,
+      "bottom": -1133.31,
+      "right": 284.05,
+      "top": -932.62,
+      "page": 1,
       "item_categories": {
         "l1": {
           "confidence": null,
@@ -104,108 +104,108 @@
         },
         "l2": {
           "confidence": null,
-          "category_name": "Personal Care",
-          "google_category_id": 727
+          "category_name": "Health Care",
+          "google_category_id": 710
         },
         "l3": {
           "confidence": null,
-          "category_name": "Cosmetics",
-          "google_category_id": 729
+          "category_name": "First Aid",
+          "google_category_id": 716
         },
         "l4": {
           "confidence": null,
-          "category_name": "Skin Care",
-          "google_category_id": 3510
+          "category_name": "Hot & Cold Therapies",
+          "google_category_id": 3370
         },
         "l5": {
           "confidence": null,
-          "category_name": "Facial Cleansers",
-          "google_category_id": 3516
+          "category_name": "Ice Packs",
+          "google_category_id": 3373
         },
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8184644,
+      "flyer_id": 8191970,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "DIVA",
+      "brand": "",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24282307/8e763c86-c48a-11f1-8bb0-e21f5e3637ac/x_large"
+        "https://f.wishabi.net/page_pdf_images/24309741/4a9e4a90-c9b6-11f1-ab34-c2e610199633/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,
       "sub_items": []
     },
     {
-      "id": 1047023178,
-      "name": "HOT WHEELS",
-      "sale_story": "20% OFF*",
+      "id": 1048257206,
+      "name": "PUREX or SNUGGLE",
+      "sale_story": null,
       "sku": null,
-      "description": "Hot Wheels Lift & Go Park Garage",
-      "disclaimer_text": "*Our regular retail price",
-      "valid_from_timestamp": "2026-11-06T00:00:00-05:00",
-      "valid_to_timestamp": "2026-11-12T23:59:59-05:00",
-      "image_url": "https://f.wishabi.net/page_pdf_images/24282327/89ed5546-c48a-11f1-893b-eeee95d2b508/x_large",
+      "description": "Laundry Detergent 1.17L-1.18L or 1.16L",
+      "disclaimer_text": null,
+      "valid_from_timestamp": "2026-11-13T00:00:00-05:00",
+      "valid_to_timestamp": "2026-11-19T23:59:59-05:00",
+      "image_url": "https://f.wishabi.net/page_pdf_images/24309741/5ee1194c-c9b6-11f1-ab34-c2e610199633/x_large",
       "custom_id_field_1": null,
       "custom_id_field_2": null,
       "custom_id_field_3": null,
       "custom_id_field_4": null,
       "custom_id_field_5": null,
       "custom_id_field_6": null,
-      "valid_from": "2026-11-06",
-      "valid_to": "2026-11-12",
+      "valid_from": "2026-11-13",
+      "valid_to": "2026-11-19",
       "categories": [
         "Grocery"
       ],
       "pre_price_text": "",
-      "price_text": "",
-      "post_price_text": "",
+      "price_text": "5.99",
+      "post_price_text": "ea.",
       "hosted_coupon_image": null,
       "hide_brand_in_pop": false,
-      "left": 11753.4,
-      "bottom": -2024.41,
-      "right": 12373.3,
-      "top": -1561.65,
-      "page": 8,
+      "left": 31.78,
+      "bottom": -1843.46,
+      "right": 275.0,
+      "top": -1584.75,
+      "page": 1,
       "item_categories": {
         "l1": {
           "confidence": null,
-          "category_name": "Toys & Games",
-          "google_category_id": 1232
+          "category_name": "Home & Garden",
+          "google_category_id": 745
         },
         "l2": {
           "confidence": null,
-          "category_name": "Toys",
-          "google_category_id": 1266
+          "category_name": "Household Supplies",
+          "google_category_id": 892
         },
         "l3": {
           "confidence": null,
-          "category_name": "Play Vehicles",
-          "google_category_id": 1282
+          "category_name": "Laundry Supplies",
+          "google_category_id": 899
         },
         "l4": {
           "confidence": null,
-          "category_name": "Toy Cars",
-          "google_category_id": 5415
+          "category_name": "Laundry Detergent",
+          "google_category_id": 3832
         },
         "l5": null,
         "l6": null,
         "l7": null
       },
-      "flyer_id": 8184644,
+      "flyer_id": 8191970,
       "page_destination": null,
       "in_store_only": false,
       "item_type": 1,
       "average_rating": null,
       "web_commission_url": null,
       "item_web_url": null,
-      "brand": "Hot Wheels",
+      "brand": "PUREX | SNUGGLE",
       "images": [
-        "https://f.wishabi.net/page_pdf_images/24282327/89ed5546-c48a-11f1-893b-eeee95d2b508/x_large"
+        "https://f.wishabi.net/page_pdf_images/24309741/5ee1194c-c9b6-11f1-ab34-c2e610199633/x_large"
       ],
       "original_price": null,
       "hide_flyer_item_ttm_links_outside_validity": false,

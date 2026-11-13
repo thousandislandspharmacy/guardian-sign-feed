@@ -1,371 +1,357 @@
 {
-  "generated_at": "2026-11-12T18:38:19+00:00",
+  "generated_at": "2026-11-13T14:42:41+00:00",
   "publication": {
-    "id": 8184644,
+    "id": 8191970,
     "name": "Promotional Flyer 25 km",
-    "valid_from": "2026-11-06",
-    "valid_to": "2026-11-12"
+    "valid_from": "2026-11-13",
+    "valid_to": "2026-11-19"
   },
   "items": [
     {
-      "name": "HAWKINS Cheezies Corn 210g or NOSH & CO. Family Size Potato Chips 250g",
-      "price": "$5.00",
-      "qualifier": "2/",
-      "image": "https://f.wishabi.net/page_pdf_images/24282386/90b8381e-c48a-11f1-9168-aa22b8f47f14/x_large",
+      "name": "TENA \u2014 Incontinence Briefs, Underwear or Pads Selected Types and Sizes",
+      "price": "$14.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/4c59963c-c9b6-11f1-ab34-c2e610199633/x_large",
       "story": "",
       "brands": [
-        "HAWKINS",
-        "NOSH & CO."
+        "Tena"
       ]
     },
     {
-      "name": "ALWAYS DISCREET \u2014 Incontinence Underwear or Pads Selected Types and Sizes",
-      "price": "$13.99",
+      "name": "TYLENOL or Option+ \u2014 Extra Strength Pain Relief Tablets or Caplets 40's-200's Muscle & Back Pain PLATINUM Relief 60's Selected Types",
+      "price": "$16.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282299/8fe7d408-c48a-11f1-b1da-424311b2d717/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/506ec22e-c9b6-11f1-ab34-c2e610199633/x_large",
       "story": "",
       "brands": [
-        "Always Discreet"
+        "Tylenol",
+        "Option+"
       ]
     },
     {
-      "name": "ADVIL \u2014 Tablets or Caplets 52's-72's or Liqui-Gels 40's-72's Selected Types",
-      "price": "$12.49",
+      "name": "ADVIL \u2014 Cold, Sinus & Flu Caplets, Tablets or Liqui-Gels 16's-32's Selected Types",
+      "price": "$8.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282299/8d4940f6-c48a-11f1-b1da-424311b2d717/x_large",
-      "story": "",
-      "brands": [
-        "Advil"
-      ]
-    },
-    {
-      "name": "ADVIL \u2014 PLUS Acetaminophen Tablets 36's",
-      "price": "$9.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282307/9af00db6-c48a-11f1-8bb0-e21f5e3637ac/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/45fa543e-c9b6-11f1-ab34-c2e610199633/x_large",
       "story": "",
       "brands": [
         "Advil"
       ]
     },
     {
-      "name": "BAND-AID Deco Bandages 20's-30's, SMART CARE Hot Wheels, Barbie Bandages 20's, Option+ Bandages, Antibiotic Cream or Ointment 15g \u2014 Selected Types",
-      "price": "15% OFF",
+      "name": "POLYSPORIN or BAND-AID \u2014 28g-30g or Option+ Hot or Cold Gel Packs, Selected Types and Sizes Advanced Bandages 10's-60's,",
+      "price": "20% OFF",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282307/97561f7e-c48a-11f1-8bb0-e21f5e3637ac/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/4a9e4a90-c9b6-11f1-ab34-c2e610199633/x_large",
       "story": "",
       "brands": []
     },
     {
-      "name": "POLYSPORIN \u2014 28g-30g Selected Types",
-      "price": "$14.99",
+      "name": "BENADRYL \u2014 Allergy Extra Strength TOTAL or NIGHTTIME Formula Caplets 24's-36's",
+      "price": "$12.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282304/8177b7a8-c48a-11f1-8046-62088cce191c/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/24309746/2cb91884-c9b6-11f1-8f42-eed409fee71f/x_large",
       "story": "",
       "brands": [
-        "Polysporin"
+        "Benadryl"
       ]
     },
     {
-      "name": "WAMPOLE OR ADORABLE \u2014 Vitamins, Minerals or Supplements Selected Types",
+      "name": "OLLY Vitamins or Gummies or GENUINE HEALTH Natural Health Supplements \u2014 Selected Types and Sizes",
       "price": "30% OFF",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282386/825555d6-c48a-11f1-9168-aa22b8f47f14/x_large",
-      "story": "",
-      "brands": [
-        "WAMPOLE",
-        "ADORABLE"
-      ]
-    },
-    {
-      "name": "BOOST, ENSURE Max, PEDIASURE or PREMIER \u2014 Selected Types and Sizes",
-      "price": "$11.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282299/8ee0fb0c-c48a-11f1-b1da-424311b2d717/x_large",
-      "story": "",
-      "brands": [
-        "BOOST",
-        "ENSURE Max",
-        "PEDIASURE",
-        "PREMIER"
-      ]
-    },
-    {
-      "name": "Option+ \u2014 Dry Cough Relief Extra Strength Syrup 100mL",
-      "price": "$5.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282386/839be068-c48a-11f1-9168-aa22b8f47f14/x_large",
-      "story": "Save up to $4.30",
-      "brands": [
-        "Option+"
-      ]
-    },
-    {
-      "name": "PHILIPS SONICARE \u2014 Oral Care Products Selected Types and Sizes",
-      "price": "20% OFF",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282364/87bafe9a-c48a-11f1-8f30-864e7d763af1/x_large",
-      "story": "",
-      "brands": [
-        "Philips"
-      ]
-    },
-    {
-      "name": "Option+ \u2014 Moisturizing Oral Care Selected Types and Sizes",
-      "price": "$6.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282305/85b9a1f0-c48a-11f1-9a36-029b1e0a2622/x_large",
-      "story": "Save up to $5",
-      "brands": [
-        "Option +"
-      ]
-    },
-    {
-      "name": "Assorted DOVE & AXE Deodorant or Body Wash Gift Sets \u2014 Selected Types and Sizes",
-      "price": "$17.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282344/84b788da-c48a-11f1-ac6d-72f44830a6cb/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/277e8ebc-c9b6-11f1-a277-ee42626c8deb/x_large",
       "story": "",
       "brands": []
     },
     {
-      "name": "Option+ \u2014 Pads or Liners Selected Types and Sizes",
-      "price": "$2.99",
+      "name": "BOOST \u2014 Nutritional Value Pack 15 x 237mL Selected Types",
+      "price": "$29.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282304/8f86c19a-c48a-11f1-8046-62088cce191c/x_large",
-      "story": "COMPARE & SAVE $2",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/2cc37e5a-c9b6-11f1-a277-ee42626c8deb/x_large",
+      "story": "",
+      "brands": [
+        "Boost"
+      ]
+    },
+    {
+      "name": "ENSURE or GLUCERNA \u2014 Nutritional Drinks Selected Types and Sizes",
+      "price": "$12.49",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/2937c93a-c9b6-11f1-ab34-c2e610199633/x_large",
+      "story": "",
+      "brands": [
+        "Ensure"
+      ]
+    },
+    {
+      "name": "Option+ \u2014 Arthritis Pain Relief Caplets 650mg 100's",
+      "price": "$9.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/2951d74e-c9b6-11f1-a277-ee42626c8deb/x_large",
+      "story": "Save up to $7",
       "brands": [
         "Option +"
       ]
     },
     {
-      "name": "PARISSA Hair Removal Products or GILLETTE VENUS, MACH3 Razors or Shave Cream \u2014 Selected Types and Sizes",
+      "name": "DENTEK OR DENTA \u2014 Oral Care Products Mouthwash, Dry Mouth Spray, Gum, Mints or Peroxide Mouthwash Selected Types and Sizes",
       "price": "20% OFF",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282364/8689d5e6-c48a-11f1-8f30-864e7d763af1/x_large",
-      "story": "/de rabais",
-      "brands": [
-        "PARISSA"
-      ]
-    },
-    {
-      "name": "Option+ \u2014 Cold + Sinus 200mg Caplets 72's",
-      "price": "$14.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282305/7f7473c4-c48a-11f1-9a36-029b1e0a2622/x_large",
-      "story": "Save up to $9.50",
-      "brands": [
-        "Option +"
-      ]
-    },
-    {
-      "name": "METAMUCIL, BENEFIBER or CULTURELLE \u2014 Fibre Laxative 72 Doses, 284g-500g or Probiotic Products 30's-50's Selected Types and Sizes",
-      "price": "25% OFF",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282299/7f0b30a8-c48a-11f1-b1da-424311b2d717/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/24309756/4145e778-c9b6-11f1-9d2d-f2686e9126b6/x_large",
       "story": "",
       "brands": [
-        "METAMUCIL",
-        "BENEFIBER",
-        "CULTURELLE"
+        "DENTEK",
+        "DENTA"
       ]
     },
     {
-      "name": "Option+ Bismuth Regular Strength Liquid 230mL or Caplets 24's",
-      "price": "$4.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282304/8e46061a-c48a-11f1-8046-62088cce191c/x_large",
-      "story": "COMPARE & SAVE $3",
-      "brands": [
-        "Option +"
-      ]
-    },
-    {
-      "name": "CASHMERE or PUREX or SPONGE TOWELS or BONTERRA \u2014 Toilet Paper 6-8 Rolls or Paper Towels 3's Papier hygi\u00e9nique 6-8 rouleaux ou Essuie-tout 3's",
-      "price": "$5.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282299/907bf840-c48a-11f1-b1da-424311b2d717/x_large",
-      "story": "",
-      "brands": [
-        "CASHMERE",
-        "PUREX",
-        "SPONGE TOWELS",
-        "BONTERRA"
-      ]
-    },
-    {
-      "name": "Option+ \u2014 Naproxen Sodium Caplets 24's",
+      "name": "Option+ \u2014 Personal Cleansing Wipes 48's",
       "price": "$3.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282386/83f8ea7e-c48a-11f1-9168-aa22b8f47f14/x_large",
-      "story": "Save up to $2.30",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/31c9e646-c9b6-11f1-a277-ee42626c8deb/x_large",
+      "story": "Save up to $2.50",
       "brands": [
-        "Option +"
+        "Options"
       ]
     },
     {
-      "name": "DIVA \u2014 Cleanser, Moisturizer, Refresher or Lubricator 50mL-150mL",
-      "price": "25% OFF",
+      "name": "DEGREE \u2014 Antiperspirant for Women 74g Selected Types",
+      "price": "$5.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282307/8e763c86-c48a-11f1-8bb0-e21f5e3637ac/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/24309756/2aba8590-c9b6-11f1-9d2d-f2686e9126b6/x_large",
       "story": "",
       "brands": [
-        "DIVA"
+        "Degree"
       ]
     },
     {
-      "name": "Option+ \u2014 Hand Soap",
-      "price": "$1.99",
+      "name": "Option+ \u2014 Nasal + Sinus Decongestant Relief Tablets 24's",
+      "price": "$5.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282386/87047008-c48a-11f1-9168-aa22b8f47f14/x_large",
-      "story": "Save up to $1",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/28d8f23e-c9b6-11f1-a277-ee42626c8deb/x_large",
+      "story": "Save up to $3.30",
+      "brands": [
+        "Options"
+      ]
+    },
+    {
+      "name": "GILLETTE \u2014 Male Prep Razors, Shave Cream or Replacement Cartridges Selected Types",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309756/3f524a60-c9b6-11f1-9d2d-f2686e9126b6/x_large",
+      "story": "",
+      "brands": [
+        "Gillette"
+      ]
+    },
+    {
+      "name": "Option+ \u2014 Alcohol Swabs 100's",
+      "price": "$2.79",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/2ee8463e-c9b6-11f1-a277-ee42626c8deb/x_large",
+      "story": "Save up to $1.50",
+      "brands": [
+        "Options"
+      ]
+    },
+    {
+      "name": "GRAVOL OR GASTROVOL \u2014 Anti-Nausea Products or Liquid Gel Caps Selected Types and Sizes",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/310c36a0-c9b6-11f1-ab34-c2e610199633/x_large",
+      "story": "",
+      "brands": [
+        "GRAVOL",
+        "GASTROVOL"
+      ]
+    },
+    {
+      "name": "Option+ \u2014 Vitamin Gummies Selected Types",
+      "price": "30% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309746/3b8cdf44-c9b6-11f1-8f42-eed409fee71f/x_large",
+      "story": "Save up to $6.05",
+      "brands": [
+        "Options"
+      ]
+    },
+    {
+      "name": "ROYALE \u2014 Bathroom Tissue 12 Double Rolls",
+      "price": "$6.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/4f978e80-c9b6-11f1-ab34-c2e610199633/x_large",
+      "story": "",
+      "brands": [
+        "Royale"
+      ]
+    },
+    {
+      "name": "Option+ Bandages \u2014 Selected Types and Sizes",
+      "price": "20% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/31415fec-c9b6-11f1-a277-ee42626c8deb/x_large",
+      "story": "Save up to $3",
       "brands": [
         "Option+"
       ]
     },
     {
-      "name": "NOSH & CO. \u2014 Nuts and Mixes 200g-250g or Jar 525g-600g Selected Types",
+      "name": "EUCERIN or AQUAPHOR \u2014 Skin Care Products Selected Types and Sizes Lip Repair Stick or Lip Balm",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/4399b1ee-c9b6-11f1-ab34-c2e610199633/x_large",
+      "story": "",
+      "brands": []
+    },
+    {
+      "name": "PREPARATION H or Option+ \u2014 Ointment, Suppositories, Gel or Cream or Personal Cleansing Pads 100's Selected Types and Sizes",
+      "price": "15% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_items/437583649/1792212304/extra_large.jpg",
+      "story": "",
+      "brands": [
+        "Preparation H",
+        "Option+"
+      ]
+    },
+    {
+      "name": "RUSSELL STOVER \u2014 No Sugar Added Assorted Chocolate or Candy 56g-150g",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309746/3d206ab0-c9b6-11f1-8f42-eed409fee71f/x_large",
+      "story": "",
+      "brands": [
+        "Russell Stover"
+      ]
+    },
+    {
+      "name": "MICATIN or TINACTIN \u2014 Foot Care Products Selected Types",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/3021d70e-c9b6-11f1-a277-ee42626c8deb/x_large",
+      "story": "",
+      "brands": [
+        "MICATIN",
+        "TINACTIN"
+      ]
+    },
+    {
+      "name": "L'OREAL PARIS \u2014 PREFERENCE, F\u00c9RIA or MAGIC ROOT COVER UP or REVLON FROST & GLOW or GARNIER GOOD Hair Colour",
+      "price": "$13.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/339f2544-c9b6-11f1-ab34-c2e610199633/x_large",
+      "story": "",
+      "brands": [
+        "L'oreal paris"
+      ]
+    },
+    {
+      "name": "CEPACOL \u2014 Sore Throat Lozenges 16's Selected Types",
+      "price": "$3.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309746/2bfa5e44-c9b6-11f1-8f42-eed409fee71f/x_large",
+      "story": "",
+      "brands": [
+        "Cepacol"
+      ]
+    },
+    {
+      "name": "SALLY HANSEN \u2014 XTREME WEAR Nail Polish Selected Types and Sizes",
+      "price": "$3.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309756/59d8623e-c9b6-11f1-9d2d-f2686e9126b6/x_large",
+      "story": "Save up to $3",
+      "brands": [
+        "Sally Hansen"
+      ]
+    },
+    {
+      "name": "MAYBELLINE NEW YORK \u2014 ULTRA SLIM BROW, EXPRESS BROW DUO or BROW FAST SCULPT Brow Products \u2014 Selected Types and Shades",
+      "price": "$10.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309756/57df7166-c9b6-11f1-9d2d-f2686e9126b6/x_large",
+      "story": "Save up to $6.50",
+      "brands": [
+        "MAYBELLINE NEW YORK"
+      ]
+    },
+    {
+      "name": "G-U-M \u2014 Toothbrush, Tongue Cleaner, PROXABRUSH Cleaner or Floss Selected Types and Sizes",
+      "price": "15% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309756/4870f844-c9b6-11f1-9d2d-f2686e9126b6/x_large",
+      "story": "",
+      "brands": [
+        "G.U.M"
+      ]
+    },
+    {
+      "name": "NIVEA \u2014 Body Wash or Antiperspirant/ Deodorant Selected Types and Sizes",
+      "price": "$4.49",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/273dbe5a-c9b6-11f1-ab34-c2e610199633/x_large",
+      "story": "",
+      "brands": [
+        "Nivea"
+      ]
+    },
+    {
+      "name": "HOT WHEELS Kids Body Wash, or Bubble Bath \u2014 236 mL",
       "price": "$4.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282386/910e5064-c48a-11f1-9168-aa22b8f47f14/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/24309751/28601120-c9b6-11f1-895c-fe5e4d3d1920/x_large",
+      "story": "",
+      "brands": []
+    },
+    {
+      "name": "FLORASTOR \u2014 FLORASTOR Probiotic Adults or Kids Capsules 20's-100's or Powder Sticks 30's Selected Types",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/2f646c5a-c9b6-11f1-a277-ee42626c8deb/x_large",
+      "story": "",
+      "brands": [
+        "Florastor"
+      ]
+    },
+    {
+      "name": "SCOTTIES \u2014 Christmas Facial Tissue 60's",
+      "price": "$1.99",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309748/353903a2-c9b6-11f1-b3a6-1ed9a837789e/x_large",
+      "story": "",
+      "brands": [
+        "Scotties"
+      ]
+    },
+    {
+      "name": "CERAVE \u2014 Skin Care Products Selected Types and Sizes",
+      "price": "25% OFF",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309741/32d75ce4-c9b6-11f1-ab34-c2e610199633/x_large",
+      "story": "",
+      "brands": [
+        "CeraVe"
+      ]
+    },
+    {
+      "name": "NOSH & CO. \u2014 Candy Bags 275g-375g",
+      "price": "$3.49",
+      "qualifier": "",
+      "image": "https://f.wishabi.net/page_pdf_images/24309758/382f01a6-c9b6-11f1-a277-ee42626c8deb/x_large",
       "story": "",
       "brands": [
         "Nosh & Co."
       ]
     },
     {
-      "name": "PEDIFIX Footcare Products \u2014 Selected Types and Sizes",
-      "price": "30% OFF",
+      "name": "HOMEDICS \u2014 Bubble Spa Foot Bath",
+      "price": "$69.99",
       "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282386/86541e74-c48a-11f1-9168-aa22b8f47f14/x_large",
+      "image": "https://f.wishabi.net/page_pdf_images/24309746/36a58224-c9b6-11f1-8f42-eed409fee71f/x_large",
       "story": "",
       "brands": [
-        "PEDIFIX"
-      ]
-    },
-    {
-      "name": "GARNIER or CLAIROL or REVLON \u2014 BELLE COLOR or L'IMAGE or Colorsilk Hair Colour Selected Shades",
-      "price": "$5.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282299/828064d8-c48a-11f1-b1da-424311b2d717/x_large",
-      "story": "",
-      "brands": [
-        "GARNIER",
-        "CLAIROL",
-        "REVLON"
-      ]
-    },
-    {
-      "name": "MUCINEX \u2014 Expectorant 12Hour Tablets 20's or Multi-Action Caplets 20's Selected Types",
-      "price": "$12.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282307/856e96b0-c48a-11f1-8bb0-e21f5e3637ac/x_large",
-      "story": "",
-      "brands": [
-        "Mucinex"
-      ]
-    },
-    {
-      "name": "SINUTAB \u2014 Extra Strength Sinus & Allergy Caplets 48's",
-      "price": "$17.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282304/7ffbf074-c48a-11f1-8046-62088cce191c/x_large",
-      "story": "",
-      "brands": [
-        "Sinutab"
-      ]
-    },
-    {
-      "name": "HYDRASENSE \u2014 Nasal Spray Sea Water Solution Medium Stream 100mL",
-      "price": "$13.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282304/875a883a-c48a-11f1-8046-62088cce191c/x_large",
-      "story": "",
-      "brands": [
-        "hydraSense"
-      ]
-    },
-    {
-      "name": "Adaptive or Diabetic socks \u2014 Selected types and sizes",
-      "price": "30% OFF",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282307/c146d490-c48a-11f1-8bb0-e21f5e3637ac/x_large",
-      "story": "",
-      "brands": []
-    },
-    {
-      "name": "COVERGIRL \u2014 SIMPLY AGELESS Cosmetics \u2014 Selected Types and Shades",
-      "price": "$16.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282364/96db4024-c48a-11f1-8f30-864e7d763af1/x_large",
-      "story": "Save up to $9.80",
-      "brands": [
-        "CoverGirl"
-      ]
-    },
-    {
-      "name": "SENSODYNE or POLIDENT or POLI-GRIP \u2014 75mL-100mL Toothpaste or 90mL Toothpaste or 40g Selected Types",
-      "price": "$4.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282299/831f2af0-c48a-11f1-b1da-424311b2d717/x_large",
-      "story": "",
-      "brands": [
-        "SENSODYNE",
-        "POLIDENT",
-        "POLI-GRIP"
-      ]
-    },
-    {
-      "name": "SECRET Antiperspirant/ Deodorant or GILLETTE Clear Gel or DEGREE Dry Spray Antiperspirant or Deodorant \u2014 Selected Types and Sizes",
-      "price": "$5.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282299/9dc163aa-c48a-11f1-b1da-424311b2d717/x_large",
-      "story": "",
-      "brands": [
-        "SECRET",
-        "GILLETTE",
-        "DEGREE"
-      ]
-    },
-    {
-      "name": "DIAL or SOFTSOAP \u2014 Liquid Hand Soap Refills 887mL or Hand Soap Refills 1.47L Selected Types",
-      "price": "$5.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282386/8d28829e-c48a-11f1-9168-aa22b8f47f14/x_large",
-      "story": "",
-      "brands": [
-        "DIAL",
-        "SOFTSOAP"
-      ]
-    },
-    {
-      "name": "PEPTO BISMOL \u2014 Regular Strength Liquid 230mL or Caplets 24's",
-      "price": "$7.99",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282304/82e2108e-c48a-11f1-8046-62088cce191c/x_large",
-      "story": "",
-      "brands": [
-        "Pepto Bismol"
-      ]
-    },
-    {
-      "name": "NEUTROGENA \u2014 Skin Care Products Selected Types and Sizes",
-      "price": "25% OFF",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282299/8a1cf8e6-c48a-11f1-b1da-424311b2d717/x_large",
-      "story": "",
-      "brands": [
-        "Neutrogena"
-      ]
-    },
-    {
-      "name": "FERRERO ROCHER Bars 90g",
-      "price": "$3.49",
-      "qualifier": "",
-      "image": "https://f.wishabi.net/page_pdf_images/24282310/88d80692-c48a-11f1-8160-4abf23c71f0f/x_large",
-      "story": "",
-      "brands": [
-        "Ferrero Rocher"
+        "Homedics"
       ]
     }
   ]
