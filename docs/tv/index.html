@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Christmas Giveaway</title>
+<style>
+html,body{margin:0;height:100%;background:#00643C;overflow:hidden;cursor:none}
+video{position:fixed;left:0;top:0;width:100%;height:100%;object-fit:contain;background:#00643C}
+#hint{position:fixed;left:0;right:0;bottom:6%;text-align:center;font:700 28px Arial,sans-serif;color:#fff;display:none}
+</style></head><body>
+<video id="v" src="giveaway.mp4" autoplay loop muted playsinline preload="auto"></video>
+<div id="hint">Press OK / Select on the remote to start</div>
+<script>
+var v=document.getElementById('v'),hint=document.getElementById('hint');
+function go(){var p=v.play();if(p&&p.catch)p.catch(function(){hint.style.display='block';});}
+function full(){hint.style.display='none';go();var f=v.requestFullscreen||v.webkitRequestFullscreen;if(f&&!document.fullscreenElement){try{f.call(v);}catch(e){}}}
+document.addEventListener('click',full);document.addEventListener('keydown',full);
+v.addEventListener('ended',function(){v.currentTime=0;go();});
+v.addEventListener('stalled',function(){setTimeout(go,2000);});
+go();
+</script></body></html>
