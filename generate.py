@@ -282,12 +282,33 @@ def card_packshot(data):
 EVERGREEN_DIR = ROOT / "evergreen"
 
 
-def evergreen_slide_uris(skip=()):
+def active_promo(cfg):
+    """Time-boxed promotion (config `promo`): ready-made 336x144 slides in
+    `dir` play IN ORDER as one block at the top of every loop until the end
+    of `until` (store-local date). While it runs, `max_deals` trims the deal
+    slides to the first N so the block comes round more often, and
+    `hide_evergreen` parks the evergreen set. After `until` the next build
+    drops the block and the normal deck returns by itself."""
+    promo = cfg.get("promo") or {}
+    folder = promo.get("dir")
+    if not folder or not (ROOT / folder).is_dir():
+        return None
+    until = promo.get("until")
+    if until:
+        local = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=5)
+        if local.date() > datetime.date.fromisoformat(until):
+            print(f"  promo {folder} ended {until}: back to the normal deck")
+            return None
+    return promo
+
+
+def evergreen_slide_uris(skip=(), folder=None, label="evergreen"):
     from PIL import Image
     uris = []
-    if not EVERGREEN_DIR.is_dir():
+    folder = folder or EVERGREEN_DIR
+    if not folder.is_dir():
         return uris
-    for path in sorted(EVERGREEN_DIR.iterdir()):
+    for path in sorted(folder.iterdir()):
         if path.suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp"):
             continue
         if path.name in skip:
@@ -307,9 +328,9 @@ def evergreen_slide_uris(skip=()):
                     canvas.save(buf, "PNG", optimize=True)
                     data = buf.getvalue()
             uris.append(data_uri(data))
-            print(f"  evergreen: {path.name}")
+            print(f"  {label}: {path.name}")
         except Exception as exc:  # noqa: BLE001 -- a bad file skips, never breaks
-            print(f"  evergreen {path.name} skipped ({exc})", file=sys.stderr)
+            print(f"  {label} {path.name} skipped ({exc})", file=sys.stderr)
     return uris
 
 
@@ -859,15 +880,28 @@ def page(cfg, items, dates_line):
         "bgs": [data_uri(render_background(v)) for v in range(len(BG_VARIANTS))],
         "badge": data_uri(render_badge()),
     }
-    evergreen = [f'''    <div class="slide">
+    def image_slides(uris):
+        return [f'''    <div class="slide">
       <img class="bg" src="{uri}" alt="">
-    </div>''' for uri in evergreen_slide_uris(evergreen_yields(cfg, items))]
+    </div>''' for uri in uris]
+    promo = active_promo(cfg)
+    promo_slides = image_slides(evergreen_slide_uris(
+        folder=ROOT / promo["dir"], label="promo")) if promo else []
+    if promo and promo.get("hide_evergreen"):
+        evergreen = []
+        print("  evergreen: parked while the promo runs")
+    else:
+        evergreen = image_slides(evergreen_slide_uris(evergreen_yields(cfg, items)))
     if items:
         deal_slides = [slide_html(item, i, assets, brands)
                        for i, item in enumerate(items)]
-        slides = "\n".join(weave(deal_slides, evergreen))
+        if promo_slides and promo.get("max_deals"):
+            deal_slides = deal_slides[:int(promo["max_deals"])]
+            print(f"  promo: deal slides trimmed to {len(deal_slides)}")
+        slides = "\n".join(promo_slides + weave(deal_slides, evergreen))
     else:
-        slides = "\n".join([fallback_slide(cfg, assets, dates_line)] + evergreen)
+        slides = "\n".join([fallback_slide(cfg, assets, dates_line)]
+                           + promo_slides + evergreen)
     # ES5 only, no external requests: the ViPlex player webview is old and
     # may be firewalled to this one page. Backgrounds, badge, cards and the
     # PT Sans subset all ride inside the HTML as data URIs.

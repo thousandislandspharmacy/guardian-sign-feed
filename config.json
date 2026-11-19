@@ -17,6 +17,12 @@
     ]
   ],
   "evergreen_yield_to_flyer": [],
+  "promo": {
+    "dir": "promo/christmas-giveaway",
+    "until": "2026-12-23",
+    "max_deals": 10,
+    "hide_evergreen": true
+  },
   "display_brands": [
     "Compound W"
   ],
