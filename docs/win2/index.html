@@ -1,0 +1,196 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Thousand Thanks Christmas Giveaway - TV loop</title>
+<style>
+@font-face{font-family:"Archivo";src:url("a/archivo-var.woff2") format("woff2");font-weight:100 900}
+@font-face{font-family:"PT Sans";src:url("a/pt-sans-400.woff2") format("woff2");font-weight:400}
+@font-face{font-family:"PT Sans";src:url("a/pt-sans-700.woff2") format("woff2");font-weight:700}
+*{box-sizing:border-box;margin:0;padding:0}
+html{width:100%;height:100%;overflow:hidden;background:#00643C}
+body{width:1920px;height:1080px;overflow:hidden;background:#00643C;transform-origin:0 0;cursor:none;font-family:"PT Sans",Arial,sans-serif;color:#fff;position:absolute;left:0;top:0}
+#bg{position:absolute;inset:0;background:radial-gradient(1400px 900px at 30% 40%,#0A7A4C 0%,#00643C 55%,#00502F 100%)}
+#hexes{position:absolute;inset:0;width:1920px;height:1080px}
+#snow{position:absolute;inset:0}
+#snow i{position:absolute;border-radius:50%;background:#fff}
+.scene{position:absolute;inset:0;display:none}
+.a{will-change:transform,opacity}
+/* header + footer */
+#head{position:absolute;left:96px;top:60px;display:flex;align-items:center;gap:22px}
+#head img{height:76px}
+#head .h0{font-family:"Archivo";font-weight:800;font-size:21px;letter-spacing:.24em;opacity:.9}
+#head .h1{font-weight:700;font-size:38px;letter-spacing:.035em;line-height:1;margin-top:8px}
+#foot{position:absolute;left:96px;right:96px;bottom:44px;display:flex;justify-content:space-between;align-items:center;font-size:25px;opacity:.82}
+#foot b{font-family:"Archivo";font-weight:700;letter-spacing:.02em}
+/* prize scenes */
+.left{position:absolute;left:96px;top:215px;width:800px}
+.count{font-family:"Archivo";font-weight:800;font-size:27px;letter-spacing:.26em;opacity:.8}
+.win{display:inline-block;margin-top:26px;background:#EE3124;border-radius:999px;padding:13px 32px 12px;font-family:"Archivo";font-weight:800;font-size:33px;letter-spacing:.2em;line-height:1}
+.title{font-family:"Archivo";font-weight:800;font-size:112px;line-height:1.0;letter-spacing:-.015em;margin-top:34px}
+.rule{width:150px;height:10px;background:#EE3124;border-radius:5px;margin-top:38px}
+.sub{font-size:45px;line-height:1.2;margin-top:30px;opacity:.95}
+.chip{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:20px;height:124px;padding:0 44px;margin-top:44px;box-shadow:0 14px 34px rgba(0,0,0,.18)}
+.chip img{display:block;width:auto}
+.card{position:absolute;left:950px;top:158px;width:874px;height:764px;background:#fff;border-radius:38px;box-shadow:0 34px 80px rgba(0,0,0,.30);overflow:hidden;display:flex;align-items:center;justify-content:center;padding:56px}
+.card img.photo{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.card.money{flex-direction:column;gap:46px;background:#F6F8F7}
+.amount{font-family:"Archivo";font-weight:900;font-size:330px;line-height:.86;letter-spacing:-.035em}
+.card.bundle{flex-direction:column;gap:24px;padding:36px;align-items:stretch;background:#fff}
+.row{flex:1 1 0;min-height:0;display:flex;align-items:center;gap:36px;border:3px solid #D9E1DD;border-radius:24px;padding:16px 26px 16px 16px;color:#1B2622}
+.row .lg{flex:none;width:360px;align-self:stretch;border-radius:14px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.row .lg img{max-width:100%;max-height:100%;object-fit:contain}
+.row .l1{font-family:"Archivo";font-weight:800;font-size:58px;color:#004D2E;line-height:1.05}
+.row .l2{font-size:32px;color:#5C6B65;margin-top:8px;line-height:1.2}
+/* intro */
+.center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.i-g{height:190px}
+.i-0{font-family:"Archivo";font-weight:800;font-size:50px;letter-spacing:.34em;margin-top:44px;padding-left:.34em}
+.i-1{font-weight:700;font-size:168px;letter-spacing:.03em;line-height:1;margin-top:20px}
+.i-2{font-size:46px;margin-top:22px;opacity:.95}
+.i-3{margin-top:54px;background:#EE3124;border-radius:999px;padding:20px 52px 18px;font-family:"Archivo";font-weight:800;font-size:40px;letter-spacing:.12em;line-height:1;white-space:nowrap}
+/* outro */
+.o-0{font-family:"Archivo";font-weight:800;font-size:34px;letter-spacing:.26em;color:#fff;opacity:.85}
+.o-1{font-family:"Archivo";font-weight:800;font-size:92px;line-height:1.02;letter-spacing:-.01em;margin-top:16px}
+.o-1 em{font-style:normal;color:#fff;background:#EE3124;border-radius:16px;padding:0 22px 4px}
+.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;width:1700px;margin-top:50px}
+.tile{width:262px;height:200px;background:#fff;border-radius:22px;display:flex;align-items:center;justify-content:center;padding:20px;box-shadow:0 16px 36px rgba(0,0,0,.24);overflow:hidden}
+.tile img{max-width:100%;max-height:100%;object-fit:contain}
+.tile .amt{font-family:"Archivo";font-weight:900;font-size:74px;letter-spacing:-.03em;line-height:.9;text-align:center}
+.tile .amt img{display:block;height:34px;margin:12px auto 0}
+.tile .txt{font-family:"Archivo";font-weight:800;font-size:33px;line-height:1.05;color:#004D2E;text-align:center}
+.o-2{font-size:42px;margin-top:46px;opacity:.95}
+</style></head>
+<body>
+<div id="bg"></div>
+<svg id="hexes" viewBox="0 0 1920 1080"></svg>
+<div id="snow"></div>
+<div id="head"><img src="a/guardian-g-mark.png" alt=""><div><div class="h0">A THOUSAND THANKS</div><div class="h1">CHRISTMAS GIVEAWAY</div></div></div>
+<div id="stage"></div>
+<div id="foot"><span><b>Thousand Islands Guardian Pharmacy</b></span><span>No purchase necessary. Skill-testing question required. Rules in store.</span></div>
+<script>
+var T = 'a/', A = 'a/', R = 'a/';
+var PRIZES = [
+  {kind:'product', title:'Apple AirPods 5', img:T+'airpods-5_apple-pair.jpg', panel:'#F5F5F7', logo:R+'logo-apple.svg', lh:66},
+  {kind:'product', title:'Apple Watch SE 3', img:T+'apple-watch-se-3_apple-health-hero.jpg', panel:'#FAF2FF', logo:R+'logo-apple.svg', lh:66},
+  {kind:'product', title:'Apple iPad 11-inch', img:T+'ipad-11_apple-hero.jpg', panel:'#FFFFFF', logo:R+'logo-apple.svg', lh:66},
+  {kind:'product', title:'TCL 65" Fire&nbsp;TV', img:T+'tcl-65-fire-tv_front-home.jpg', panel:'#FFFFFF', logo:A+'logo-tcl.png', lh:48},
+  {kind:'product', title:'DeWalt 20V Combo Kit', img:T+'dewalt-dck276d2_dewalt-kit.jpg', panel:'#FFFFFF', logo:R+'logo-dewalt.svg', lh:52},
+  {kind:'product', title:'DJI Neo Drone', img:T+'dji-neo_dji-a.png', panel:'#F6F8F7', logo:R+'logo-dji.svg', lh:64},
+  {kind:'product', title:'Barbie Dreamhouse', img:T+'barbie-dreamhouse-hmx10_mattel-1.jpg', panel:'#FFFFFF', logo:R+'logo-barbie.svg', lh:70},
+  {kind:'money', title:'Visa Gift Card', amount:'$200', accent:'#1434CB', logo:R+'logo-visa.svg', lh:130},
+  {kind:'money', title:'Metro Gift Card', amount:'$500', accent:'#E3141C', logo:R+'logo-metro.svg', lh:120},
+  {kind:'service', title:'Car Detailing', sub:'from Dixon Automotive Group', logo:A+'logo-dixon-clean.png', tile:'Car<br>Detailing'},
+  {kind:'bundle', title:'Pamper Me Package', sub:'Three treats from local businesses', tile:'Pamper Me<br>Package', items:[
+    {label:'Massage', by:'Eminence Massage Therapy', logo:T+'logo-eminence-massage-therapy.png', bg:'#FFFFFF', pad:8},
+    {label:'Mani-Pedi', by:'H&amp;T Nails', logo:T+'logo-ht-nails.png', bg:'#FFFFFF', pad:26},
+    {label:'Hair', by:'Rapunzel Studio of Hair Design', logo:A+'logo-rapunzel-black.png', bg:'#000000', pad:4}
+  ]}
+];
+var N = PRIZES.length, INTRO = 4.6, PRIZE = 4.6, OUTRO = 7.0;
+var DUR = INTRO + N * PRIZE + OUTRO;
+window.DUR = DUR;
+
+function el(html){var d=document.createElement('div');d.innerHTML=html;return d.firstChild;}
+var stage = document.getElementById('stage'), scenes = [];
+function addScene(html, start, len){var s=el('<div class="scene">'+html+'</div>');stage.appendChild(s);scenes.push({node:s,start:start,len:len,items:[].slice.call(s.querySelectorAll('.a')),zoom:[].slice.call(s.querySelectorAll('.z'))});}
+
+// intro
+addScene('<div class="center">'
+ +'<img class="i-g a" data-i="0" data-fy="40" src="'+A+'guardian-g-mark.png" alt="">'
+ +'<div class="i-0 a" data-i="1" data-fy="40">A THOUSAND THANKS</div>'
+ +'<div class="i-1 a" data-i="2" data-fy="40">CHRISTMAS GIVEAWAY</div>'
+ +'<div class="i-2 a" data-i="3" data-fy="40">Thousand Islands Guardian Pharmacy</div>'
+ +'<div class="i-3 a" data-i="5" data-fy="40">'+N+' PRIZES &nbsp;&middot;&nbsp; DRAW DECEMBER 23 &nbsp;&middot;&nbsp; ENTER IN STORE</div>'
+ +'</div>', 0, INTRO);
+
+// prizes
+PRIZES.forEach(function(p, k){
+  var left = '<div class="left"><div class="count a" data-i="0" data-fy="30">PRIZE '+(k+1)+' OF '+N+'</div>'
+    +'<div><div class="win a" data-i="1" data-fy="30">ENTER TO WIN</div></div>'
+    +'<div class="title a" data-i="2" data-fy="30">'+p.title+'</div>'
+    +'<div class="rule a" data-i="3" data-fy="30"></div>'
+    +(p.sub?'<div class="sub a" data-i="4" data-fy="30">'+p.sub+'</div>':'')
+    +(p.kind==='product'?'<div><div class="chip a" data-i="4" data-fy="30"><img src="'+p.logo+'" style="height:'+p.lh+'px" alt=""></div></div>':'')
+    +'</div>';
+  var card;
+  if(p.kind==='product') card='<div class="card a" data-i="1" data-fx="110" style="background:'+p.panel+'"><img class="photo z" src="'+p.img+'" alt=""></div>';
+  else if(p.kind==='money') card='<div class="card money a" data-i="1" data-fx="110"><div class="amount z" style="color:'+p.accent+'">'+p.amount+'</div><img src="'+p.logo+'" style="height:'+p.lh+'px" alt=""></div>';
+  else if(p.kind==='service') card='<div class="card a" data-i="1" data-fx="110"><img class="photo z" src="'+p.logo+'" style="width:740px" alt=""></div>';
+  else card='<div class="card bundle a" data-i="1" data-fx="110">'+p.items.map(function(it){return '<div class="row"><div class="lg" style="background:'+it.bg+';padding:'+it.pad+'px"><img src="'+it.logo+'" alt=""></div><div><div class="l1">'+it.label+'</div><div class="l2">'+it.by+'</div></div></div>';}).join('')+'</div>';
+  addScene(left+card, INTRO + k*PRIZE, PRIZE);
+});
+
+// outro
+var tiles = PRIZES.map(function(p, k){
+  var inner = p.kind==='product' ? '<img src="'+p.img+'" alt="">'
+    : p.kind==='money' ? '<div class="amt" style="color:'+p.accent+'">'+p.amount+'<img src="'+p.logo+'" alt=""></div>'
+    : '<div class="txt">'+p.tile+'</div>';
+  return '<div class="tile a" data-i="'+(3+k*0.55)+'" data-fy="34" data-pop="1" style="background:'+(p.panel||'#fff')+'">'+inner+'</div>';
+}).join('');
+addScene('<div class="center">'
+ +'<div class="o-0 a" data-i="0" data-fy="30">'+N+' PRIZES &nbsp;&middot;&nbsp; '+N+' BALLOT BOXES</div>'
+ +'<div class="o-1 a" data-i="1" data-fy="30">Drop your ballot in the box<br>for the prize <em>you</em> want to win</div>'
+ +'<div class="grid">'+tiles+'</div>'
+ +'<div class="o-2 a" data-i="11" data-fy="30">Draw date: <b>December 23</b> &nbsp;&middot;&nbsp; Ask for your ballot in store</div>'
+ +'</div>', INTRO + N*PRIZE, OUTRO);
+
+// background hexes (periodic over DUR so the loop is seamless)
+var HEX = [[260,930,330,.07,1],[1650,150,300,.06,2],[1180,1010,210,.05,1],[690,90,170,.045,3],[1850,720,250,.05,2],[70,330,200,.04,3],[1420,560,120,.035,1]];
+var svg = document.getElementById('hexes'), hexNodes = [];
+HEX.forEach(function(h, k){
+  var pts=[];for(var a=0;a<6;a++){var th=Math.PI/3*a;pts.push((h[2]*Math.cos(th)).toFixed(1)+','+(h[2]*Math.sin(th)).toFixed(1));}
+  var g=document.createElementNS('http://www.w3.org/2000/svg','polygon');
+  g.setAttribute('points',pts.join(' '));
+  if(k%2){g.setAttribute('fill','none');g.setAttribute('stroke','#fff');g.setAttribute('stroke-opacity',h[3]*2.2);g.setAttribute('stroke-width','5');}
+  else{g.setAttribute('fill','#fff');g.setAttribute('fill-opacity',h[3]);}
+  svg.appendChild(g);hexNodes.push(g);
+});
+// snow (each flake falls a whole number of screen heights per loop)
+var snow = document.getElementById('snow'), flakes = [];
+function rnd(s){var x=Math.sin(s*127.1+311.7)*43758.5453;return x-Math.floor(x);}
+for(var f=0;f<46;f++){
+  var size=4+Math.round(rnd(f)*7), n=document.createElement('i');
+  n.style.width=n.style.height=size+'px';n.style.opacity=(0.16+rnd(f+50)*0.30).toFixed(2);
+  snow.appendChild(n);
+  flakes.push({n:n,x:rnd(f+100)*1920,y:rnd(f+200)*1140,laps:1+Math.round(rnd(f+300)*2),sw:14+rnd(f+400)*26,ph:rnd(f+500)*6.283,k:1+Math.round(rnd(f+600)*2)});
+}
+function clamp(v){return v<0?0:v>1?1:v;}
+function ease(p){p=clamp(p);return 1-Math.pow(1-p,3);}
+function easeIn(p){p=clamp(p);return p*p*p;}
+var head=document.getElementById('head');
+window.seek = function(t){
+  t = ((t % DUR) + DUR) % DUR;
+  var w = 2*Math.PI*t/DUR;
+  HEX.forEach(function(h,k){
+    var dx=Math.sin(w*h[4]+k)*46, dy=Math.cos(w*h[4]+k*1.7)*34, rot=Math.sin(w+k)*7;
+    hexNodes[k].setAttribute('transform','translate('+(h[0]+dx).toFixed(2)+' '+(h[1]+dy).toFixed(2)+') rotate('+rot.toFixed(2)+')');
+  });
+  flakes.forEach(function(fl){
+    var y=(fl.y + fl.laps*1140*t/DUR) % 1140 - 30, x=fl.x + Math.sin(w*fl.k*2+fl.ph)*fl.sw;
+    fl.n.style.transform='translate('+x.toFixed(1)+'px,'+y.toFixed(1)+'px)';
+  });
+  var p0=INTRO, p1=INTRO+N*PRIZE;
+  head.style.opacity = (ease((t-p0)/0.6) * (1-ease((t-(p1-0.45))/0.45))).toFixed(3);
+  scenes.forEach(function(s){
+    var l=t-s.start;
+    if(l<0||l>=s.len){s.node.style.display='none';return;}
+    s.node.style.display='block';
+    var out=clamp((l-(s.len-0.55))/0.5);out=out*out*(3-2*out);
+    s.items.forEach(function(n){
+      var d=parseFloat(n.getAttribute('data-i'))*0.11, pin=ease((l-d)/0.7);
+      var fx=parseFloat(n.getAttribute('data-fx')||0), fy=parseFloat(n.getAttribute('data-fy')||0);
+      var x=fx*(1-pin) - (fx?70:40)*out, y=fy*(1-pin);
+      var sc=n.getAttribute('data-pop')?(0.86+0.14*pin):1;
+      n.style.opacity=(pin*(1-out)).toFixed(3);
+      n.style.transform='translate('+x.toFixed(2)+'px,'+y.toFixed(2)+'px) scale('+sc.toFixed(4)+')';
+    });
+    s.zoom.forEach(function(n){n.style.transform='scale('+(1+0.055*l/s.len).toFixed(4)+')';});
+  });
+};
+var q = /[?&]t=([\d.]+)/.exec(location.search);
+seek(q ? parseFloat(q[1]) : 0);
+if(!q){var t0=performance.now();(function tick(){seek((performance.now()-t0)/1000);requestAnimationFrame(tick);})();}
+function fit(){var k=Math.min(window.innerWidth/1920,window.innerHeight/1080);document.body.style.transform='translate('+((window.innerWidth-1920*k)/2)+'px,'+((window.innerHeight-1080*k)/2)+'px) scale('+k+')';}
+fit();window.addEventListener('resize',fit);
+function full(){var e=document.documentElement,f=e.requestFullscreen||e.webkitRequestFullscreen;if(f&&!document.fullscreenElement){try{f.call(e);}catch(x){}}}
+document.addEventListener('click',full);document.addEventListener('keydown',full);
+</script>
+</body></html>
